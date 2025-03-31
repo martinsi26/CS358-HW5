@@ -81,14 +81,62 @@ public class CG1Visitor extends Visitor
      * We'll start by setting the offsets for Object.
      * You need to continue the traversal with all of the subclasses.
      */
-    void setOffsets(ClassDecl c)
+    private void setOffsets(ClassDecl c)
     {
-        // do stuff
+        for(InstVarDecl v : c.fieldEnv.values()) {
+            // set the offset to the next available position
+
+            // need to check parents offset first and include it in the v.offset
+            if(v.type.vtableName().equals("INT") || v.type.vtableName().equals("BOOLEAN")) {
+                v.offset = -16 - (c.numDataFields * 4);
+                c.numDataFields++;
+            } else {
+                v.offset = 0 + (c.numObjFields * 4);
+                c.numObjFields++;
+            }
+        }
+
+        for(MethodDecl m : c.methodEnv.values()) {
+            code.emit(m.name);
+            code.emit("CLASS_" + c.name + ":");
+
+            m.paramSize = m.formals.size();
+            int gc_tag = 0;
+            for(int i = 0; i < m.formals.size(); i++) {
+                if(m.formals.get(i).type.vtableName().equals("INT")) {
+                    gc_tag++;
+                }
+            }
+            int max = m.paramSize + gc_tag;
+            gc_tag = 0;
+            for(int i = 0; i < m.formals.size(); i++) {
+                if(m.formals.get(i).type.vtableName().equals("INT")) {
+                    gc_tag++;
+                }
+                m.formals.get(i).offset = (max * 4) - ((i * 4) + (gc_tag * 4));
+                
+                // for each method if the method is in the vtable, overwrite it (how to see if method is in vtable?)
+                // if it is not in the vtable, add a new entry
+                // set the method's offset to it's position inthe table * 4 (how to find position in table?)
+                //m.offset = /*methodOffset*/ * 4;
+
+
+
+                // CODE TO NUMERATE numDataFields and numObjFields
+                // if(m.formals.get(i).type.vtableName.equals("INT") || m.formals.get(i).type.vtableName.equals("BOOLEAN")) {
+                //     currentClass.numDataFields = currentClass.numDataFields + 1;
+                // } else {
+                //     currentClass.numObjFields = currentClass.numObjFields + 1;
+                // }
+            }
+        }
 
         // look at each subclass and call setoffsets
         for(ClassDecl s : c.subclasses) {
             setOffsets(s);
         }
+
+        code.emit("END_CLASS_" + c.name + ":");
     }
    
 

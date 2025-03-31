@@ -44,18 +44,34 @@ public class CG3Visitor extends Visitor
     }
 
     public void push_int(String r) {
-        code.emit("addu $sp, $sp, 8");
-        code.emit("sw $s5, -4($sp)");
+        code.emit("subu $sp, $sp, 8");
+        code.emit("sw $s5, 4($sp)");
         code.emit("sw "+r+", ($sp)");
         stack += 8;
     }
 
     public void pop_int(String r) {
-
+        code.emit("addu, $sp, $sp, 8");
+        code.emit("lw "+r+", ($sp)");
+        stack -= 8;
     }
 
-    public void this_swap(int paramSize) {
-        code.emit("");
+    public void push(String r) {
+        code.emit("subu $sp, $sp, 4");
+        code.emit("sw "+r+", ($sp)");
+        stack += 4;
+    }
+
+    public void pop(String r) {
+        code.emit("addu, $sp, $sp, 4");
+        code.emit("lw "+r+", ($sp)");
+        stack -= 4;
+    }
+
+    public void this_swap(int paramSize, String r) {
+        code.emit("lw $t0, "+paramSize+"($sp)");
+        code.emit("sw "+r+", "+paramSize+"($sp)");
+        code.emit("move "+r+", $t0");
     }
 
     public void undo_this_swap(int paramSize) {
@@ -63,27 +79,128 @@ public class CG3Visitor extends Visitor
         code.emit("");
     }
 
-    public Object visit(MethodDecl n)
+    public Object visit(ClassDecl c)
     {
-        n.formals.accept(this);
-        n.stmts.accept(this);
-
-        // this_swap([paramSize]);
-
-        // code.emit("beq $s2, $0, nullPtrException");
-        // code.emit("lw $t0, -12($s2)");        // get VMT pointer
-
-        // code.emit("lw $t0, [method offset]($t0)");  // foo is slot 16 in the VMT
-
-        // code.emit("jalr $t0");               // call foo
-
-        // code.emit("addu $sp, $sp, [paramSize]");
-
-        // code.emit("subu $sp, $sp, 4");
-        // code.emit("sw $t0, ($sp)");
+        c.decls.accept(this);
 
         return null;
     }
+
+    public Object visit(MethodDecl m)
+    {
+        m.formals.accept(this);
+        m.stmts.accept(this);
+
+        return null;
+    }
+
+    public Object visit(MethodDeclVoid m)
+    {
+        code.emit("mth_"+m.classDecl.name+"_"+m.name+":");
+        push("$ra");
+
+        //Statements?
+
+        // pop off local variables from stack
+        code.emit("$addu $sp, $sp, "+stack);
+
+        pop("$ra");
+        code.emit("jr $ra");
+
+        return visit((MethodDecl)m);
+    }
+
+    public Object visit(Call c)
+    {
+        n.parms.accept(this);
+        n.obj.accept(this);
+
+        // put this onto stack
+        // put x onto stack (param 1)
+        // put y onto stack (param 2)
+
+        this_swap(c.methodLink.paramSize, "$s2");
+        code.emit("beq $s2, $0, nullPtrException");
+        code.emit("lw $t0, -12($s2)");
+        code.emit("lw $t0, "+c.methodLink.vtableOffset+"($t0)");
+        code.emit("jalr $t0");
+        code.emit("addu $sp, $sp, "+c.methodLink.paramSize);
+        pop("$s2");
+        push("$t0");
+
+        return null;
+    }
+
+    public Object visit(LocalVarDecl n)
+    {
+        n.initExp.accept(this);
+        code.emit("lw $0, ($sp)");
+        return visit((VarDecl)n);
+    }
+
+    public Object visit(IntegerLiteral n) 
+    {
+        code.emit("li $t0, " + n.val);
+        push_int("$t0");
+        return null;
+    }
+
+    public Object visit(StringLiteral n)  
+    {
+        code.emit("li $t0, " + n.str);
+        push("$t0");
+        return null; 
+    }
+
+    public Object visit(True n)    
+    { 
+        code.emit("li $t0, true");
+        push("$t0");
+        return null; 
+    }
+
+    public Object visit(False n)   
+    { 
+        code.emit("li $t0, false");
+        push("$t0");
+        return null; 
+    }
+
+    public Object visit(And n)         { return visit((BinExp)n); }
+    public Object visit(Equals n)      { return visit((BinExp)n); }
+    public Object visit(LessThan n)    { return visit((BinExp)n); }
+    public Object visit(GreaterThan n) { return visit((BinExp)n); }
+    public Object visit(Or n)          { return visit((BinExp)n); }
+
+    public Object visit(Minus n) 
+    { 
+        pop_int("$t2");
+        pop_int("$t1");
+        code.emit("subu $t0, $t1, $t2");
+        push_int("$t0");
+        return visit((BinExp)n); 
+    }
+
+    public Object visit(Plus n)        
+    {
+        pop_int("$t2");
+        pop_int("$t1");
+        code.emit("addu $t0, $t1, $t2");
+        push_int("$t0");
+        return visit((BinExp)n); 
+    }
+
+    public Object visit(Times n)       
+    { 
+        pop_int("$t2");
+        pop_int("$t1");
+        code.emit("mul $t0, $t1, $t2");
+        push_int("$t0");
+        return visit((BinExp)n);
+    }
+
+    public Object visit(Divide n)      { return visit((BinExp)n); }
+    public Object visit(Remainder n)   { return visit((BinExp)n); }
 }
 
 
