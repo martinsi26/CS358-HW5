@@ -106,20 +106,19 @@ public class CG1Visitor extends Visitor
             // code.emit(m.name);
             // code.emit("CLASS_" + c.name + ":");
 
-            m.paramSize = m.formals.size();
             int gc_tag = 0;
             for(int i = 0; i < m.formals.size(); i++) {
                 if(m.formals.get(i).type.typeName().equals("I")) {
                     gc_tag++;
                 }
             }
-            int max = m.paramSize + gc_tag;
+            m.paramSize = m.formals.size() + gc_tag;
             gc_tag = 0;
             for(int i = 0; i < m.formals.size(); i++) {
                 if(m.formals.get(i).type.typeName().equals("I")) {
                     gc_tag++;
                 }
-                m.formals.get(i).offset = (max * 4) - ((i + gc_tag) * 4);
+                m.formals.get(i).offset = (m.paramSize * 4) - ((i + gc_tag) * 4);
                 
                 // for each method if the method is in the vtable, overwrite it (how to see if method is in vtable?)
                 // if it is not in the vtable, add a new entry

@@ -26,11 +26,12 @@ public class CG3Visitor extends Visitor
     @Override
     public Object visit(Program n)
     {
+        code.comment(n, "begin");
         code.emit(".text");
         code.emit(".globl main");
         code.emit("main:");
         code.emit("  jal vm_init");
-        //CALL MAIN STATEMENT
+        n.mainStatement.accept(this);
         //exit the program
         code.emit("  li $v0, 10");
         code.emit("  syscall");
@@ -40,6 +41,7 @@ public class CG3Visitor extends Visitor
 
         // flush the output and return
         code.flush();
+        code.comment(n, "end");
         return null;
     }
 
@@ -58,11 +60,11 @@ public class CG3Visitor extends Visitor
 
     public void pop(Type t, String reg) {
         if(t.isInt()) {
-            code.emit("addu, $sp, $sp, 8");
+            code.emit("addu $sp, $sp, 8");
             code.emit("lw "+reg+", ($sp)");
             stack -= 8;
         } else {
-            code.emit("addu, $sp, $sp, 4");
+            code.emit("addu $sp, $sp, 4");
             code.emit("lw "+reg+", ($sp)");
             stack -= 4;
         }
@@ -100,6 +102,7 @@ public class CG3Visitor extends Visitor
 
     public Object visit(MethodDeclVoid m)
     {
+        code.comment(m, "begin");
         code.emit(".globl "+"mth_"+m.classDecl.name+"_"+m.name);
         code.emit("mth_"+m.classDecl.name+"_"+m.name+":");
         push(new VoidType(-1), "$ra");
@@ -112,7 +115,7 @@ public class CG3Visitor extends Visitor
         pop_size(stack);
         pop(new VoidType(-1), "$ra");
         code.emit("jr $ra");
-
+        code.comment(m, "end");
         return null;
     }
 
@@ -139,56 +142,86 @@ public class CG3Visitor extends Visitor
 
     public Object visit(Call c)
     {
-        c.parms.accept(this);
+        code.comment(c, "begin");
         c.obj.accept(this);
+        c.parms.accept(this);
 
-        // put this onto stack
-        // put x onto stack (param 1)
-        // put y onto stack (param 2)
+        if(c.obj.name().equals("Super")) {
+            this_swap(c.methodLink.paramSize, "$s2");
+            code.emit("jal mth_"+c.methodLink.classDecl.name+"_"+c.methodLink.name);
+            pop_size(c.methodLink.paramSize*4);
+            pop(c.type, "$s2");
+            push(c.type, "$t0");
+        } else {
+            this_swap(c.methodLink.paramSize, "$s2");
+            npe("$s2");
+            code.emit("lw $t0, -12($s2)");
+            code.emit("lw $t0, "+c.methodLink.vtableOffset+"($t0)");
+            code.emit("jalr $t0");
+            pop_size(c.methodLink.paramSize*4);
+            pop(c.type, "$s2");
+            push(c.type, "$t0");
+        }
 
-        this_swap(c.methodLink.paramSize, "$s2");
-        npe("$s2");
-        code.emit("lw $t0, -12($s2)");
-        code.emit("lw $t0, "+c.methodLink.vtableOffset+"($t0)");
-        code.emit("jalr $t0");
-        code.emit("addu $sp, $sp, "+c.methodLink.paramSize);
-        pop(c.type, "$s2");
-        push(c.type, "$t0");
-
+        code.comment(c, "end");
         return null;
     }
 
     public Object visit(LocalVarDecl n)
     {
+        code.comment(n, "begin");
         n.initExp.accept(this);
-        code.emit("lw $0, ($sp) #**'V'");
-        return visit((VarDecl)n);
+        visit((VarDecl)n);
+        code.emit("lw $0, ($sp) #**'LocalVariable'");
+        code.comment(n, "end");
+        n.offset = -stack;
+        return null;
+    }
+
+    public Object visit(IdentifierExp n)  
+    {
+        if(n.link.name().equals("InstVarDecl")) {
+            code.emit("lw $t0, "+n.link.offset+"($s2)");
+            push(n.type, "$t0");
+        } else {
+            code.emit("lw $t0, "+n.link.offset+stack+"($sp)");
+            push(n.type, "$t0");
+        }
+        return null; 
     }
 
     public Object visit(IntegerLiteral n) 
     {
+        code.comment(n, "begin");
         code.emit("li $t0, "+n.val);
         push(n.type, "$t0");
+        code.comment(n, "end");
         return null;
     }
 
     public Object visit(StringLiteral n)  
     {
-        code.emit("li $t0, strLit_"+n.str);
+        code.comment(n, "begin");
+        code.emit("li $t0, strLit_"+n.uniqueCgRep);
         push(n.type, "$t0");
+        code.comment(n, "end");
         return null; 
     }
 
     public Object visit(True n)    
     { 
+        code.comment(n, "begin");
         code.emit("li $t0, 1");
         push(n.type, "$t0");
+        code.comment(n, "end");
         return null; 
     }
 
     public Object visit(False n)   
     { 
+        code.comment(n, "begin");
         push(n.type, "$0");
+        code.comment(n, "end");
         return null; 
     }
 
@@ -218,30 +251,38 @@ public class CG3Visitor extends Visitor
 
     public Object visit(Minus n) 
     { 
+        code.comment(n, "begin");
         visit((BinExp)n);
-        pop(n.type, "$t2");
-        pop(n.type, "$t1");
+        pop(n.right.type, "$t2");
+        pop(n.left.type, "$t1");
         code.emit("subu $t0, $t1, $t2");
         push(n.type, "$t0");
+        code.comment(n, "end");
         return null; 
     }
 
     public Object visit(Plus n)        
     {
-        pop(n.type, "$t2");
-        pop(n.type, "$t1");
+        code.comment(n, "begin");
+        visit((BinExp)n);
+        pop(n.right.type, "$t2");
+        pop(n.left.type, "$t1");
         code.emit("addu $t0, $t1, $t2");
         push(n.type, "$t0");
-        return visit((BinExp)n); 
+        code.comment(n, "end");
+        return null; 
     }
 
     public Object visit(Times n)       
     { 
-        pop(n.type, "$t2");
-        pop(n.type, "$t1");
+        code.comment(n, "begin");
+        visit((BinExp)n);
+        pop(n.right.type, "$t2");
+        pop(n.left.type, "$t1");
         code.emit("mul $t0, $t1, $t2");
         push(n.type, "$t0");
-        return visit((BinExp)n);
+        code.comment(n, "end");
+        return null;
     }
 
     public Object visit(Divide n)      { return visit((BinExp)n); }
