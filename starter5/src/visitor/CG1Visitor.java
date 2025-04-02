@@ -83,37 +83,43 @@ public class CG1Visitor extends Visitor
      */
     private void setOffsets(ClassDecl c)
     {
+        if(c.superLink != null) {
+            int p_numData = c.superLink.numDataFields;
+            int p_objData = c.superLink.numObjFields;
+            c.numDataFields = p_numData;
+            c.numObjFields = p_objData;
+        } else {
+            c.numDataFields++;
+        }
         for(InstVarDecl v : c.fieldEnv.values()) {
             // set the offset to the next available position
-
-            // need to check parents offset first and include it in the v.offset
-            if(v.type.vtableName().equals("INT") || v.type.vtableName().equals("BOOLEAN")) {
-                v.offset = -16 - (c.numDataFields * 4);
+            if(v.type.typeName().equals("I") || v.type.typeName().equals("Z")) {
                 c.numDataFields++;
+                v.offset = -8 - (c.numDataFields * 4);
             } else {
-                v.offset = 0 + (c.numObjFields * 4);
                 c.numObjFields++;
+                v.offset = -4 + (c.numObjFields * 4);
             }
         }
 
         for(MethodDecl m : c.methodEnv.values()) {
-            code.emit(m.name);
-            code.emit("CLASS_" + c.name + ":");
+            // code.emit(m.name);
+            // code.emit("CLASS_" + c.name + ":");
 
             m.paramSize = m.formals.size();
             int gc_tag = 0;
             for(int i = 0; i < m.formals.size(); i++) {
-                if(m.formals.get(i).type.vtableName().equals("INT")) {
+                if(m.formals.get(i).type.typeName().equals("I")) {
                     gc_tag++;
                 }
             }
             int max = m.paramSize + gc_tag;
             gc_tag = 0;
             for(int i = 0; i < m.formals.size(); i++) {
-                if(m.formals.get(i).type.vtableName().equals("INT")) {
+                if(m.formals.get(i).type.typeName().equals("I")) {
                     gc_tag++;
                 }
-                m.formals.get(i).offset = (max * 4) - ((i * 4) + (gc_tag * 4));
+                m.formals.get(i).offset = (max * 4) - ((i + gc_tag) * 4);
                 
                 // for each method if the method is in the vtable, overwrite it (how to see if method is in vtable?)
                 // if it is not in the vtable, add a new entry
