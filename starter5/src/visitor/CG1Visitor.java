@@ -84,12 +84,11 @@ public class CG1Visitor extends Visitor
     private void setOffsets(ClassDecl c)
     {
         if(c.superLink != null) {
-            int p_numData = c.superLink.numDataFields;
-            int p_objData = c.superLink.numObjFields;
-            c.numDataFields = p_numData;
-            c.numObjFields = p_objData;
+            c.numDataFields = c.superLink.numDataFields;
+            c.numObjFields = c.superLink.numObjFields;
         } else {
             c.numDataFields++;
+            c.numObjFields++;
         }
         for(InstVarDecl v : c.fieldEnv.values()) {
             // set the offset to the next available position
@@ -106,14 +105,13 @@ public class CG1Visitor extends Visitor
             // code.emit(m.name);
             // code.emit("CLASS_" + c.name + ":");
 
-            int gc_tag = 0;
+            m.paramSize = m.formals.size();
             for(int i = 0; i < m.formals.size(); i++) {
                 if(m.formals.get(i).type.typeName().equals("I")) {
-                    gc_tag++;
+                    m.paramSize++;
                 }
             }
-            m.paramSize = m.formals.size() + gc_tag;
-            gc_tag = 0;
+            int gc_tag = 0;
             for(int i = 0; i < m.formals.size(); i++) {
                 if(m.formals.get(i).type.typeName().equals("I")) {
                     gc_tag++;
@@ -141,7 +139,7 @@ public class CG1Visitor extends Visitor
             setOffsets(s);
         }
 
-        code.emit("END_CLASS_" + c.name + ":");
+        //code.emit("END_CLASS_" + c.name + ":");
     }
    
 

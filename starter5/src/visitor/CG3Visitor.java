@@ -79,7 +79,7 @@ public class CG3Visitor extends Visitor
         code.emit("beq "+reg+", $0, nullPtrException");
     }
 
-    public void this_swap(int paramSize, String reg) {
+    public void swap(int paramSize, String reg) {
         code.emit("lw $t0, "+paramSize+"($sp)");
         code.emit("sw "+reg+", "+paramSize+"($sp)");
         code.emit("move "+reg+", $t0");
@@ -147,13 +147,13 @@ public class CG3Visitor extends Visitor
         c.parms.accept(this);
 
         if(c.obj.name().equals("Super")) {
-            this_swap(c.methodLink.paramSize, "$s2");
+            swap(c.methodLink.paramSize, "$s2");
             code.emit("jal mth_"+c.methodLink.classDecl.name+"_"+c.methodLink.name);
             pop_size(c.methodLink.paramSize*4);
             pop(c.type, "$s2");
             push(c.type, "$t0");
         } else {
-            this_swap(c.methodLink.paramSize, "$s2");
+            swap(c.methodLink.paramSize, "$s2");
             npe("$s2");
             code.emit("lw $t0, -12($s2)");
             code.emit("lw $t0, "+c.methodLink.vtableOffset+"($t0)");
@@ -172,7 +172,7 @@ public class CG3Visitor extends Visitor
         code.comment(n, "begin");
         n.initExp.accept(this);
         visit((VarDecl)n);
-        code.emit("lw $0, ($sp) #**'LocalVariable'");
+        code.emit("lw $0, ($sp) #**"+n.name);
         code.comment(n, "end");
         n.offset = -stack;
         return null;
@@ -202,7 +202,7 @@ public class CG3Visitor extends Visitor
     public Object visit(StringLiteral n)  
     {
         code.comment(n, "begin");
-        code.emit("li $t0, strLit_"+n.uniqueCgRep);
+        code.emit("li $t0, strLit_"+n.uniqueId);
         push(n.type, "$t0");
         code.comment(n, "end");
         return null; 
@@ -225,23 +225,23 @@ public class CG3Visitor extends Visitor
         return null; 
     }
 
-    // public Object visit(Null n)    
-    // { 
-    //     push(n.type, "$0");
-    //     return null; 
-    // }
+    public Object visit(Null n)    
+    { 
+        push(n.type, "$0");
+        return null; 
+    }
 
-    // public Object visit(Super n)   
-    // { 
-    //     push(n.type, "$s2");
-    //     return null; 
-    // }
+    public Object visit(Super n)   
+    { 
+        push(n.type, "$s2");
+        return null; 
+    }
 
-    // public Object visit(This n)    
-    // { 
-    //     push(n.type, "$s2");
-    //     return null; 
-    // }
+    public Object visit(This n)
+    { 
+        push(n.type, "$s2");
+        return null; 
+    }
 
     public Object visit(And n)         { return visit((BinExp)n); }
     public Object visit(Equals n)      { return visit((BinExp)n); }

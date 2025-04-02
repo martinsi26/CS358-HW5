@@ -1,0 +1,7 @@
+true
+14
+true
+false
+30000
+(none)
+C:\Users\simon\Documents\CS358-HW5\starter5\tests\Test.asm
