@@ -1,4 +1,4 @@
- .data # Program at 3.1
+ .data # Program at 5.1
 # ****** class Object ****** # ClassDecl at 0.0
   .byte 0 # ClassDecl at 0.0
   .byte 0 # ClassDecl at 0.0
@@ -48,49 +48,6 @@ CLASS_Lib: # ClassDecl at 0.0
   .word mth_Lib_printInt # MethodDeclVoid at 0.0
   .word mth_Lib_intToString # MethodDeclNonVoid at 0.0
   .word mth_Lib_intToChar # MethodDeclNonVoid at 0.0
-# ****** class Toast ****** # ClassDecl at 28.7
-  .byte 0 # ClassDecl at 28.7
-  .byte 0 # ClassDecl at 28.7
-  .byte 0 # ClassDecl at 28.7
-  .byte 212 # 'T' with high bit set # ClassDecl at 28.7
-  .byte 111 # 'o' # ClassDecl at 28.7
-  .byte 97 # 'a' # ClassDecl at 28.7
-  .byte 115 # 's' # ClassDecl at 28.7
-  .byte 116 # 't' # ClassDecl at 28.7
-CLASS_Toast: # ClassDecl at 28.7
-  .word mth_Object_hashCode # MethodDeclNonVoid at 0.0
-  .word mth_Object_equals # MethodDeclNonVoid at 0.0
-  .word mth_Object_toString # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readLine # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readInt # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readChar # MethodDeclNonVoid at 0.0
-  .word mth_Lib_printStr # MethodDeclVoid at 0.0
-  .word mth_Lib_printBool # MethodDeclVoid at 0.0
-  .word mth_Lib_printInt # MethodDeclVoid at 0.0
-  .word mth_Lib_intToString # MethodDeclNonVoid at 0.0
-  .word mth_Lib_intToChar # MethodDeclNonVoid at 0.0
-  .word mth_Toast_run # MethodDeclVoid at 30.17
-# ****** class Jam ****** # ClassDecl at 9.7
-  .byte 0 # ClassDecl at 9.7
-  .byte 202 # 'J' with high bit set # ClassDecl at 9.7
-  .byte 97 # 'a' # ClassDecl at 9.7
-  .byte 109 # 'm' # ClassDecl at 9.7
-CLASS_Jam: # ClassDecl at 9.7
-  .word mth_Object_hashCode # MethodDeclNonVoid at 0.0
-  .word mth_Object_equals # MethodDeclNonVoid at 0.0
-  .word mth_Object_toString # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readLine # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readInt # MethodDeclNonVoid at 0.0
-  .word mth_Lib_readChar # MethodDeclNonVoid at 0.0
-  .word mth_Lib_printStr # MethodDeclVoid at 0.0
-  .word mth_Lib_printBool # MethodDeclVoid at 0.0
-  .word mth_Lib_printInt # MethodDeclVoid at 0.0
-  .word mth_Lib_intToString # MethodDeclNonVoid at 0.0
-  .word mth_Lib_intToChar # MethodDeclNonVoid at 0.0
-  .word mth_Toast_run # MethodDeclVoid at 30.17
-  .word mth_Jam_test # MethodDeclVoid at 12.17
-END_CLASS_Jam: # ClassDecl at 9.7
-END_CLASS_Toast: # ClassDecl at 28.7
 END_CLASS_Lib: # ClassDecl at 0.0
 # ****** class RunMain ****** # ClassDecl at 0.0
   .byte 0 # ClassDecl at 0.0
@@ -106,52 +63,65 @@ CLASS_RunMain: # ClassDecl at 0.0
   .word mth_Object_equals # MethodDeclNonVoid at 0.0
   .word mth_Object_toString # MethodDeclNonVoid at 0.0
 END_CLASS_RunMain: # ClassDecl at 0.0
-# ****** class Main ****** # ClassDecl at 3.7
-  .byte 205 # 'M' with high bit set # ClassDecl at 3.7
-  .byte 97 # 'a' # ClassDecl at 3.7
-  .byte 105 # 'i' # ClassDecl at 3.7
-  .byte 110 # 'n' # ClassDecl at 3.7
-CLASS_Main: # ClassDecl at 3.7
+# ****** class Main ****** # ClassDecl at 5.7
+  .byte 205 # 'M' with high bit set # ClassDecl at 5.7
+  .byte 97 # 'a' # ClassDecl at 5.7
+  .byte 105 # 'i' # ClassDecl at 5.7
+  .byte 110 # 'n' # ClassDecl at 5.7
+CLASS_Main: # ClassDecl at 5.7
   .word mth_Object_hashCode # MethodDeclNonVoid at 0.0
   .word mth_Object_equals # MethodDeclNonVoid at 0.0
   .word mth_Object_toString # MethodDeclNonVoid at 0.0
-  .word mth_Main_main # MethodDeclVoid at 4.17
-END_CLASS_Main: # ClassDecl at 3.7
+  .word mth_Main_main # MethodDeclVoid at 8.17
+  .word mth_Main_fib # MethodDeclNonVoid at 29.16
+END_CLASS_Main: # ClassDecl at 5.7
 dataArrayVTableStart: # IntegerType at 0.0
 END_CLASS_Object: # ClassDecl at 0.0
-  .byte 102 # StringLiteral at 14.13
-  .byte 117 # StringLiteral at 14.13
-  .byte 110 # StringLiteral at 14.13
-  .byte 0 # StringLiteral at 14.13
-  .word CLASS_String # StringLiteral at 14.13
-  .word 2 # StringLiteral at 14.13
-  .word -3 # StringLiteral at 14.13
-strLit_16: # StringLiteral at 14.13
-  .byte 32 # StringLiteral at 20.22
-  .byte 0 # StringLiteral at 20.22
-  .byte 0 # StringLiteral at 20.22
-  .byte 0 # StringLiteral at 20.22
-  .word CLASS_String # StringLiteral at 20.22
-  .word 2 # StringLiteral at 20.22
-  .word -1 # StringLiteral at 20.22
-strLit_51: # StringLiteral at 20.22
-  .byte 10 # StringLiteral at 22.18
-  .byte 0 # StringLiteral at 22.18
-  .byte 0 # StringLiteral at 22.18
-  .byte 0 # StringLiteral at 22.18
-  .word CLASS_String # StringLiteral at 22.18
-  .word 2 # StringLiteral at 22.18
-  .word -1 # StringLiteral at 22.18
-strLit_59: # StringLiteral at 22.18
-  .byte 10 # StringLiteral at 36.23
-  .byte 0 # StringLiteral at 36.23
-  .byte 0 # StringLiteral at 36.23
-  .byte 0 # StringLiteral at 36.23
-  .word CLASS_String # StringLiteral at 36.23
-  .word 2 # StringLiteral at 36.23
-  .word -1 # StringLiteral at 36.23
-strLit_100: # StringLiteral at 36.23
-# begin: Program at 3.1; stackHeight = 0
+  .byte 84 # StringLiteral at 20.15
+  .byte 104 # StringLiteral at 20.15
+  .byte 101 # StringLiteral at 20.15
+  .byte 32 # StringLiteral at 20.15
+  .byte 102 # StringLiteral at 20.15
+  .byte 105 # StringLiteral at 20.15
+  .byte 98 # StringLiteral at 20.15
+  .byte 111 # StringLiteral at 20.15
+  .byte 110 # StringLiteral at 20.15
+  .byte 97 # StringLiteral at 20.15
+  .byte 99 # StringLiteral at 20.15
+  .byte 99 # StringLiteral at 20.15
+  .byte 105 # StringLiteral at 20.15
+  .byte 32 # StringLiteral at 20.15
+  .byte 110 # StringLiteral at 20.15
+  .byte 117 # StringLiteral at 20.15
+  .byte 109 # StringLiteral at 20.15
+  .byte 98 # StringLiteral at 20.15
+  .byte 101 # StringLiteral at 20.15
+  .byte 114 # StringLiteral at 20.15
+  .byte 32 # StringLiteral at 20.15
+  .byte 111 # StringLiteral at 20.15
+  .byte 102 # StringLiteral at 20.15
+  .byte 32 # StringLiteral at 20.15
+  .word CLASS_String # StringLiteral at 20.15
+  .word 7 # StringLiteral at 20.15
+  .word -24 # StringLiteral at 20.15
+strLit_16: # StringLiteral at 20.15
+  .byte 32 # StringLiteral at 22.15
+  .byte 105 # StringLiteral at 22.15
+  .byte 115 # StringLiteral at 22.15
+  .byte 32 # StringLiteral at 22.15
+  .word CLASS_String # StringLiteral at 22.15
+  .word 2 # StringLiteral at 22.15
+  .word -4 # StringLiteral at 22.15
+strLit_24: # StringLiteral at 22.15
+  .byte 46 # StringLiteral at 24.15
+  .byte 10 # StringLiteral at 24.15
+  .byte 0 # StringLiteral at 24.15
+  .byte 0 # StringLiteral at 24.15
+  .word CLASS_String # StringLiteral at 24.15
+  .word 2 # StringLiteral at 24.15
+  .word -2 # StringLiteral at 24.15
+strLit_32: # StringLiteral at 24.15
+# begin: Program at 5.1; stackHeight = 0
 .text
 .globl main
 main:
@@ -183,137 +153,230 @@ addu $sp, $sp, 4
 # end: CallStatement at 0.0; stackHeight = 0
   li $v0, 10
   syscall
-# begin: MethodDeclVoid at 4.17; stackHeight = 0
+# begin: MethodDeclVoid at 8.17; stackHeight = 0
 .globl mth_Main_main
 mth_Main_main:
 subu $sp, $sp, 4
 sw $ra, ($sp)
-# begin: CallStatement at 5.19; stackHeight = 0
-# begin: Call at 5.19; stackHeight = 0
-# begin: NewObject at 5.9; stackHeight = 0
-li $s6, 4
-li $s7, 2
+# begin: LocalVarDecl at 11.6; stackHeight = 0
+# begin: NewObject at 11.12; stackHeight = 0
+li $s6, 2
+li $s7, 1
 jal newObject
-la $t0, CLASS_Jam
+la $t0, CLASS_Lib
 sw $t0, -12($s7)
-# end: NewObject at 5.9; stackHeight = 4
-lw $t0, 0($sp)
-sw $s2, 0($sp)
+# end: NewObject at 11.12; stackHeight = 4
+lw $0, ($sp) #**lib
+# end: LocalVarDecl at 11.6; stackHeight = 4
+# begin: LocalVarDecl at 14.6; stackHeight = 4
+# begin: IntegerLiteral at 14.12; stackHeight = 4
+li $t0, 14
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IntegerLiteral at 14.12; stackHeight = 12
+lw $0, ($sp) #**val
+# end: LocalVarDecl at 14.6; stackHeight = 12
+# begin: LocalVarDecl at 17.6; stackHeight = 12
+# begin: Call at 17.15; stackHeight = 12
+subu $sp, $sp, 4
+sw $s2, ($sp)
+# begin: IdentifierExp at 17.19; stackHeight = 16
+lw $t0, 4($sp) #**LocalVar
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IdentifierExp at 17.19; stackHeight = 24
+lw $t0, 8($sp)
+sw $s2, 8($sp)
 move $s2, $t0
 beq $s2, $0, nullPtrException
 lw $t0, -12($s2)
-lw $t0, 44($t0)
+lw $t0, 16($t0)
 jalr $t0
-addu $sp, $sp, 0
+addu $sp, $sp, 8
+lw $s2, ($sp)
+addu $sp, $sp, 4
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: Call at 17.15; stackHeight = 20
+lw $0, ($sp) #**result
+# end: LocalVarDecl at 17.6; stackHeight = 20
+# begin: CallStatement at 20.6; stackHeight = 20
+# begin: Call at 20.6; stackHeight = 20
+# begin: IdentifierExp at 20.2; stackHeight = 20
+lw $t0, 16($sp) #**LocalVar
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: IdentifierExp at 20.2; stackHeight = 24
+# begin: StringLiteral at 20.15; stackHeight = 24
+li $t0, strLit_16
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: StringLiteral at 20.15; stackHeight = 28
+lw $t0, 4($sp)
+sw $s2, 4($sp)
+move $s2, $t0
+beq $s2, $0, nullPtrException
+lw $t0, -12($s2)
+lw $t0, 24($t0)
+jalr $t0
+addu $sp, $sp, 4
 lw $s2, ($sp)
 addu $sp, $sp, 4
 subu $sp, $sp, 4
 sw $t0, ($sp)
-# end: Call at 5.19; stackHeight = 4
+# end: Call at 20.6; stackHeight = 24
 lw $t0, ($sp)
 addu $sp, $sp, 4
-# end: CallStatement at 5.19; stackHeight = 0
-addu $sp, $sp, 0
+# end: CallStatement at 20.6; stackHeight = 20
+# begin: CallStatement at 21.6; stackHeight = 20
+# begin: Call at 21.6; stackHeight = 20
+# begin: IdentifierExp at 21.2; stackHeight = 20
+lw $t0, 16($sp) #**LocalVar
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: IdentifierExp at 21.2; stackHeight = 24
+# begin: IdentifierExp at 21.15; stackHeight = 24
+lw $t0, 12($sp) #**LocalVar
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IdentifierExp at 21.15; stackHeight = 32
+lw $t0, 8($sp)
+sw $s2, 8($sp)
+move $s2, $t0
+beq $s2, $0, nullPtrException
+lw $t0, -12($s2)
+lw $t0, 32($t0)
+jalr $t0
+addu $sp, $sp, 8
+lw $s2, ($sp)
+addu $sp, $sp, 4
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: Call at 21.6; stackHeight = 24
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 21.6; stackHeight = 20
+# begin: CallStatement at 22.6; stackHeight = 20
+# begin: Call at 22.6; stackHeight = 20
+# begin: IdentifierExp at 22.2; stackHeight = 20
+lw $t0, 16($sp) #**LocalVar
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: IdentifierExp at 22.2; stackHeight = 24
+# begin: StringLiteral at 22.15; stackHeight = 24
+li $t0, strLit_24
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: StringLiteral at 22.15; stackHeight = 28
+lw $t0, 4($sp)
+sw $s2, 4($sp)
+move $s2, $t0
+beq $s2, $0, nullPtrException
+lw $t0, -12($s2)
+lw $t0, 24($t0)
+jalr $t0
+addu $sp, $sp, 4
+lw $s2, ($sp)
+addu $sp, $sp, 4
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: Call at 22.6; stackHeight = 24
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 22.6; stackHeight = 20
+# begin: CallStatement at 23.6; stackHeight = 20
+# begin: Call at 23.6; stackHeight = 20
+# begin: IdentifierExp at 23.2; stackHeight = 20
+lw $t0, 16($sp) #**LocalVar
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: IdentifierExp at 23.2; stackHeight = 24
+# begin: IdentifierExp at 23.15; stackHeight = 24
+lw $t0, 4($sp) #**LocalVar
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IdentifierExp at 23.15; stackHeight = 32
+lw $t0, 8($sp)
+sw $s2, 8($sp)
+move $s2, $t0
+beq $s2, $0, nullPtrException
+lw $t0, -12($s2)
+lw $t0, 32($t0)
+jalr $t0
+addu $sp, $sp, 8
+lw $s2, ($sp)
+addu $sp, $sp, 4
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: Call at 23.6; stackHeight = 24
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 23.6; stackHeight = 20
+# begin: CallStatement at 24.6; stackHeight = 20
+# begin: Call at 24.6; stackHeight = 20
+# begin: IdentifierExp at 24.2; stackHeight = 20
+lw $t0, 16($sp) #**LocalVar
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: IdentifierExp at 24.2; stackHeight = 24
+# begin: StringLiteral at 24.15; stackHeight = 24
+li $t0, strLit_32
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: StringLiteral at 24.15; stackHeight = 28
+lw $t0, 4($sp)
+sw $s2, 4($sp)
+move $s2, $t0
+beq $s2, $0, nullPtrException
+lw $t0, -12($s2)
+lw $t0, 24($t0)
+jalr $t0
+addu $sp, $sp, 4
+lw $s2, ($sp)
+addu $sp, $sp, 4
+subu $sp, $sp, 4
+sw $t0, ($sp)
+# end: Call at 24.6; stackHeight = 24
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 24.6; stackHeight = 20
+addu $sp, $sp, 20
 lw $ra, ($sp)
 addu $sp, $sp, 4
 jr $ra
-# end: MethodDeclVoid at 4.17; stackHeight = -4
-# begin: MethodDeclVoid at 12.17; stackHeight = -4
-.globl mth_Jam_test
-mth_Jam_test:
+# end: MethodDeclVoid at 8.17; stackHeight = -4
+.globl mth_Main_fib
+mth_Main_fib:
 subu $sp, $sp, 4
 sw $ra, ($sp)
-# begin: Assign at 13.11; stackHeight = 0
-# begin: IntegerLiteral at 13.13; stackHeight = 0
-li $t0, 3
+# begin: LocalVarDecl at 31.6; stackHeight = 0
+# begin: IdentifierExp at 31.15; stackHeight = 0
+lw $t0, 4($sp) #**LocalVar
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IntegerLiteral at 13.13; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 8
-sw $t0, -20($sp)
-# end: Assign at 13.11; stackHeight = 0
-# begin: Assign at 14.11; stackHeight = 0
-# begin: StringLiteral at 14.13; stackHeight = 0
-li $t0, strLit_16
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: StringLiteral at 14.13; stackHeight = 4
-lw $t0, ($sp)
-addu $sp, $sp, 4
-sw $t0, 4($sp)
-# end: Assign at 14.11; stackHeight = 0
-# begin: Block at 15.9; stackHeight = 0
-# begin: LocalVarDecl at 15.18; stackHeight = 0
-# begin: IntegerLiteral at 15.22; stackHeight = 0
-li $t0, 0
+# end: IdentifierExp at 31.15; stackHeight = 8
+lw $0, ($sp) #**rtnVal
+# end: LocalVarDecl at 31.6; stackHeight = 8
+# begin: If at 32.2; stackHeight = 8
+# begin: GreaterThan at 32.8; stackHeight = 8
+# begin: IdentifierExp at 32.6; stackHeight = 8
+lw $t0, 12($sp) #**LocalVar
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IntegerLiteral at 15.22; stackHeight = 8
-lw $0, ($sp) #**i
-# end: LocalVarDecl at 15.18; stackHeight = 8
-# begin: BreakTarget at 15.9; stackHeight = 8
-while_cond_57:
-# begin: LessThan at 15.27; stackHeight = 8
-# begin: IdentifierExp at 15.25; stackHeight = 8
-lw $t0, 0($sp) #**LocalVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 15.25; stackHeight = 16
-# begin: IdentifierExp at 15.29; stackHeight = 16
-lw $t0, 20($sp) #**LocalVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 15.29; stackHeight = 24
-lw $t2, ($sp)
-addu $sp, $sp, 8
-lw $t1, ($sp)
-addu $sp, $sp, 8
-slt $t0, $t1, $t2
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: LessThan at 15.27; stackHeight = 12
-lw $t0, ($sp)
-addu $sp, $sp, 4
-beq $t0, $0, break_target_57
-# begin: Block at 15.9; stackHeight = 8
-# begin: Block at 15.37; stackHeight = 8
-# begin: LocalVarDecl at 16.21; stackHeight = 8
-# begin: True at 16.25; stackHeight = 8
+# end: IdentifierExp at 32.6; stackHeight = 16
+# begin: IntegerLiteral at 32.10; stackHeight = 16
 li $t0, 1
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: True at 16.25; stackHeight = 12
-lw $0, ($sp) #**x
-# end: LocalVarDecl at 16.21; stackHeight = 12
-# begin: LocalVarDecl at 17.17; stackHeight = 12
-# begin: IntegerLiteral at 17.21; stackHeight = 12
-li $t0, 78
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IntegerLiteral at 17.21; stackHeight = 20
-lw $0, ($sp) #**y
-# end: LocalVarDecl at 17.17; stackHeight = 20
-# begin: Assign at 18.15; stackHeight = 20
-# begin: And at 18.23; stackHeight = 20
-# begin: GreaterThan at 18.19; stackHeight = 20
-# begin: IdentifierExp at 18.17; stackHeight = 20
-lw $t0, 0($sp) #**LocalVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 18.17; stackHeight = 28
-# begin: IntegerLiteral at 18.21; stackHeight = 28
-li $t0, 0
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 18.21; stackHeight = 36
+# end: IntegerLiteral at 32.10; stackHeight = 24
 lw $t2, ($sp)
 addu $sp, $sp, 8
 lw $t1, ($sp)
@@ -321,105 +384,91 @@ addu $sp, $sp, 8
 sgt $t0, $t1, $t2
 subu $sp, $sp, 4
 sw $t0, ($sp)
-# end: GreaterThan at 18.19; stackHeight = 24
-lw $t0, ($sp)
-beq $t0, $0, skip_43
+# end: GreaterThan at 32.8; stackHeight = 12
 lw $t0, ($sp)
 addu $sp, $sp, 4
-# begin: IdentifierExp at 18.26; stackHeight = 20
-lw $t0, 8($sp) #**LocalVar
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: IdentifierExp at 18.26; stackHeight = 24
-skip_43:
-# end: And at 18.23; stackHeight = 24
-lw $t0, ($sp)
-addu $sp, $sp, 4
-sw $t0, 8($sp)
-# end: Assign at 18.15; stackHeight = 20
-# begin: CallStatement at 19.13; stackHeight = 20
-# begin: Call at 19.13; stackHeight = 20
+beq $t0, $0, if_else_61
+# begin: Block at 32.13; stackHeight = 8
+# begin: Assign at 34.13; stackHeight = 8
+# begin: Plus at 34.24; stackHeight = 8
+# begin: Call at 34.15; stackHeight = 8
 subu $sp, $sp, 4
 sw $s2, ($sp)
-# begin: Plus at 19.23; stackHeight = 24
-# begin: IdentifierExp at 19.22; stackHeight = 24
+# begin: Minus at 34.20; stackHeight = 12
+# begin: IdentifierExp at 34.19; stackHeight = 12
 lw $t0, 16($sp) #**LocalVar
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IdentifierExp at 19.22; stackHeight = 32
-# begin: IdentifierExp at 19.24; stackHeight = 32
-lw $t0, 12($sp) #**LocalVar
+# end: IdentifierExp at 34.19; stackHeight = 20
+# begin: IntegerLiteral at 34.21; stackHeight = 20
+li $t0, 1
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IdentifierExp at 19.24; stackHeight = 40
+# end: IntegerLiteral at 34.21; stackHeight = 28
 lw $t2, ($sp)
 addu $sp, $sp, 8
 lw $t1, ($sp)
 addu $sp, $sp, 8
-addu $t0, $t1, $t2
+subu $t0, $t1, $t2
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: Plus at 19.23; stackHeight = 32
+# end: Minus at 34.20; stackHeight = 20
 lw $t0, 8($sp)
 sw $s2, 8($sp)
 move $s2, $t0
 beq $s2, $0, nullPtrException
 lw $t0, -12($s2)
-lw $t0, 32($t0)
+lw $t0, 16($t0)
 jalr $t0
 addu $sp, $sp, 8
 lw $s2, ($sp)
 addu $sp, $sp, 4
-subu $sp, $sp, 4
+subu $sp, $sp, 8
+sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: Call at 19.13; stackHeight = 24
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 19.13; stackHeight = 20
-# begin: CallStatement at 20.13; stackHeight = 20
-# begin: Call at 20.13; stackHeight = 20
+# end: Call at 34.15; stackHeight = 16
+# begin: Call at 34.26; stackHeight = 16
 subu $sp, $sp, 4
 sw $s2, ($sp)
-# begin: StringLiteral at 20.22; stackHeight = 24
-li $t0, strLit_51
-subu $sp, $sp, 4
+# begin: Minus at 34.31; stackHeight = 20
+# begin: IdentifierExp at 34.30; stackHeight = 20
+lw $t0, 24($sp) #**LocalVar
+subu $sp, $sp, 8
+sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: StringLiteral at 20.22; stackHeight = 28
-lw $t0, 4($sp)
-sw $s2, 4($sp)
+# end: IdentifierExp at 34.30; stackHeight = 28
+# begin: IntegerLiteral at 34.32; stackHeight = 28
+li $t0, 2
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IntegerLiteral at 34.32; stackHeight = 36
+lw $t2, ($sp)
+addu $sp, $sp, 8
+lw $t1, ($sp)
+addu $sp, $sp, 8
+subu $t0, $t1, $t2
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: Minus at 34.31; stackHeight = 28
+lw $t0, 8($sp)
+sw $s2, 8($sp)
 move $s2, $t0
 beq $s2, $0, nullPtrException
 lw $t0, -12($s2)
-lw $t0, 24($t0)
+lw $t0, 16($t0)
 jalr $t0
-addu $sp, $sp, 4
+addu $sp, $sp, 8
 lw $s2, ($sp)
 addu $sp, $sp, 4
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: Call at 20.13; stackHeight = 24
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 20.13; stackHeight = 20
-addu $sp, $sp, 12
-# end: Block at 15.37; stackHeight = 8
-# begin: Assign at 15.32; stackHeight = 8
-# begin: Plus at 15.33; stackHeight = 8
-# begin: IdentifierExp at 15.32; stackHeight = 8
-lw $t0, 0($sp) #**LocalVar
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: IdentifierExp at 15.32; stackHeight = 16
-# begin: IntegerLiteral at 15.33; stackHeight = 16
-li $t0, 1
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 15.33; stackHeight = 24
+# end: Call at 34.26; stackHeight = 24
 lw $t2, ($sp)
 addu $sp, $sp, 8
 lw $t1, ($sp)
@@ -428,249 +477,33 @@ addu $t0, $t1, $t2
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
-# end: Plus at 15.33; stackHeight = 16
+# end: Plus at 34.24; stackHeight = 16
 lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 0($sp)
-# end: Assign at 15.32; stackHeight = 8
+# end: Assign at 34.13; stackHeight = 8
 addu $sp, $sp, 0
-# end: Block at 15.9; stackHeight = 8
-j while_cond_57
-break_target_57:
-# end: BreakTarget at 15.9; stackHeight = 8
-addu $sp, $sp, 8
-# end: Block at 15.9; stackHeight = 0
-# begin: CallStatement at 22.9; stackHeight = 0
-# begin: Call at 22.9; stackHeight = 0
-subu $sp, $sp, 4
-sw $s2, ($sp)
-# begin: StringLiteral at 22.18; stackHeight = 4
-li $t0, strLit_59
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: StringLiteral at 22.18; stackHeight = 8
-lw $t0, 4($sp)
-sw $s2, 4($sp)
-move $s2, $t0
-beq $s2, $0, nullPtrException
-lw $t0, -12($s2)
-lw $t0, 24($t0)
-jalr $t0
-addu $sp, $sp, 4
-lw $s2, ($sp)
-addu $sp, $sp, 4
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: Call at 22.9; stackHeight = 4
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 22.9; stackHeight = 0
-# begin: Assign at 23.9; stackHeight = 0
-# begin: Plus at 23.10; stackHeight = 0
-# begin: IdentifierExp at 23.9; stackHeight = 0
-lw $t0, -20($s2) #**InstVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 23.9; stackHeight = 8
-# begin: IntegerLiteral at 23.10; stackHeight = 8
-li $t0, 1
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 23.10; stackHeight = 16
-lw $t2, ($sp)
-addu $sp, $sp, 8
-lw $t1, ($sp)
-addu $sp, $sp, 8
-addu $t0, $t1, $t2
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: Plus at 23.10; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 8
-sw $t0, -20($sp)
-# end: Assign at 23.9; stackHeight = 0
-# begin: Assign at 24.9; stackHeight = 0
-# begin: Plus at 24.10; stackHeight = 0
-# begin: IdentifierExp at 24.9; stackHeight = 0
-lw $t0, -16($s2) #**InstVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 24.9; stackHeight = 8
-# begin: IntegerLiteral at 24.10; stackHeight = 8
-li $t0, 1
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 24.10; stackHeight = 16
-lw $t2, ($sp)
-addu $sp, $sp, 8
-lw $t1, ($sp)
-addu $sp, $sp, 8
-addu $t0, $t1, $t2
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: Plus at 24.10; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 8
-sw $t0, -16($sp)
-# end: Assign at 24.9; stackHeight = 0
+# end: Block at 32.13; stackHeight = 8
+j if_done_61
+if_else_61:
+# begin: Block at 36.2; stackHeight = 8
 addu $sp, $sp, 0
+# end: Block at 36.2; stackHeight = 8
+if_done_61:
+# end: If at 32.2; stackHeight = 8
+# begin: IdentifierExp at 36.9; stackHeight = 8
+lw $t0, 0($sp) #**LocalVar
+subu $sp, $sp, 8
+sw $s5, 4($sp)
+sw $t0, ($sp)
+# end: IdentifierExp at 36.9; stackHeight = 16
+lw $t0, ($sp)
+addu $sp, $sp, 8
+addu $sp, $sp, 8
 lw $ra, ($sp)
 addu $sp, $sp, 4
 jr $ra
-# end: MethodDeclVoid at 12.17; stackHeight = -4
-# begin: MethodDeclVoid at 30.17; stackHeight = -4
-.globl mth_Toast_run
-mth_Toast_run:
-subu $sp, $sp, 4
-sw $ra, ($sp)
-# begin: LocalVarDecl at 31.13; stackHeight = 0
-# begin: NewObject at 31.17; stackHeight = 0
-li $s6, 4
-li $s7, 2
-jal newObject
-la $t0, CLASS_Jam
-sw $t0, -12($s7)
-# end: NewObject at 31.17; stackHeight = 4
-lw $0, ($sp) #**j
-# end: LocalVarDecl at 31.13; stackHeight = 4
-# begin: CallStatement at 32.11; stackHeight = 4
-# begin: Call at 32.11; stackHeight = 4
-# begin: IdentifierExp at 32.9; stackHeight = 4
-lw $t0, 0($sp) #**LocalVar
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: IdentifierExp at 32.9; stackHeight = 8
-# begin: IntegerLiteral at 32.16; stackHeight = 8
-li $t0, 33
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 32.16; stackHeight = 16
-lw $t0, 8($sp)
-sw $s2, 8($sp)
-move $s2, $t0
-beq $s2, $0, nullPtrException
-lw $t0, -12($s2)
-lw $t0, 48($t0)
-jalr $t0
-addu $sp, $sp, 8
-lw $s2, ($sp)
-addu $sp, $sp, 4
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: Call at 32.11; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 32.11; stackHeight = 4
-# begin: Assign at 33.11; stackHeight = 4
-# begin: InstVarAccess at 33.14; stackHeight = 4
-# begin: IdentifierExp at 33.13; stackHeight = 4
-lw $t0, 0($sp) #**LocalVar
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: IdentifierExp at 33.13; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 4
-beq $t0, $0, nullPtrException
-lw $t0, -64($t0)
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: InstVarAccess at 33.14; stackHeight = 12
-lw $t0, ($sp)
-addu $sp, $sp, 8
-sw $t0, -12($sp)
-# end: Assign at 33.11; stackHeight = 4
-# begin: Assign at 34.9; stackHeight = 4
-# begin: Plus at 34.10; stackHeight = 4
-# begin: IdentifierExp at 34.9; stackHeight = 4
-lw $t0, -16($s2) #**InstVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 34.9; stackHeight = 12
-# begin: IntegerLiteral at 34.10; stackHeight = 12
-li $t0, 1
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IntegerLiteral at 34.10; stackHeight = 20
-lw $t2, ($sp)
-addu $sp, $sp, 8
-lw $t1, ($sp)
-addu $sp, $sp, 8
-addu $t0, $t1, $t2
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: Plus at 34.10; stackHeight = 12
-lw $t0, ($sp)
-addu $sp, $sp, 8
-sw $t0, -12($sp)
-# end: Assign at 34.9; stackHeight = 4
-# begin: CallStatement at 35.14; stackHeight = 4
-# begin: Call at 35.14; stackHeight = 4
-subu $sp, $sp, 4
-sw $s2, ($sp)
-# begin: IdentifierExp at 35.23; stackHeight = 8
-lw $t0, -16($s2) #**InstVar
-subu $sp, $sp, 8
-sw $s5, 4($sp)
-sw $t0, ($sp)
-# end: IdentifierExp at 35.23; stackHeight = 16
-lw $t0, 8($sp)
-sw $s2, 8($sp)
-move $s2, $t0
-beq $s2, $0, nullPtrException
-lw $t0, -12($s2)
-lw $t0, 32($t0)
-jalr $t0
-addu $sp, $sp, 8
-lw $s2, ($sp)
-addu $sp, $sp, 4
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: Call at 35.14; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 35.14; stackHeight = 4
-# begin: CallStatement at 36.14; stackHeight = 4
-# begin: Call at 36.14; stackHeight = 4
-subu $sp, $sp, 4
-sw $s2, ($sp)
-# begin: StringLiteral at 36.23; stackHeight = 8
-li $t0, strLit_100
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: StringLiteral at 36.23; stackHeight = 12
-lw $t0, 4($sp)
-sw $s2, 4($sp)
-move $s2, $t0
-beq $s2, $0, nullPtrException
-lw $t0, -12($s2)
-lw $t0, 24($t0)
-jalr $t0
-addu $sp, $sp, 4
-lw $s2, ($sp)
-addu $sp, $sp, 4
-subu $sp, $sp, 4
-sw $t0, ($sp)
-# end: Call at 36.14; stackHeight = 8
-lw $t0, ($sp)
-addu $sp, $sp, 4
-# end: CallStatement at 36.14; stackHeight = 4
-addu $sp, $sp, 4
-lw $ra, ($sp)
-addu $sp, $sp, 4
-jr $ra
-# end: MethodDeclVoid at 30.17; stackHeight = -4
-# end: Program at 3.1; stackHeight = -4
+# end: Program at 5.1; stackHeight = -4
 ##############################################################
 # MiniJava/UP library for MIPS/Spim -- version that assumes
 #    one-word boolean on stack
