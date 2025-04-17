@@ -85,35 +85,46 @@ END_CLASS_RunMain: # ClassDecl at 0.0
 dataArrayVTableStart: # IntegerType at 0.0
 END_CLASS_Object: # ClassDecl at 0.0
   .byte 10 # StringLiteral at 8.24
-  .byte 0 # StringLiteral at 8.24
-  .byte 0 # StringLiteral at 8.24
-  .byte 0 # StringLiteral at 8.24
+  .byte 104 # StringLiteral at 8.24
+  .byte 105 # StringLiteral at 8.24
+  .byte 10 # StringLiteral at 8.24
   .word CLASS_String # StringLiteral at 8.24
   .word 2 # StringLiteral at 8.24
-  .word -1 # StringLiteral at 8.24
+  .word -4 # StringLiteral at 8.24
 strLit_16: # StringLiteral at 8.24
 # begin: Program at 1.0; stackHeight = 0
 .text
 .globl main
 main:
   jal vm_init
+# begin: CallStatement at 0.0; stackHeight = 0
 # begin: Call at 0.0; stackHeight = 0
+# begin: NewObject at 0.0; stackHeight = 0
+li $s6, 2
+li $s7, 1
+jal newObject
+la $t0, CLASS_Main
+sw $t0, -12($s7)
+# end: NewObject at 0.0; stackHeight = 0
 lw $t0, 0($sp)
 sw $s2, 0($sp)
 move $s2, $t0
 beq $s2, $0, nullPtrException
 lw $t0, -12($s2)
-lw $t0, 11($t0)
+lw $t0, 44($t0)
 jalr $t0
 addu $sp, $sp, 0
-addu $sp, $sp, 4
 lw $s2, ($sp)
+addu $sp, $sp, 4
 subu $sp, $sp, 4
 sw $t0, ($sp)
 # end: Call at 0.0; stackHeight = 0
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 0.0; stackHeight = -4
   li $v0, 10
   syscall
-# begin: MethodDeclVoid at 3.17; stackHeight = 0
+# begin: MethodDeclVoid at 3.17; stackHeight = -4
 .globl mth_Main_main
 mth_Main_main:
 subu $sp, $sp, 4
@@ -129,20 +140,22 @@ lw $0, ($sp) #**xyz
 # end: LocalVarDecl at 5.13; stackHeight = 8
 # begin: LocalVarDecl at 6.13; stackHeight = 8
 # begin: Plus at 6.22; stackHeight = 8
-lw $t0, -88($sp)
+# begin: IdentifierExp at 6.19; stackHeight = 8
+lw $t0, 0($sp)
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
+# end: IdentifierExp at 6.19; stackHeight = 16
 # begin: IntegerLiteral at 6.23; stackHeight = 16
 li $t0, 30
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
 # end: IntegerLiteral at 6.23; stackHeight = 24
-addu $sp, $sp, 8
 lw $t2, ($sp)
 addu $sp, $sp, 8
 lw $t1, ($sp)
+addu $sp, $sp, 8
 addu $t0, $t1, $t2
 subu $sp, $sp, 8
 sw $s5, 4($sp)
@@ -150,63 +163,73 @@ sw $t0, ($sp)
 # end: Plus at 6.22; stackHeight = 16
 lw $0, ($sp) #**abc
 # end: LocalVarDecl at 6.13; stackHeight = 16
+# begin: CallStatement at 7.14; stackHeight = 16
 # begin: Call at 7.14; stackHeight = 16
 subu $sp, $sp, 4
 sw $s2, ($sp)
 # begin: Plus at 7.26; stackHeight = 20
-lw $t0, -1620($sp)
+# begin: IdentifierExp at 7.23; stackHeight = 20
+lw $t0, 4($sp)
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
+# end: IdentifierExp at 7.23; stackHeight = 28
 # begin: IntegerLiteral at 7.27; stackHeight = 28
 li $t0, 6
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
 # end: IntegerLiteral at 7.27; stackHeight = 36
-addu $sp, $sp, 8
 lw $t2, ($sp)
 addu $sp, $sp, 8
 lw $t1, ($sp)
+addu $sp, $sp, 8
 addu $t0, $t1, $t2
 subu $sp, $sp, 8
 sw $s5, 4($sp)
 sw $t0, ($sp)
 # end: Plus at 7.26; stackHeight = 28
-lw $t0, 2($sp)
-sw $s2, 2($sp)
+lw $t0, 8($sp)
+sw $s2, 8($sp)
 move $s2, $t0
 beq $s2, $0, nullPtrException
 lw $t0, -12($s2)
-lw $t0, 8($t0)
+lw $t0, 32($t0)
 jalr $t0
 addu $sp, $sp, 8
-addu $sp, $sp, 4
 lw $s2, ($sp)
+addu $sp, $sp, 4
 subu $sp, $sp, 4
 sw $t0, ($sp)
 # end: Call at 7.14; stackHeight = 20
-# begin: Call at 8.15; stackHeight = 20
+lw $t0, ($sp)
+addu $sp, $sp, 4
+# end: CallStatement at 7.14; stackHeight = 16
+# begin: CallStatement at 8.15; stackHeight = 16
+# begin: Call at 8.15; stackHeight = 16
 subu $sp, $sp, 4
 sw $s2, ($sp)
-# begin: StringLiteral at 8.24; stackHeight = 24
+# begin: StringLiteral at 8.24; stackHeight = 20
 li $t0, strLit_16
 subu $sp, $sp, 4
 sw $t0, ($sp)
-# end: StringLiteral at 8.24; stackHeight = 28
-lw $t0, 1($sp)
-sw $s2, 1($sp)
+# end: StringLiteral at 8.24; stackHeight = 24
+lw $t0, 4($sp)
+sw $s2, 4($sp)
 move $s2, $t0
 jal mth_Lib_printStr
 addu $sp, $sp, 4
-addu $sp, $sp, 4
 lw $s2, ($sp)
+addu $sp, $sp, 4
 subu $sp, $sp, 4
 sw $t0, ($sp)
-# end: Call at 8.15; stackHeight = 24
-addu $sp, $sp, 24
+# end: Call at 8.15; stackHeight = 20
+lw $t0, ($sp)
 addu $sp, $sp, 4
+# end: CallStatement at 8.15; stackHeight = 16
+addu $sp, $sp, 16
 lw $ra, ($sp)
+addu $sp, $sp, 4
 jr $ra
 # end: MethodDeclVoid at 3.17; stackHeight = -4
 # end: Program at 1.0; stackHeight = -4

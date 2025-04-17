@@ -5,6 +5,6 @@ class Main extends Lib
         int xyz = 123;
         int abc = xyz+30;
         this.printInt(abc+6);
-        super.printStr("\n");
+        super.printStr("\nhi\n");
     }
 }
