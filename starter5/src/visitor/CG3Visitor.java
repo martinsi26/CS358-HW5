@@ -113,7 +113,6 @@ public class CG3Visitor extends Visitor
 
     public Object visit(MethodDeclVoid m)
     {
-        code.comment(m, "begin");
         code.emit(".globl "+"mth_"+m.classDecl.name+"_"+m.name);
         code.emit("mth_"+m.classDecl.name+"_"+m.name+":");
         push(new VoidType(-1), "$ra");
@@ -126,7 +125,7 @@ public class CG3Visitor extends Visitor
         pop_size(stack);
         pop(new VoidType(-1), "$ra");
         code.emit("jr $ra");
-        code.comment(m, "end");
+
         return null;
     }
 
@@ -183,7 +182,9 @@ public class CG3Visitor extends Visitor
         code.comment(n, "begin");
         int startStack = stack;
         n.stmts.accept(this);
-        pop_size(stack - startStack);
+        if((stack - startStack) > 0) {
+            pop_size(stack - startStack);
+        }
         code.comment(n, "end");
         return null;
     }
