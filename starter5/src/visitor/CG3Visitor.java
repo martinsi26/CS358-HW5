@@ -314,19 +314,29 @@ public class CG3Visitor extends Visitor
 
     public Object visit(Null n)    
     { 
+<<<<<<< Updated upstream
         push(n.type, "$zero");
+=======
+        code.comment(n, "begin");
+        push(n.type, "$0");
+        code.comment(n, "end");
+>>>>>>> Stashed changes
         return null; 
     }
 
     public Object visit(Super n)   
     { 
+        code.comment(n, "begin");
         push(n.type, "$s2");
+        code.comment(n, "end");
         return null; 
     }
 
     public Object visit(This n)
     { 
+        code.comment(n, "begin");
         push(n.type, "$s2");
+        code.comment(n, "end");
         return null; 
     }
 

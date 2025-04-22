@@ -224,7 +224,6 @@ addu $sp, $sp, 4
 # end: CallStatement at 0.0; stackHeight = 0
   li $v0, 10
   syscall
-# begin: MethodDeclVoid at 6.17; stackHeight = 0
 .globl mth_Main_main
 mth_Main_main:
 subu $sp, $sp, 4
@@ -258,16 +257,16 @@ addu $sp, $sp, 0
 lw $ra, ($sp)
 addu $sp, $sp, 4
 jr $ra
-# end: MethodDeclVoid at 6.17; stackHeight = -4
-# begin: MethodDeclVoid at 15.17; stackHeight = -4
 .globl mth_Seive_exec
 mth_Seive_exec:
 subu $sp, $sp, 4
 sw $ra, ($sp)
 # begin: CallStatement at 18.2; stackHeight = 0
 # begin: Call at 18.2; stackHeight = 0
+# begin: This at 18.2; stackHeight = 0
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 18.2; stackHeight = 4
 # begin: StringLiteral at 18.11; stackHeight = 4
 li $t0, strLit_6
 subu $sp, $sp, 4
@@ -291,8 +290,10 @@ addu $sp, $sp, 4
 # end: CallStatement at 18.2; stackHeight = 0
 # begin: LocalVarDecl at 19.6; stackHeight = 0
 # begin: Call at 19.12; stackHeight = 0
+# begin: This at 19.12; stackHeight = 0
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 19.12; stackHeight = 4
 lw $t0, 0($sp)
 sw $s2, 0($sp)
 move $s2, $t0
@@ -355,12 +356,10 @@ lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 0($sp)
 # end: Assign at 24.8; stackHeight = 16
-addu $sp, $sp, 0
 # end: Block at 23.13; stackHeight = 16
 j if_done_27
 if_else_27:
 # begin: Block at 32.2; stackHeight = 16
-addu $sp, $sp, 0
 # end: Block at 32.2; stackHeight = 16
 if_done_27:
 # end: If at 23.2; stackHeight = 16
@@ -559,7 +558,6 @@ sll $t1, $t1, 2
 addu $t1, $t1, $t2
 sw $t0, ($t1)
 # end: Assign at 38.16; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 37.39; stackHeight = 36
 # begin: Assign at 37.30; stackHeight = 36
 # begin: Plus at 37.34; stackHeight = 36
@@ -588,23 +586,19 @@ lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 0($sp)
 # end: Assign at 37.30; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 37.3; stackHeight = 36
 j while_cond_75
 break_target_75:
 # end: BreakTarget at 37.3; stackHeight = 36
 addu $sp, $sp, 8
 # end: Block at 37.3; stackHeight = 28
-addu $sp, $sp, 0
 # end: Block at 36.21; stackHeight = 28
 j if_done_79
 if_else_79:
 # begin: Block at 41.2; stackHeight = 28
-addu $sp, $sp, 0
 # end: Block at 41.2; stackHeight = 28
 if_done_79:
 # end: If at 36.6; stackHeight = 28
-addu $sp, $sp, 0
 # end: Block at 35.31; stackHeight = 28
 # begin: Assign at 35.26; stackHeight = 28
 # begin: Plus at 35.27; stackHeight = 28
@@ -633,7 +627,6 @@ lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 0($sp)
 # end: Assign at 35.26; stackHeight = 28
-addu $sp, $sp, 0
 # end: Block at 35.2; stackHeight = 28
 j while_cond_82
 break_target_82:
@@ -642,8 +635,10 @@ addu $sp, $sp, 8
 # end: Block at 35.2; stackHeight = 20
 # begin: CallStatement at 48.2; stackHeight = 20
 # begin: Call at 48.2; stackHeight = 20
+# begin: This at 48.2; stackHeight = 20
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 48.2; stackHeight = 24
 # begin: StringLiteral at 48.11; stackHeight = 24
 li $t0, strLit_84
 subu $sp, $sp, 4
@@ -667,8 +662,10 @@ addu $sp, $sp, 4
 # end: CallStatement at 48.2; stackHeight = 20
 # begin: CallStatement at 49.2; stackHeight = 20
 # begin: Call at 49.2; stackHeight = 20
+# begin: This at 49.2; stackHeight = 20
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 49.2; stackHeight = 24
 # begin: IdentifierExp at 49.11; stackHeight = 24
 lw $t0, 8($sp) #**LocalVar
 subu $sp, $sp, 8
@@ -693,8 +690,10 @@ addu $sp, $sp, 4
 # end: CallStatement at 49.2; stackHeight = 20
 # begin: CallStatement at 50.2; stackHeight = 20
 # begin: Call at 50.2; stackHeight = 20
+# begin: This at 50.2; stackHeight = 20
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 50.2; stackHeight = 24
 # begin: StringLiteral at 50.11; stackHeight = 24
 li $t0, strLit_92
 subu $sp, $sp, 4
@@ -800,8 +799,10 @@ beq $t0, $0, if_else_145
 # begin: Block at 55.21; stackHeight = 36
 # begin: CallStatement at 57.3; stackHeight = 36
 # begin: Call at 57.3; stackHeight = 36
+# begin: This at 57.3; stackHeight = 36
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 57.3; stackHeight = 40
 # begin: IdentifierExp at 57.12; stackHeight = 40
 lw $t0, 4($sp) #**LocalVar
 subu $sp, $sp, 8
@@ -884,8 +885,10 @@ beq $t0, $0, if_else_142
 # begin: Block at 59.29; stackHeight = 36
 # begin: CallStatement at 61.7; stackHeight = 36
 # begin: Call at 61.7; stackHeight = 36
+# begin: This at 61.7; stackHeight = 36
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 61.7; stackHeight = 40
 # begin: StringLiteral at 61.16; stackHeight = 40
 li $t0, strLit_129
 subu $sp, $sp, 4
@@ -918,15 +921,16 @@ lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 8($sp)
 # end: Assign at 62.22; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 59.29; stackHeight = 36
 j if_done_142
 if_else_142:
 # begin: Block at 64.8; stackHeight = 36
 # begin: CallStatement at 66.7; stackHeight = 36
 # begin: Call at 66.7; stackHeight = 36
+# begin: This at 66.7; stackHeight = 36
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 66.7; stackHeight = 40
 # begin: StringLiteral at 66.16; stackHeight = 40
 li $t0, strLit_137
 subu $sp, $sp, 4
@@ -948,20 +952,16 @@ sw $t0, ($sp)
 lw $t0, ($sp)
 addu $sp, $sp, 4
 # end: CallStatement at 66.7; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 64.8; stackHeight = 36
 if_done_142:
 # end: If at 59.3; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 55.21; stackHeight = 36
 j if_done_145
 if_else_145:
 # begin: Block at 69.2; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 69.2; stackHeight = 36
 if_done_145:
 # end: If at 55.6; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 54.30; stackHeight = 36
 # begin: Assign at 54.25; stackHeight = 36
 # begin: Plus at 54.26; stackHeight = 36
@@ -990,7 +990,6 @@ lw $t0, ($sp)
 addu $sp, $sp, 8
 sw $t0, 0($sp)
 # end: Assign at 54.25; stackHeight = 36
-addu $sp, $sp, 0
 # end: Block at 54.2; stackHeight = 36
 j while_cond_148
 break_target_148:
@@ -999,8 +998,10 @@ addu $sp, $sp, 8
 # end: Block at 54.2; stackHeight = 28
 # begin: CallStatement at 72.2; stackHeight = 28
 # begin: Call at 72.2; stackHeight = 28
+# begin: This at 72.2; stackHeight = 28
 subu $sp, $sp, 4
 sw $s2, ($sp)
+# end: This at 72.2; stackHeight = 32
 # begin: StringLiteral at 72.11; stackHeight = 32
 li $t0, strLit_150
 subu $sp, $sp, 4
@@ -1026,7 +1027,6 @@ addu $sp, $sp, 28
 lw $ra, ($sp)
 addu $sp, $sp, 4
 jr $ra
-# end: MethodDeclVoid at 15.17; stackHeight = -4
 # end: Program at 5.1; stackHeight = -4
 ##############################################################
 # MiniJava/UP library for MIPS/Spim -- version that assumes
