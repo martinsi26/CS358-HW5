@@ -1,0 +1,9976 @@
+    lw $t0, -64($t0)
+    lw $t0, -16($t0)
+# line 335
+
+    la $t0, strLit_79
+    la $t0, strLit_29
+# line 442
+
+    sw $0, ($sp)
+    sw $zero, ($sp)
+# line 656
+
+    sw $0, ($sp)
+    sw $zero, ($sp)
+# line 735
+
+    sw $0, ($sp)
+    sw $zero, ($sp)
+# line 765
+
+# begin: IdentifierExp at 86.23; stackHeight = 12
+    lw $zero, ($sp) #**"bl"
+# line 767
+
+    lw $t0, 8($sp)
+# begin: IdentifierExp at 86.23; stackHeight = 12
+# line 768
+
+    subu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 769
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 770
+
+# end: IdentifierExp at 86.23; stackHeight = 16
+    sw $t0, ($sp)
+# line 771
+
+    lw $t0, 8($sp)
+# end: IdentifierExp at 86.23; stackHeight = 16
+# line 772
+
+    sw $s2, 8($sp)
+    lw $zero, ($sp) #**"lib"
+# line 773
+
+    move $s2, $t0
+    lw $t0, 8($sp)
+# line 774
+
+    beq $s2, $zero, nullPtrException
+    sw $s2, 8($sp)
+# line 775
+
+    lw $t0, -12($s2)
+    move $s2, $t0
+# line 776
+
+    lw $t0, 44($t0)
+    beq $s2, $zero, nullPtrException
+# line 777
+
+    jalr $t0 # helpPrint
+    lw $t0, -12($s2)
+# line 778
+
+    addu $sp, $sp, 8
+    lw $t0, 44($t0)
+# line 779
+
+    lw $s2, ($sp)
+    jalr $t0 # helpPrint
+# line 780
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 781
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 782
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 783
+
+# end: Call at 86.7; stackHeight = 8
+    subu $sp, $sp, 4
+# line 784
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 785
+
+    addu $sp, $sp, 4
+# end: Call at 86.7; stackHeight = 8
+# line 786
+
+# end: CallStatement at 86.7; stackHeight = 4
+    lw $t0, ($sp)
+# line 787
+
+    lw $ra, ($sp)
+# end: CallStatement at 86.7; stackHeight = 4
+# line 789
+
+    jr $ra
+    lw $ra, ($sp)
+# line 791
+
+.globl mth_RedBlackTree_helpPrint
+    addu $sp, $sp, 4
+# line 792
+
+mth_RedBlackTree_helpPrint:
+    jr $ra
+# line 793
+
+    subu $sp, $sp, 4
+.globl mth_RedBlackTree_helpPrint
+# line 794
+
+    sw $ra, ($sp)
+mth_RedBlackTree_helpPrint:
+# line 795
+
+    addu $sp, $sp, 0
+    subu $sp, $sp, 4
+# line 796
+
+    lw $ra, ($sp)
+    sw $ra, ($sp)
+# line 797
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 798
+
+    jr $ra
+    lw $ra, ($sp)
+# line 799
+
+.globl mth_RedBlackTree_lookup
+    addu $sp, $sp, 4
+# line 800
+
+mth_RedBlackTree_lookup:
+    jr $ra
+# line 801
+
+    subu $sp, $sp, 4
+.globl mth_RedBlackTree_lookup
+# line 802
+
+    sw $ra, ($sp)
+mth_RedBlackTree_lookup:
+# line 803
+
+# begin: False at 95.9; stackHeight = 0
+    subu $sp, $sp, 4
+# line 804
+
+    subu $sp, $sp, 4
+    sw $ra, ($sp)
+# line 805
+
+    sw $zero, ($sp)
+# begin: False at 95.9; stackHeight = 0
+# line 806
+
+# end: False at 95.9; stackHeight = 4
+    subu $sp, $sp, 4
+# line 807
+
+    lw $t0, ($sp)
+    sw $zero, ($sp)
+# line 808
+
+    addu $sp, $sp, 4
+# end: False at 95.9; stackHeight = 4
+# line 809
+
+    addu $sp, $sp, 0
+    lw $t0, ($sp)
+# line 810
+
+    lw $ra, ($sp)
+    addu $sp, $sp, 4
+# line 811
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 812
+
+    jr $ra
+    lw $ra, ($sp)
+# line 813
+
+.globl mth_RedBlackTree_delete
+    addu $sp, $sp, 4
+# line 814
+
+mth_RedBlackTree_delete:
+    jr $ra
+# line 815
+
+    subu $sp, $sp, 4
+.globl mth_RedBlackTree_delete
+# line 816
+
+    sw $ra, ($sp)
+mth_RedBlackTree_delete:
+# line 817
+
+# begin: Call at 100.9; stackHeight = 0
+    subu $sp, $sp, 4
+# line 818
+
+# begin: This at 100.9; stackHeight = 0
+    sw $ra, ($sp)
+# line 819
+
+    subu $sp, $sp, 4
+# begin: Call at 100.9; stackHeight = 0
+# line 820
+
+    sw $s2, ($sp)
+# begin: This at 100.9; stackHeight = 0
+# line 821
+
+# end: This at 100.9; stackHeight = 4
+    subu $sp, $sp, 4
+# line 822
+
+# begin: IdentifierExp at 100.20; stackHeight = 4
+    sw $s2, ($sp)
+# line 823
+
+    lw $t0, 8($sp)
+# end: This at 100.9; stackHeight = 4
+# line 824
+
+    subu $sp, $sp, 8
+# begin: IdentifierExp at 100.20; stackHeight = 4
+# line 825
+
+    sw $s5, 4($sp)
+    lw $t0, 8($sp)
+# line 826
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 827
+
+# end: IdentifierExp at 100.20; stackHeight = 12
+    sw $s5, 4($sp)
+# line 828
+
+# begin: NewArray at 100.26; stackHeight = 12
+    sw $t0, ($sp)
+# line 829
+
+# begin: IntegerLiteral at 100.38; stackHeight = 12
+# end: IdentifierExp at 100.20; stackHeight = 12
+# line 830
+
+    li $t0, 1
+# begin: NewArray at 100.26; stackHeight = 12
+# line 831
+
+    subu $sp, $sp, 8
+# begin: IntegerLiteral at 100.38; stackHeight = 12
+# line 832
+
+    sw $s5, 4($sp)
+    li $t0, 1
+# line 833
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 834
+
+# end: IntegerLiteral at 100.38; stackHeight = 20
+    sw $s5, 4($sp)
+# line 835
+
+    lw $s7, ($sp)
+    sw $t0, ($sp)
+# line 836
+
+    addu $sp, $sp, 8
+# end: IntegerLiteral at 100.38; stackHeight = 20
+# line 837
+
+    li $s6, 1
+    lw $s7, ($sp)
+# line 838
+
+    jal newObject
+    addu $sp, $sp, 8
+# line 839
+
+    la $t0, CLASS_ARRAY_BOOLEAN
+    li $s6, 1
+# line 840
+
+    sw $t0, -12($s7)
+    jal newObject
+# line 841
+
+# end: NewArray at 100.26; stackHeight = 16
+    la $t0, CLASS_ARRAY_BOOLEAN
+# line 842
+
+    lw $t0, 12($sp)
+    sw $t0, -12($s7)
+# line 843
+
+    sw $s2, 12($sp)
+# end: NewArray at 100.26; stackHeight = 16
+# line 844
+
+    move $s2, $t0
+    lw $zero, ($sp) #**"isShort"
+# line 845
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 12($sp)
+# line 846
+
+    lw $t0, -12($s2)
+    sw $s2, 12($sp)
+# line 847
+
+    lw $t0, 56($t0)
+    move $s2, $t0
+# line 848
+
+    jalr $t0 # helpDelete
+    beq $s2, $zero, nullPtrException
+# line 849
+
+    addu $sp, $sp, 12
+    lw $t0, -12($s2)
+# line 850
+
+    lw $s2, ($sp)
+    lw $t0, 56($t0)
+# line 851
+
+    addu $sp, $sp, 4
+    jalr $t0 # helpDelete
+# line 852
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 12
+# line 853
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 854
+
+# end: Call at 100.9; stackHeight = 4
+    addu $sp, $sp, 4
+# line 855
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 856
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 857
+
+    addu $sp, $sp, 0
+# end: Call at 100.9; stackHeight = 4
+# line 858
+
+    lw $ra, ($sp)
+    lw $t0, ($sp)
+# line 859
+
+    jr $ra
+    addu $sp, $sp, 0
+# line 861
+
+.globl mth_RedBlackTree_helpDelete
+    lw $ra, ($sp)
+# line 862
+
+mth_RedBlackTree_helpDelete:
+    addu $sp, $sp, 4
+# line 863
+
+    subu $sp, $sp, 4
+    jr $ra
+# line 864
+
+    sw $ra, ($sp)
+.globl mth_RedBlackTree_helpDelete
+# line 865
+
+# begin: This at 107.9; stackHeight = 0
+mth_RedBlackTree_helpDelete:
+# line 866
+
+    sw $s2, ($sp)
+    sw $ra, ($sp)
+# line 868
+
+# end: This at 107.9; stackHeight = 4
+# begin: This at 107.9; stackHeight = 0
+# line 869
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 870
+
+    addu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 871
+
+    addu $sp, $sp, 0
+# end: This at 107.9; stackHeight = 4
+# line 872
+
+    lw $ra, ($sp)
+    lw $t0, ($sp)
+# line 873
+
+    jr $ra
+    addu $sp, $sp, 0
+# line 875
+
+.globl mth_NullRedBlackTree_isNull
+    lw $ra, ($sp)
+# line 876
+
+mth_NullRedBlackTree_isNull:
+    addu $sp, $sp, 4
+# line 877
+
+    subu $sp, $sp, 4
+    jr $ra
+# line 878
+
+    sw $ra, ($sp)
+.globl mth_NullRedBlackTree_isNull
+# line 879
+
+# begin: True at 116.9; stackHeight = 0
+mth_NullRedBlackTree_isNull:
+# line 880
+
+    li $t0, 1
+    subu $sp, $sp, 4
+# line 881
+
+    subu $sp, $sp, 4
+    sw $ra, ($sp)
+# line 882
+
+    sw $t0, ($sp)
+# begin: True at 116.9; stackHeight = 0
+# line 883
+
+# end: True at 116.9; stackHeight = 4
+    li $t0, 1
+# line 884
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 885
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 886
+
+    addu $sp, $sp, 0
+# end: True at 116.9; stackHeight = 4
+# line 887
+
+    lw $ra, ($sp)
+    lw $t0, ($sp)
+# line 888
+
+    jr $ra
+    addu $sp, $sp, 0
+# line 890
+
+.globl mth_NullRedBlackTree_helpInsert
+    lw $ra, ($sp)
+# line 891
+
+mth_NullRedBlackTree_helpInsert:
+    addu $sp, $sp, 4
+# line 892
+
+    subu $sp, $sp, 4
+    jr $ra
+# line 893
+
+    sw $ra, ($sp)
+.globl mth_NullRedBlackTree_helpInsert
+# line 894
+
+# begin: Call at 121.35; stackHeight = 0
+mth_NullRedBlackTree_helpInsert:
+# line 895
+
+# begin: NewObject at 121.9; stackHeight = 0
+    subu $sp, $sp, 4
+# line 896
+
+    li $s6, 3
+    sw $ra, ($sp)
+# line 897
+
+    li $s7, 2
+# begin: Call at 121.35; stackHeight = 0
+# line 898
+
+    jal newObject
+# begin: NewObject at 121.9; stackHeight = 0
+# line 899
+
+    la $t0, CLASS_NonNullRedBlackTree
+    li $s6, 3
+# line 900
+
+    sw $t0, -12($s7)
+    li $s7, 2
+# line 901
+
+# end: NewObject at 121.9; stackHeight = 4
+    jal newObject
+# line 902
+
+# begin: IdentifierExp at 121.40; stackHeight = 4
+    la $t0, CLASS_NonNullRedBlackTree
+# line 903
+
+    lw $t0, 8($sp)
+    sw $t0, -12($s7)
+# line 904
+
+    subu $sp, $sp, 8
+# end: NewObject at 121.9; stackHeight = 4
+# line 905
+
+    sw $s5, 4($sp)
+# begin: IdentifierExp at 121.40; stackHeight = 4
+# line 906
+
+    sw $t0, ($sp)
+    lw $t0, 8($sp)
+# line 907
+
+# end: IdentifierExp at 121.40; stackHeight = 12
+    subu $sp, $sp, 8
+# line 908
+
+# begin: This at 121.45; stackHeight = 12
+    sw $s5, 4($sp)
+# line 909
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 910
+
+    sw $s2, ($sp)
+# end: IdentifierExp at 121.40; stackHeight = 12
+# line 911
+
+# end: This at 121.45; stackHeight = 16
+# begin: This at 121.45; stackHeight = 12
+# line 912
+
+# begin: This at 121.50; stackHeight = 16
+    subu $sp, $sp, 4
+# line 913
+
+    subu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 914
+
+    sw $s2, ($sp)
+# end: This at 121.45; stackHeight = 16
+# line 915
+
+# end: This at 121.50; stackHeight = 20
+    lw $zero, ($sp) #**"left"
+# line 916
+
+# begin: False at 121.55; stackHeight = 20
+# begin: This at 121.50; stackHeight = 16
+# line 917
+
+    sw $zero, ($sp)
+    sw $s2, ($sp)
+# line 919
+
+# end: False at 121.55; stackHeight = 24
+# end: This at 121.50; stackHeight = 20
+# line 920
+
+    lw $t0, 20($sp)
+    lw $zero, ($sp) #**"right"
+# line 921
+
+    sw $s2, 20($sp)
+# begin: False at 121.55; stackHeight = 20
+# line 922
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 923
+
+    beq $s2, $zero, nullPtrException
+    sw $zero, ($sp)
+# line 924
+
+    lw $t0, -12($s2)
+# end: False at 121.55; stackHeight = 24
+# line 925
+
+    lw $t0, 64($t0)
+    lw $zero, ($sp) #**"isBlack"
+# line 926
+
+    jalr $t0 # init
+    lw $t0, 20($sp)
+# line 927
+
+    addu $sp, $sp, 20
+    sw $s2, 20($sp)
+# line 928
+
+    lw $s2, ($sp)
+    move $s2, $t0
+# line 929
+
+    addu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 930
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 931
+
+    sw $t0, ($sp)
+    lw $t0, 64($t0)
+# line 932
+
+# end: Call at 121.35; stackHeight = 4
+    jalr $t0 # init
+# line 933
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 20
+# line 934
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 935
+
+    addu $sp, $sp, 0
+    addu $sp, $sp, 4
+# line 936
+
+    lw $ra, ($sp)
+    subu $sp, $sp, 4
+# line 937
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 938
+
+    jr $ra
+# end: Call at 121.35; stackHeight = 4
+# line 939
+
+.globl mth_NonNullRedBlackTree_isBlack
+    lw $t0, ($sp)
+# line 940
+
+mth_NonNullRedBlackTree_isBlack:
+    addu $sp, $sp, 4
+# line 941
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 942
+
+    sw $ra, ($sp)
+    lw $ra, ($sp)
+# line 943
+
+# begin: IdentifierExp at 135.9; stackHeight = 0
+    addu $sp, $sp, 4
+# line 944
+
+    lw $t0, -20($s2)
+    jr $ra
+# line 945
+
+    subu $sp, $sp, 4
+.globl mth_NonNullRedBlackTree_isBlack
+# line 946
+
+    sw $t0, ($sp)
+mth_NonNullRedBlackTree_isBlack:
+# line 947
+
+# end: IdentifierExp at 135.9; stackHeight = 4
+    subu $sp, $sp, 4
+# line 948
+
+    lw $t0, ($sp)
+    sw $ra, ($sp)
+# line 949
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 135.9; stackHeight = 0
+# line 950
+
+    addu $sp, $sp, 0
+    lw $t0, -20($s2)
+# line 951
+
+    lw $ra, ($sp)
+    subu $sp, $sp, 4
+# line 952
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 953
+
+    jr $ra
+# end: IdentifierExp at 135.9; stackHeight = 4
+# line 954
+
+.globl mth_NonNullRedBlackTree_setBlack
+    lw $t0, ($sp)
+# line 955
+
+mth_NonNullRedBlackTree_setBlack:
+    addu $sp, $sp, 4
+# line 956
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 957
+
+    sw $ra, ($sp)
+    lw $ra, ($sp)
+# line 958
+
+# begin: Assign at 140.10; stackHeight = 0
+    addu $sp, $sp, 4
+# line 959
+
+# begin: True at 140.12; stackHeight = 0
+    jr $ra
+# line 960
+
+    li $t0, 1
+.globl mth_NonNullRedBlackTree_setBlack
+# line 961
+
+    subu $sp, $sp, 4
+mth_NonNullRedBlackTree_setBlack:
+# line 962
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 963
+
+# end: True at 140.12; stackHeight = 4
+    sw $ra, ($sp)
+# line 964
+
+    lw $t0, ($sp)
+# begin: Assign at 140.10; stackHeight = 0
+# line 965
+
+    addu $sp, $sp, 4
+# begin: True at 140.12; stackHeight = 0
+# line 966
+
+    sw $t0, -20($sp)
+    li $t0, 1
+# line 967
+
+# end: Assign at 140.10; stackHeight = 0
+    subu $sp, $sp, 4
+# line 968
+
+    addu $sp, $sp, 0
+    sw $t0, ($sp)
+# line 969
+
+    lw $ra, ($sp)
+# end: True at 140.12; stackHeight = 4
+# line 970
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 971
+
+    jr $ra
+    addu $sp, $sp, 4
+# line 972
+
+.globl mth_NonNullRedBlackTree_setRed
+    sw $t0, -20($s2)
+# line 973
+
+mth_NonNullRedBlackTree_setRed:
+# end: Assign at 140.10; stackHeight = 0
+# line 974
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 975
+
+    sw $ra, ($sp)
+    lw $ra, ($sp)
+# line 976
+
+# begin: Assign at 145.10; stackHeight = 0
+    addu $sp, $sp, 4
+# line 977
+
+# begin: False at 145.12; stackHeight = 0
+    jr $ra
+# line 978
+
+    subu $sp, $sp, 4
+.globl mth_NonNullRedBlackTree_setRed
+# line 979
+
+    sw $zero, ($sp)
+mth_NonNullRedBlackTree_setRed:
+# line 980
+
+# end: False at 145.12; stackHeight = 4
+    subu $sp, $sp, 4
+# line 981
+
+    lw $t0, ($sp)
+    sw $ra, ($sp)
+# line 982
+
+    addu $sp, $sp, 4
+# begin: Assign at 145.10; stackHeight = 0
+# line 983
+
+    sw $t0, -20($sp)
+# begin: False at 145.12; stackHeight = 0
+# line 984
+
+# end: Assign at 145.10; stackHeight = 0
+    subu $sp, $sp, 4
+# line 985
+
+    addu $sp, $sp, 0
+    sw $zero, ($sp)
+# line 986
+
+    lw $ra, ($sp)
+# end: False at 145.12; stackHeight = 4
+# line 987
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 988
+
+    jr $ra
+    addu $sp, $sp, 4
+# line 989
+
+.globl mth_NonNullRedBlackTree_init
+    sw $t0, -20($s2)
+# line 990
+
+mth_NonNullRedBlackTree_init:
+# end: Assign at 145.10; stackHeight = 0
+# line 991
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 992
+
+    sw $ra, ($sp)
+    lw $ra, ($sp)
+# line 993
+
+# begin: Assign at 151.12; stackHeight = 0
+    addu $sp, $sp, 4
+# line 994
+
+# begin: IdentifierExp at 151.14; stackHeight = 0
+    jr $ra
+# line 995
+
+    lw $t0, 16($sp)
+.globl mth_NonNullRedBlackTree_init
+# line 996
+
+    subu $sp, $sp, 8
+mth_NonNullRedBlackTree_init:
+# line 997
+
+    sw $s5, 4($sp)
+    subu $sp, $sp, 4
+# line 998
+
+    sw $t0, ($sp)
+    sw $ra, ($sp)
+# line 999
+
+# end: IdentifierExp at 151.14; stackHeight = 8
+# begin: Assign at 151.12; stackHeight = 0
+# line 1000
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 151.14; stackHeight = 0
+# line 1001
+
+    addu $sp, $sp, 8
+    lw $t0, 16($sp)
+# line 1002
+
+    sw $t0, -16($s2)
+    subu $sp, $sp, 8
+# line 1003
+
+# end: Assign at 151.12; stackHeight = 0
+    sw $s5, 4($sp)
+# line 1004
+
+# begin: Assign at 152.12; stackHeight = 0
+    sw $t0, ($sp)
+# line 1005
+
+# begin: IdentifierExp at 152.14; stackHeight = 0
+# end: IdentifierExp at 151.14; stackHeight = 8
+# line 1006
+
+    lw $t0, 12($sp)
+# begin: This at 151.2; stackHeight = 8
+# line 1007
+
+    sw $t0, ($sp)
+    sw $s2, ($sp)
+# line 1009
+
+# end: IdentifierExp at 152.14; stackHeight = 4
+# end: This at 151.2; stackHeight = 12
+# line 1010
+
+    lw $t0, ($sp)
+    lw $t1, ($sp)
+# line 1011
+
+    sw $t0, 4($s2)
+    beq $t1, $zero, nullPtrException
+# line 1013
+
+# end: Assign at 152.12; stackHeight = 0
+    lw $t0, ($sp)
+# line 1014
+
+# begin: Assign at 153.13; stackHeight = 0
+    addu $sp, $sp, 8
+# line 1015
+
+# begin: IdentifierExp at 153.15; stackHeight = 0
+    sw $t0, -16($t1)
+# line 1016
+
+    lw $t0, 8($sp)
+# end: Assign at 151.12; stackHeight = 0
+# line 1017
+
+    subu $sp, $sp, 4
+# begin: Assign at 152.12; stackHeight = 0
+# line 1018
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 152.14; stackHeight = 0
+# line 1019
+
+# end: IdentifierExp at 153.15; stackHeight = 4
+    lw $t0, 12($sp)
+# line 1020
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1021
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1022
+
+    sw $t0, 8($s2)
+# end: IdentifierExp at 152.14; stackHeight = 4
+# line 1023
+
+# end: Assign at 153.13; stackHeight = 0
+# begin: This at 152.2; stackHeight = 4
+# line 1024
+
+# begin: Assign at 154.15; stackHeight = 0
+    subu $sp, $sp, 4
+# line 1025
+
+# begin: IdentifierExp at 154.17; stackHeight = 0
+    sw $s2, ($sp)
+# line 1026
+
+    lw $t0, 4($sp)
+# end: This at 152.2; stackHeight = 8
+# line 1027
+
+    subu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 1028
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1029
+
+# end: IdentifierExp at 154.17; stackHeight = 4
+    beq $t1, $zero, nullPtrException
+# line 1030
+
+    sw $t0, -20($s2)
+    sw $t0, 0($t1)
+# line 1033
+
+# end: Assign at 154.15; stackHeight = 0
+# end: Assign at 152.12; stackHeight = 0
+# line 1034
+
+# begin: This at 155.9; stackHeight = 0
+# begin: Assign at 153.13; stackHeight = 0
+# line 1035
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 153.15; stackHeight = 0
+# line 1036
+
+    sw $s2, ($sp)
+    lw $t0, 8($sp)
+# line 1037
+
+# end: This at 155.9; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1038
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 1039
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 153.15; stackHeight = 4
+# line 1040
+
+    addu $sp, $sp, 0
+# begin: This at 153.2; stackHeight = 4
+# line 1041
+
+    lw $ra, ($sp)
+    subu $sp, $sp, 4
+# line 1042
+
+    addu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 1043
+
+    jr $ra
+# end: This at 153.2; stackHeight = 8
+# line 1044
+
+.globl mth_NonNullRedBlackTree_helpInsert
+    lw $t1, ($sp)
+# line 1045
+
+mth_NonNullRedBlackTree_helpInsert:
+    addu $sp, $sp, 4
+# line 1046
+
+    subu $sp, $sp, 4
+    beq $t1, $zero, nullPtrException
+# line 1047
+
+    sw $ra, ($sp)
+    lw $t0, ($sp)
+# line 1048
+
+# begin: LocalVarDecl at 162.15; stackHeight = 0
+    addu $sp, $sp, 4
+# line 1049
+
+# begin: This at 162.24; stackHeight = 0
+    sw $t0, 4($t1)
+# line 1050
+
+    subu $sp, $sp, 4
+# end: Assign at 153.13; stackHeight = 0
+# line 1051
+
+    sw $s2, ($sp)
+# begin: Assign at 154.15; stackHeight = 0
+# line 1052
+
+# end: This at 162.24; stackHeight = 4
+# begin: IdentifierExp at 154.17; stackHeight = 0
+# line 1053
+
+    lw $zero, ($sp) #**"rtnVal"
+    lw $t0, 4($sp)
+# line 1054
+
+# end: LocalVarDecl at 162.15; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1055
+
+# begin: If at 165.2; stackHeight = 4
+    sw $t0, ($sp)
+# line 1056
+
+# begin: GreaterThan at 165.11; stackHeight = 4
+# end: IdentifierExp at 154.17; stackHeight = 4
+# line 1057
+
+# begin: IdentifierExp at 165.6; stackHeight = 4
+# begin: This at 154.2; stackHeight = 4
+# line 1058
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 1059
+
+    subu $sp, $sp, 8
+    sw $s2, ($sp)
+# line 1060
+
+    sw $s5, 4($sp)
+# end: This at 154.2; stackHeight = 8
+# line 1061
+
+    sw $t0, ($sp)
+    lw $t1, ($sp)
+# line 1062
+
+# end: IdentifierExp at 165.6; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1063
+
+# begin: InstVarAccess at 165.17; stackHeight = 12
+    beq $t1, $zero, nullPtrException
+# line 1064
+
+# begin: This at 165.13; stackHeight = 12
+    lw $t0, ($sp)
+# line 1065
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1066
+
+    sw $s2, ($sp)
+    sw $t0, -20($t1)
+# line 1067
+
+# end: This at 165.13; stackHeight = 16
+# end: Assign at 154.15; stackHeight = 0
+# line 1068
+
+    lw $t0, ($sp)
+# begin: This at 155.9; stackHeight = 0
+# line 1069
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 1070
+
+    beq $t0, $zero, nullPtrException
+    sw $s2, ($sp)
+# line 1071
+
+    lw $t0, -64($t0)
+# end: This at 155.9; stackHeight = 4
+# line 1072
+
+    subu $sp, $sp, 8
+    lw $t0, ($sp)
+# line 1073
+
+    sw $s5, 4($sp)
+    addu $sp, $sp, 4
+# line 1074
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 0
+# line 1075
+
+# end: InstVarAccess at 165.17; stackHeight = 20
+    lw $ra, ($sp)
+# line 1076
+
+    lw $t2, ($sp)
+    addu $sp, $sp, 4
+# line 1077
+
+    addu $sp, $sp, 8
+    jr $ra
+# line 1078
+
+    lw $t1, ($sp)
+.globl mth_NonNullRedBlackTree_helpInsert
+# line 1079
+
+    addu $sp, $sp, 8
+mth_NonNullRedBlackTree_helpInsert:
+# line 1080
+
+    sgt $t0, $t1, $t2
+    subu $sp, $sp, 4
+# line 1081
+
+    subu $sp, $sp, 4
+    sw $ra, ($sp)
+# line 1082
+
+    sw $t0, ($sp)
+# begin: LocalVarDecl at 162.15; stackHeight = 0
+# line 1083
+
+# end: GreaterThan at 165.11; stackHeight = 8
+# begin: This at 162.24; stackHeight = 0
+# line 1084
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1085
+
+    addu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 1086
+
+    beq $t0, $zero, if_else_271
+# end: This at 162.24; stackHeight = 4
+# line 1087
+
+# begin: Block at 165.24; stackHeight = 4
+    lw $zero, ($sp) #**"rtnVal"
+# line 1088
+
+# begin: Assign at 167.12; stackHeight = 4
+# end: LocalVarDecl at 162.15; stackHeight = 4
+# line 1089
+
+# begin: Call at 167.20; stackHeight = 4
+# begin: If at 165.2; stackHeight = 4
+# line 1090
+
+# begin: IdentifierExp at 167.14; stackHeight = 4
+# begin: GreaterThan at 165.11; stackHeight = 4
+# line 1091
+
+    lw $t0, 8($s2)
+# begin: IdentifierExp at 165.6; stackHeight = 4
+# line 1092
+
+    subu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 1093
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 1094
+
+# end: IdentifierExp at 167.14; stackHeight = 8
+    sw $s5, 4($sp)
+# line 1095
+
+# begin: IdentifierExp at 167.31; stackHeight = 8
+    sw $t0, ($sp)
+# line 1096
+
+    lw $t0, 12($sp)
+# end: IdentifierExp at 165.6; stackHeight = 12
+# line 1097
+
+    subu $sp, $sp, 8
+# begin: InstVarAccess at 165.17; stackHeight = 12
+# line 1098
+
+    sw $s5, 4($sp)
+# begin: This at 165.13; stackHeight = 12
+# line 1099
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1100
+
+# end: IdentifierExp at 167.31; stackHeight = 16
+    sw $s2, ($sp)
+# line 1101
+
+    lw $t0, 8($sp)
+# end: This at 165.13; stackHeight = 16
+# line 1102
+
+    sw $s2, 8($sp)
+    lw $t0, ($sp)
+# line 1103
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 1104
+
+    beq $s2, $zero, nullPtrException
+    beq $t0, $zero, nullPtrException
+# line 1105
+
+    lw $t0, -12($s2)
+    lw $t0, -16($t0)
+# line 1106
+
+    lw $t0, 28($t0)
+    subu $sp, $sp, 8
+# line 1107
+
+    jalr $t0 # helpInsert
+    sw $s5, 4($sp)
+# line 1108
+
+    addu $sp, $sp, 8
+    sw $t0, ($sp)
+# line 1109
+
+    lw $s2, ($sp)
+# end: InstVarAccess at 165.17; stackHeight = 20
+# line 1110
+
+    addu $sp, $sp, 4
+    lw $t2, ($sp)
+# line 1111
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1112
+
+    sw $t0, ($sp)
+    lw $t1, ($sp)
+# line 1113
+
+# end: Call at 167.20; stackHeight = 8
+    addu $sp, $sp, 8
+# line 1114
+
+    lw $t0, ($sp)
+    sgt $t0, $t1, $t2
+# line 1115
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 1116
+
+    sw $t0, 12($sp)
+    sw $t0, ($sp)
+# line 1117
+
+# end: Assign at 167.12; stackHeight = 4
+# end: GreaterThan at 165.11; stackHeight = 8
+# line 1118
+
+# begin: Assign at 168.13; stackHeight = 4
+    lw $t0, ($sp)
+# line 1119
+
+# begin: Call at 168.20; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1120
+
+# begin: This at 168.15; stackHeight = 4
+    beq $t0, $zero, if_else_271
+# line 1121
+
+    subu $sp, $sp, 4
+# begin: Block at 165.24; stackHeight = 4
+# line 1122
+
+    sw $s2, ($sp)
+# begin: Assign at 167.12; stackHeight = 4
+# line 1123
+
+# end: This at 168.15; stackHeight = 8
+# begin: Call at 167.20; stackHeight = 4
+# line 1124
+
+# begin: False at 168.41; stackHeight = 8
+# begin: IdentifierExp at 167.14; stackHeight = 4
+# line 1125
+
+    subu $sp, $sp, 4
+    lw $t0, 4($s2)
+# line 1126
+
+    sw $zero, ($sp)
+    subu $sp, $sp, 4
+# line 1127
+
+# end: False at 168.41; stackHeight = 12
+    sw $t0, ($sp)
+# line 1128
+
+    lw $t0, 4($sp)
+# end: IdentifierExp at 167.14; stackHeight = 8
+# line 1129
+
+    sw $s2, 4($sp)
+# begin: IdentifierExp at 167.31; stackHeight = 8
+# line 1130
+
+    move $s2, $t0
+    lw $t0, 12($sp)
+# line 1131
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 8
+# line 1132
+
+    lw $t0, -12($s2)
+    sw $s5, 4($sp)
+# line 1133
+
+    lw $t0, 88($t0)
+    sw $t0, ($sp)
+# line 1134
+
+    jalr $t0 # rebalanceAfterInsert
+# end: IdentifierExp at 167.31; stackHeight = 16
+# line 1135
+
+    addu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 1136
+
+    lw $s2, ($sp)
+    sw $s2, 8($sp)
+# line 1137
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 1138
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1139
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 1140
+
+# end: Call at 168.20; stackHeight = 8
+    lw $t0, 28($t0)
+# line 1141
+
+    lw $t0, ($sp)
+    jalr $t0 # helpInsert
+# line 1142
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1143
+
+    sw $t0, 0($sp)
+    lw $s2, ($sp)
+# line 1144
+
+# end: Assign at 168.13; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1145
+
+# end: Block at 165.24; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1146
+
+    j if_done_271
+    sw $t0, ($sp)
+# line 1147
+
+  if_else_271:
+# end: Call at 167.20; stackHeight = 8
+# line 1148
+
+# begin: If at 170.7; stackHeight = 4
+    lw $t0, ($sp)
+# line 1149
+
+# begin: LessThan at 170.16; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1150
+
+# begin: IdentifierExp at 170.11; stackHeight = 4
+    sw $t0, 4($s2)
+# line 1151
+
+    lw $t0, 8($sp)
+# end: Assign at 167.12; stackHeight = 4
+# line 1152
+
+    subu $sp, $sp, 8
+# begin: Assign at 168.13; stackHeight = 4
+# line 1153
+
+    sw $s5, 4($sp)
+# begin: Call at 168.20; stackHeight = 4
+# line 1154
+
+    sw $t0, ($sp)
+# begin: This at 168.15; stackHeight = 4
+# line 1155
+
+# end: IdentifierExp at 170.11; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1156
+
+# begin: InstVarAccess at 170.22; stackHeight = 12
+    sw $s2, ($sp)
+# line 1157
+
+# begin: This at 170.18; stackHeight = 12
+# end: This at 168.15; stackHeight = 8
+# line 1158
+
+    subu $sp, $sp, 4
+# begin: False at 168.41; stackHeight = 8
+# line 1159
+
+    sw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 1160
+
+# end: This at 170.18; stackHeight = 16
+    sw $zero, ($sp)
+# line 1161
+
+    lw $t0, ($sp)
+# end: False at 168.41; stackHeight = 12
+# line 1162
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 1163
+
+    beq $t0, $zero, nullPtrException
+    lw $t0, 4($sp)
+# line 1164
+
+    lw $t0, -64($t0)
+    sw $s2, 4($sp)
+# line 1165
+
+    subu $sp, $sp, 8
+    move $s2, $t0
+# line 1166
+
+    sw $s5, 4($sp)
+    beq $s2, $zero, nullPtrException
+# line 1167
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 1168
+
+# end: InstVarAccess at 170.22; stackHeight = 20
+    lw $t0, 88($t0)
+# line 1169
+
+    lw $t2, ($sp)
+    jalr $t0 # rebalanceAfterInsert
+# line 1170
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 1171
+
+    lw $t1, ($sp)
+    lw $s2, ($sp)
+# line 1172
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 1173
+
+    slt $t0, $t1, $t2
+    subu $sp, $sp, 4
+# line 1174
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1175
+
+    sw $t0, ($sp)
+# end: Call at 168.20; stackHeight = 8
+# line 1176
+
+# end: LessThan at 170.16; stackHeight = 8
+    lw $t0, ($sp)
+# line 1177
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1178
+
+    addu $sp, $sp, 4
+    sw $t0, 0($sp)
+# line 1179
+
+    beq $t0, $zero, if_else_270
+# end: Assign at 168.13; stackHeight = 4
+# line 1180
+
+# begin: Block at 170.29; stackHeight = 4
+# end: Block at 165.24; stackHeight = 4
+# line 1181
+
+# begin: Assign at 172.11; stackHeight = 4
+    j if_done_271
+# line 1182
+
+# begin: Call at 172.18; stackHeight = 4
+  if_else_271:
+# line 1183
+
+# begin: IdentifierExp at 172.13; stackHeight = 4
+# begin: If at 170.7; stackHeight = 4
+# line 1184
+
+    lw $t0, 4($s2)
+# begin: LessThan at 170.16; stackHeight = 4
+# line 1185
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 170.11; stackHeight = 4
+# line 1186
+
+    sw $t0, ($sp)
+    lw $t0, 8($sp)
+# line 1187
+
+# end: IdentifierExp at 172.13; stackHeight = 8
+    subu $sp, $sp, 8
+# line 1188
+
+# begin: IdentifierExp at 172.29; stackHeight = 8
+    sw $s5, 4($sp)
+# line 1189
+
+    lw $t0, 12($sp)
+    sw $t0, ($sp)
+# line 1190
+
+    subu $sp, $sp, 8
+# end: IdentifierExp at 170.11; stackHeight = 12
+# line 1191
+
+    sw $s5, 4($sp)
+# begin: InstVarAccess at 170.22; stackHeight = 12
+# line 1192
+
+    sw $t0, ($sp)
+# begin: This at 170.18; stackHeight = 12
+# line 1193
+
+# end: IdentifierExp at 172.29; stackHeight = 16
+    subu $sp, $sp, 4
+# line 1194
+
+    lw $t0, 8($sp)
+    sw $s2, ($sp)
+# line 1195
+
+    sw $s2, 8($sp)
+# end: This at 170.18; stackHeight = 16
+# line 1196
+
+    move $s2, $t0
+    lw $t0, ($sp)
+# line 1197
+
+    beq $s2, $zero, nullPtrException
+    addu $sp, $sp, 4
+# line 1198
+
+    lw $t0, -12($s2)
+    beq $t0, $zero, nullPtrException
+# line 1199
+
+    lw $t0, 28($t0)
+    lw $t0, -16($t0)
+# line 1200
+
+    jalr $t0 # helpInsert
+    subu $sp, $sp, 8
+# line 1201
+
+    addu $sp, $sp, 8
+    sw $s5, 4($sp)
+# line 1202
+
+    lw $s2, ($sp)
+    sw $t0, ($sp)
+# line 1203
+
+    addu $sp, $sp, 4
+# end: InstVarAccess at 170.22; stackHeight = 20
+# line 1204
+
+    subu $sp, $sp, 4
+    lw $t2, ($sp)
+# line 1205
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 1206
+
+# end: Call at 172.18; stackHeight = 8
+    lw $t1, ($sp)
+# line 1207
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 1208
+
+    addu $sp, $sp, 4
+    slt $t0, $t1, $t2
+# line 1209
+
+    sw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 1210
+
+# end: Assign at 172.11; stackHeight = 4
+    sw $t0, ($sp)
+# line 1211
+
+# begin: Assign at 173.13; stackHeight = 4
+# end: LessThan at 170.16; stackHeight = 8
+# line 1212
+
+# begin: Call at 173.20; stackHeight = 4
+    lw $t0, ($sp)
+# line 1213
+
+# begin: This at 173.15; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1214
+
+    subu $sp, $sp, 4
+    beq $t0, $zero, if_else_270
+# line 1215
+
+    sw $s2, ($sp)
+# begin: Block at 170.29; stackHeight = 4
+# line 1216
+
+# end: This at 173.15; stackHeight = 8
+# begin: Assign at 172.11; stackHeight = 4
+# line 1217
+
+# begin: True at 173.41; stackHeight = 8
+# begin: Call at 172.18; stackHeight = 4
+# line 1218
+
+    li $t0, 1
+# begin: IdentifierExp at 172.13; stackHeight = 4
+# line 1219
+
+    subu $sp, $sp, 4
+    lw $t0, 0($s2)
+# line 1220
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1221
+
+# end: True at 173.41; stackHeight = 12
+    sw $t0, ($sp)
+# line 1222
+
+    lw $t0, 4($sp)
+# end: IdentifierExp at 172.13; stackHeight = 8
+# line 1223
+
+    sw $s2, 4($sp)
+# begin: IdentifierExp at 172.29; stackHeight = 8
+# line 1224
+
+    move $s2, $t0
+    lw $t0, 12($sp)
+# line 1225
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 8
+# line 1226
+
+    lw $t0, -12($s2)
+    sw $s5, 4($sp)
+# line 1227
+
+    lw $t0, 88($t0)
+    sw $t0, ($sp)
+# line 1228
+
+    jalr $t0 # rebalanceAfterInsert
+# end: IdentifierExp at 172.29; stackHeight = 16
+# line 1229
+
+    addu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 1230
+
+    lw $s2, ($sp)
+    sw $s2, 8($sp)
+# line 1231
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 1232
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1233
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 1234
+
+# end: Call at 173.20; stackHeight = 8
+    lw $t0, 28($t0)
+# line 1235
+
+    lw $t0, ($sp)
+    jalr $t0 # helpInsert
+# line 1236
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1237
+
+    sw $t0, 0($sp)
+    lw $s2, ($sp)
+# line 1238
+
+# end: Assign at 173.13; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1239
+
+# end: Block at 170.29; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1240
+
+    j if_done_270
+    sw $t0, ($sp)
+# line 1241
+
+  if_else_270:
+# end: Call at 172.18; stackHeight = 8
+# line 1242
+
+# begin: Block at 177.2; stackHeight = 4
+    lw $t0, ($sp)
+# line 1243
+
+# end: Block at 177.2; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1244
+
+  if_done_270:
+    sw $t0, 0($s2)
+# line 1245
+
+# end: If at 170.7; stackHeight = 4
+# end: Assign at 172.11; stackHeight = 4
+# line 1246
+
+  if_done_271:
+# begin: Assign at 173.13; stackHeight = 4
+# line 1247
+
+# end: If at 165.2; stackHeight = 4
+# begin: Call at 173.20; stackHeight = 4
+# line 1248
+
+# begin: IdentifierExp at 177.9; stackHeight = 4
+# begin: This at 173.15; stackHeight = 4
+# line 1249
+
+    lw $t0, 0($sp)
+    subu $sp, $sp, 4
+# line 1250
+
+    subu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 1251
+
+    sw $t0, ($sp)
+# end: This at 173.15; stackHeight = 8
+# line 1252
+
+# end: IdentifierExp at 177.9; stackHeight = 8
+# begin: True at 173.41; stackHeight = 8
+# line 1253
+
+    lw $t0, ($sp)
+    li $t0, 1
+# line 1254
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 1255
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1256
+
+    lw $ra, ($sp)
+# end: True at 173.41; stackHeight = 12
+# line 1257
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 1258
+
+    jr $ra
+    lw $t0, 4($sp)
+# line 1259
+
+.globl mth_NonNullRedBlackTree_lookup
+    sw $s2, 4($sp)
+# line 1260
+
+mth_NonNullRedBlackTree_lookup:
+    move $s2, $t0
+# line 1261
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1262
+
+    sw $ra, ($sp)
+    lw $t0, -12($s2)
+# line 1263
+
+# begin: LocalVarDecl at 182.10; stackHeight = 0
+    lw $t0, 88($t0)
+# line 1264
+
+# begin: True at 182.19; stackHeight = 0
+    jalr $t0 # rebalanceAfterInsert
+# line 1265
+
+    li $t0, 1
+    addu $sp, $sp, 4
+# line 1266
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 1267
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1268
+
+# end: True at 182.19; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1269
+
+    lw $zero, ($sp) #**"rtnVal"
+    sw $t0, ($sp)
+# line 1270
+
+# end: LocalVarDecl at 182.10; stackHeight = 4
+# end: Call at 173.20; stackHeight = 8
+# line 1271
+
+# begin: If at 183.2; stackHeight = 4
+    lw $t0, ($sp)
+# line 1272
+
+# begin: LessThan at 183.11; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1273
+
+# begin: IdentifierExp at 183.6; stackHeight = 4
+    sw $t0, 0($sp)
+# line 1274
+
+    lw $t0, 8($sp)
+# end: Assign at 173.13; stackHeight = 4
+# line 1275
+
+    subu $sp, $sp, 8
+# end: Block at 170.29; stackHeight = 4
+# line 1276
+
+    sw $s5, 4($sp)
+    j if_done_270
+# line 1277
+
+    sw $t0, ($sp)
+  if_else_270:
+# line 1278
+
+# end: IdentifierExp at 183.6; stackHeight = 12
+# begin: Block at 177.2; stackHeight = 4
+# line 1279
+
+# begin: InstVarAccess at 183.17; stackHeight = 12
+# end: Block at 177.2; stackHeight = 4
+# line 1280
+
+# begin: This at 183.13; stackHeight = 12
+  if_done_270:
+# line 1281
+
+    subu $sp, $sp, 4
+# end: If at 170.7; stackHeight = 4
+# line 1282
+
+    sw $s2, ($sp)
+  if_done_271:
+# line 1283
+
+# end: This at 183.13; stackHeight = 16
+# end: If at 165.2; stackHeight = 4
+# line 1284
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 177.9; stackHeight = 4
+# line 1285
+
+    addu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 1286
+
+    beq $t0, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 1287
+
+    lw $t0, -64($t0)
+    sw $t0, ($sp)
+# line 1288
+
+    subu $sp, $sp, 8
+# end: IdentifierExp at 177.9; stackHeight = 8
+# line 1289
+
+    sw $s5, 4($sp)
+    lw $t0, ($sp)
+# line 1290
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1291
+
+# end: InstVarAccess at 183.17; stackHeight = 20
+    addu $sp, $sp, 4
+# line 1292
+
+    lw $t2, ($sp)
+    lw $ra, ($sp)
+# line 1293
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 1294
+
+    lw $t1, ($sp)
+    jr $ra
+# line 1295
+
+    addu $sp, $sp, 8
+.globl mth_NonNullRedBlackTree_lookup
+# line 1296
+
+    slt $t0, $t1, $t2
+mth_NonNullRedBlackTree_lookup:
+# line 1297
+
+    sw $t0, ($sp)
+    sw $ra, ($sp)
+# line 1299
+
+# end: LessThan at 183.11; stackHeight = 8
+# begin: LocalVarDecl at 182.10; stackHeight = 0
+# line 1300
+
+    lw $t0, ($sp)
+# begin: True at 182.19; stackHeight = 0
+# line 1301
+
+    addu $sp, $sp, 4
+    li $t0, 1
+# line 1302
+
+    beq $t0, $zero, if_else_303
+    subu $sp, $sp, 4
+# line 1303
+
+# begin: Block at 183.24; stackHeight = 4
+    sw $t0, ($sp)
+# line 1304
+
+# begin: Assign at 184.13; stackHeight = 4
+# end: True at 182.19; stackHeight = 4
+# line 1305
+
+# begin: Call at 184.20; stackHeight = 4
+    lw $zero, ($sp) #**"rtnVal"
+# line 1306
+
+# begin: IdentifierExp at 184.15; stackHeight = 4
+# end: LocalVarDecl at 182.10; stackHeight = 4
+# line 1307
+
+    lw $t0, 4($s2)
+# begin: If at 183.2; stackHeight = 4
+# line 1308
+
+    subu $sp, $sp, 4
+# begin: LessThan at 183.11; stackHeight = 4
+# line 1309
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 183.6; stackHeight = 4
+# line 1310
+
+# end: IdentifierExp at 184.15; stackHeight = 8
+    lw $t0, 8($sp)
+# line 1311
+
+# begin: IdentifierExp at 184.27; stackHeight = 8
+    subu $sp, $sp, 8
+# line 1312
+
+    lw $t0, 12($sp)
+    sw $s5, 4($sp)
+# line 1313
+
+    subu $sp, $sp, 8
+    sw $t0, ($sp)
+# line 1314
+
+    sw $s5, 4($sp)
+# end: IdentifierExp at 183.6; stackHeight = 12
+# line 1315
+
+    sw $t0, ($sp)
+# begin: InstVarAccess at 183.17; stackHeight = 12
+# line 1316
+
+# end: IdentifierExp at 184.27; stackHeight = 16
+# begin: This at 183.13; stackHeight = 12
+# line 1317
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 1318
+
+    sw $s2, 8($sp)
+    sw $s2, ($sp)
+# line 1319
+
+    move $s2, $t0
+# end: This at 183.13; stackHeight = 16
+# line 1320
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 1321
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 1322
+
+    lw $t0, 48($t0)
+    beq $t0, $zero, nullPtrException
+# line 1323
+
+    jalr $t0 # lookup
+    lw $t0, -16($t0)
+# line 1324
+
+    addu $sp, $sp, 8
+    subu $sp, $sp, 8
+# line 1325
+
+    lw $s2, ($sp)
+    sw $s5, 4($sp)
+# line 1326
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1327
+
+    subu $sp, $sp, 4
+# end: InstVarAccess at 183.17; stackHeight = 20
+# line 1328
+
+    sw $t0, ($sp)
+    lw $t2, ($sp)
+# line 1329
+
+# end: Call at 184.20; stackHeight = 8
+    addu $sp, $sp, 8
+# line 1330
+
+    lw $t0, ($sp)
+    lw $t1, ($sp)
+# line 1331
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1332
+
+    sw $t0, 0($sp)
+    slt $t0, $t1, $t2
+# line 1333
+
+# end: Assign at 184.13; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1334
+
+# end: Block at 183.24; stackHeight = 4
+    sw $t0, ($sp)
+# line 1335
+
+    j if_done_303
+# end: LessThan at 183.11; stackHeight = 8
+# line 1336
+
+  if_else_303:
+    lw $t0, ($sp)
+# line 1337
+
+# begin: If at 186.7; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1338
+
+# begin: GreaterThan at 186.16; stackHeight = 4
+    beq $t0, $zero, if_else_303
+# line 1339
+
+# begin: IdentifierExp at 186.11; stackHeight = 4
+# begin: Block at 183.24; stackHeight = 4
+# line 1340
+
+    lw $t0, 8($sp)
+# begin: Assign at 184.13; stackHeight = 4
+# line 1341
+
+    subu $sp, $sp, 8
+# begin: Call at 184.20; stackHeight = 4
+# line 1342
+
+    sw $s5, 4($sp)
+# begin: IdentifierExp at 184.15; stackHeight = 4
+# line 1343
+
+    sw $t0, ($sp)
+    lw $t0, 0($s2)
+# line 1344
+
+# end: IdentifierExp at 186.11; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1345
+
+# begin: InstVarAccess at 186.22; stackHeight = 12
+    sw $t0, ($sp)
+# line 1346
+
+# begin: This at 186.18; stackHeight = 12
+# end: IdentifierExp at 184.15; stackHeight = 8
+# line 1347
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 184.27; stackHeight = 8
+# line 1348
+
+    sw $s2, ($sp)
+    lw $t0, 12($sp)
+# line 1349
+
+# end: This at 186.18; stackHeight = 16
+    subu $sp, $sp, 8
+# line 1350
+
+    lw $t0, ($sp)
+    sw $s5, 4($sp)
+# line 1351
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1352
+
+    beq $t0, $zero, nullPtrException
+# end: IdentifierExp at 184.27; stackHeight = 16
+# line 1353
+
+    lw $t0, -64($t0)
+    lw $t0, 8($sp)
+# line 1354
+
+    subu $sp, $sp, 8
+    sw $s2, 8($sp)
+# line 1355
+
+    sw $s5, 4($sp)
+    move $s2, $t0
+# line 1356
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 1357
+
+# end: InstVarAccess at 186.22; stackHeight = 20
+    lw $t0, -12($s2)
+# line 1358
+
+    lw $t2, ($sp)
+    lw $t0, 48($t0)
+# line 1359
+
+    addu $sp, $sp, 8
+    jalr $t0 # lookup
+# line 1360
+
+    lw $t1, ($sp)
+    addu $sp, $sp, 8
+# line 1361
+
+    addu $sp, $sp, 8
+    lw $s2, ($sp)
+# line 1362
+
+    sgt $t0, $t1, $t2
+    addu $sp, $sp, 4
+# line 1363
+
+# end: GreaterThan at 186.16; stackHeight = 8
+# end: Call at 184.20; stackHeight = 8
+# line 1366
+
+    beq $t0, $zero, if_else_302
+    sw $t0, 0($sp)
+# line 1369
+
+# begin: Block at 186.29; stackHeight = 4
+# end: Assign at 184.13; stackHeight = 4
+# line 1370
+
+# begin: Assign at 187.13; stackHeight = 4
+# end: Block at 183.24; stackHeight = 4
+# line 1371
+
+# begin: Call at 187.21; stackHeight = 4
+    j if_done_303
+# line 1372
+
+# begin: IdentifierExp at 187.15; stackHeight = 4
+  if_else_303:
+# line 1373
+
+    lw $t0, 8($s2)
+# begin: If at 186.7; stackHeight = 4
+# line 1374
+
+    subu $sp, $sp, 4
+# begin: GreaterThan at 186.16; stackHeight = 4
+# line 1375
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 186.11; stackHeight = 4
+# line 1376
+
+# end: IdentifierExp at 187.15; stackHeight = 8
+    lw $t0, 8($sp)
+# line 1377
+
+# begin: IdentifierExp at 187.28; stackHeight = 8
+    subu $sp, $sp, 8
+# line 1378
+
+    lw $t0, 12($sp)
+    sw $s5, 4($sp)
+# line 1379
+
+    subu $sp, $sp, 8
+    sw $t0, ($sp)
+# line 1380
+
+    sw $s5, 4($sp)
+# end: IdentifierExp at 186.11; stackHeight = 12
+# line 1381
+
+    sw $t0, ($sp)
+# begin: InstVarAccess at 186.22; stackHeight = 12
+# line 1382
+
+# end: IdentifierExp at 187.28; stackHeight = 16
+# begin: This at 186.18; stackHeight = 12
+# line 1383
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 1384
+
+    sw $s2, 8($sp)
+    sw $s2, ($sp)
+# line 1385
+
+    move $s2, $t0
+# end: This at 186.18; stackHeight = 16
+# line 1386
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 1387
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 1388
+
+    lw $t0, 48($t0)
+    beq $t0, $zero, nullPtrException
+# line 1389
+
+    jalr $t0 # lookup
+    lw $t0, -16($t0)
+# line 1390
+
+    addu $sp, $sp, 8
+    subu $sp, $sp, 8
+# line 1391
+
+    lw $s2, ($sp)
+    sw $s5, 4($sp)
+# line 1392
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1393
+
+    subu $sp, $sp, 4
+# end: InstVarAccess at 186.22; stackHeight = 20
+# line 1394
+
+    sw $t0, ($sp)
+    lw $t2, ($sp)
+# line 1395
+
+# end: Call at 187.21; stackHeight = 8
+    addu $sp, $sp, 8
+# line 1396
+
+    lw $t0, ($sp)
+    lw $t1, ($sp)
+# line 1397
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1398
+
+    sw $t0, 0($sp)
+    sgt $t0, $t1, $t2
+# line 1399
+
+# end: Assign at 187.13; stackHeight = 4
+    subu $sp, $sp, 4
+# line 1400
+
+# end: Block at 186.29; stackHeight = 4
+    sw $t0, ($sp)
+# line 1401
+
+    j if_done_302
+# end: GreaterThan at 186.16; stackHeight = 8
+# line 1402
+
+  if_else_302:
+    lw $t0, ($sp)
+# line 1403
+
+# begin: Block at 189.2; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1404
+
+# end: Block at 189.2; stackHeight = 4
+    beq $t0, $zero, if_else_302
+# line 1405
+
+  if_done_302:
+# begin: Block at 186.29; stackHeight = 4
+# line 1406
+
+# end: If at 186.7; stackHeight = 4
+# begin: Assign at 187.13; stackHeight = 4
+# line 1407
+
+  if_done_303:
+# begin: Call at 187.21; stackHeight = 4
+# line 1408
+
+# end: If at 183.2; stackHeight = 4
+# begin: IdentifierExp at 187.15; stackHeight = 4
+# line 1409
+
+# begin: IdentifierExp at 189.9; stackHeight = 4
+    lw $t0, 4($s2)
+# line 1410
+
+    lw $t0, 0($sp)
+    subu $sp, $sp, 4
+# line 1411
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1412
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 187.15; stackHeight = 8
+# line 1413
+
+# end: IdentifierExp at 189.9; stackHeight = 8
+# begin: IdentifierExp at 187.28; stackHeight = 8
+# line 1414
+
+    lw $t0, ($sp)
+    lw $t0, 12($sp)
+# line 1415
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 8
+# line 1416
+
+    addu $sp, $sp, 4
+    sw $s5, 4($sp)
+# line 1417
+
+    lw $ra, ($sp)
+    sw $t0, ($sp)
+# line 1418
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 187.28; stackHeight = 16
+# line 1419
+
+    jr $ra
+    lw $t0, 8($sp)
+# line 1420
+
+.globl mth_NonNullRedBlackTree_helpDelete
+    sw $s2, 8($sp)
+# line 1421
+
+mth_NonNullRedBlackTree_helpDelete:
+    move $s2, $t0
+# line 1422
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1423
+
+    sw $ra, ($sp)
+    lw $t0, -12($s2)
+# line 1424
+
+# begin: LocalVarDecl at 198.15; stackHeight = 0
+    lw $t0, 48($t0)
+# line 1425
+
+# begin: Null at 198.24; stackHeight = 0
+    jalr $t0 # lookup
+# line 1426
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 1427
+
+    sw $0, ($sp)
+    lw $s2, ($sp)
+# line 1428
+
+# end: Null at 198.24; stackHeight = 4
+    addu $sp, $sp, 4
+# line 1429
+
+    lw $zero, ($sp) #**"rtnVal"
+    subu $sp, $sp, 4
+# line 1430
+
+# end: LocalVarDecl at 198.15; stackHeight = 4
+    sw $t0, ($sp)
+# line 1431
+
+# begin: LocalVarDecl at 201.22; stackHeight = 4
+# end: Call at 187.21; stackHeight = 8
+# line 1432
+
+# begin: This at 201.32; stackHeight = 4
+    lw $t0, ($sp)
+# line 1433
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1434
+
+    sw $s2, ($sp)
+    sw $t0, 0($sp)
+# line 1435
+
+# end: This at 201.32; stackHeight = 8
+# end: Assign at 187.13; stackHeight = 4
+# line 1436
+
+    lw $zero, ($sp) #**"rtnVal2"
+# end: Block at 186.29; stackHeight = 4
+# line 1437
+
+# end: LocalVarDecl at 201.22; stackHeight = 8
+    j if_done_302
+# line 1438
+
+# begin: If at 204.2; stackHeight = 8
+  if_else_302:
+# line 1439
+
+# begin: Equals at 204.11; stackHeight = 8
+# begin: Block at 189.2; stackHeight = 4
+# line 1440
+
+# begin: IdentifierExp at 204.6; stackHeight = 8
+# end: Block at 189.2; stackHeight = 4
+# line 1441
+
+    lw $t0, 16($sp)
+  if_done_302:
+# line 1442
+
+    subu $sp, $sp, 8
+# end: If at 186.7; stackHeight = 4
+# line 1443
+
+    sw $s5, 4($sp)
+  if_done_303:
+# line 1444
+
+    sw $t0, ($sp)
+# end: If at 183.2; stackHeight = 4
+# line 1445
+
+# end: IdentifierExp at 204.6; stackHeight = 16
+# begin: IdentifierExp at 189.9; stackHeight = 4
+# line 1446
+
+# begin: InstVarAccess at 204.18; stackHeight = 16
+    lw $t0, 0($sp)
+# line 1447
+
+# begin: This at 204.14; stackHeight = 16
+    subu $sp, $sp, 4
+# line 1448
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1449
+
+    sw $s2, ($sp)
+# end: IdentifierExp at 189.9; stackHeight = 8
+# line 1450
+
+# end: This at 204.14; stackHeight = 20
+    lw $t0, ($sp)
+# line 1451
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1452
+
+    beq $t0, $zero, nullPtrException
+    lw $ra, ($sp)
+# line 1454
+
+    lw $t0, -64($t0)
+    addu $sp, $sp, 4
+# line 1455
+
+    subu $sp, $sp, 8
+    jr $ra
+# line 1456
+
+    sw $s5, 4($sp)
+.globl mth_NonNullRedBlackTree_helpDelete
+# line 1457
+
+    sw $t0, ($sp)
+mth_NonNullRedBlackTree_helpDelete:
+# line 1458
+
+# end: InstVarAccess at 204.18; stackHeight = 24
+    subu $sp, $sp, 4
+# line 1459
+
+    lw $t2, ($sp)
+    sw $ra, ($sp)
+# line 1460
+
+    addu $sp, $sp, 8
+# begin: LocalVarDecl at 198.15; stackHeight = 0
+# line 1461
+
+    lw $t1, ($sp)
+# begin: Null at 198.24; stackHeight = 0
+# line 1462
+
+    addu $sp, $sp, 8
+    subu $sp, $sp, 4
+# line 1463
+
+    seq $t0, $t1, $t2
+    sw $zero, ($sp)
+# line 1464
+
+    subu $sp, $sp, 4
+# end: Null at 198.24; stackHeight = 4
+# line 1465
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"rtnVal"
+# line 1466
+
+# end: Equals at 204.11; stackHeight = 12
+# end: LocalVarDecl at 198.15; stackHeight = 4
+# line 1467
+
+    lw $t0, ($sp)
+# begin: LocalVarDecl at 201.22; stackHeight = 4
+# line 1468
+
+    addu $sp, $sp, 4
+# begin: This at 201.32; stackHeight = 4
+# line 1469
+
+    beq $t0, $zero, if_else_446
+    subu $sp, $sp, 4
+# line 1470
+
+# begin: Block at 204.25; stackHeight = 8
+    sw $s2, ($sp)
+# line 1471
+
+# begin: If at 205.6; stackHeight = 8
+# end: This at 201.32; stackHeight = 8
+# line 1472
+
+# begin: Call at 205.16; stackHeight = 8
+    lw $zero, ($sp) #**"rtnVal2"
+# line 1473
+
+# begin: IdentifierExp at 205.10; stackHeight = 8
+# end: LocalVarDecl at 201.22; stackHeight = 8
+# line 1474
+
+    lw $t0, 8($s2)
+# begin: If at 204.2; stackHeight = 8
+# line 1475
+
+    subu $sp, $sp, 4
+# begin: Equals at 204.11; stackHeight = 8
+# line 1476
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 204.6; stackHeight = 8
+# line 1477
+
+# end: IdentifierExp at 205.10; stackHeight = 12
+    lw $t0, 16($sp)
+# line 1478
+
+    lw $t0, 0($sp)
+    subu $sp, $sp, 8
+# line 1479
+
+    sw $s2, 0($sp)
+    sw $s5, 4($sp)
+# line 1480
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 1481
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 204.6; stackHeight = 16
+# line 1482
+
+    lw $t0, -12($s2)
+# begin: InstVarAccess at 204.18; stackHeight = 16
+# line 1483
+
+    lw $t0, 12($t0)
+# begin: This at 204.14; stackHeight = 16
+# line 1484
+
+    jalr $t0 # isNull
+    subu $sp, $sp, 4
+# line 1485
+
+    addu $sp, $sp, 0
+    sw $s2, ($sp)
+# line 1486
+
+    lw $s2, ($sp)
+# end: This at 204.14; stackHeight = 20
+# line 1487
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 1488
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1489
+
+    sw $t0, ($sp)
+    beq $t0, $zero, nullPtrException
+# line 1490
+
+# end: Call at 205.16; stackHeight = 12
+    lw $t0, -16($t0)
+# line 1491
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 1492
+
+    addu $sp, $sp, 4
+    sw $s5, 4($sp)
+# line 1493
+
+    beq $t0, $zero, if_else_411
+    sw $t0, ($sp)
+# line 1494
+
+# begin: Block at 205.26; stackHeight = 8
+# end: InstVarAccess at 204.18; stackHeight = 24
+# line 1495
+
+# begin: If at 206.3; stackHeight = 8
+    lw $t2, ($sp)
+# line 1496
+
+# begin: Call at 206.12; stackHeight = 8
+    addu $sp, $sp, 8
+# line 1497
+
+# begin: IdentifierExp at 206.7; stackHeight = 8
+    lw $t1, ($sp)
+# line 1498
+
+    lw $t0, 4($s2)
+    addu $sp, $sp, 8
+# line 1499
+
+    subu $sp, $sp, 4
+    seq $t0, $t1, $t2
+# line 1500
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1501
+
+# end: IdentifierExp at 206.7; stackHeight = 12
+    sw $t0, ($sp)
+# line 1502
+
+    lw $t0, 0($sp)
+# end: Equals at 204.11; stackHeight = 12
+# line 1503
+
+    sw $s2, 0($sp)
+    lw $t0, ($sp)
+# line 1504
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 1505
+
+    beq $s2, $zero, nullPtrException
+    beq $t0, $zero, if_else_446
+# line 1506
+
+    lw $t0, -12($s2)
+# begin: Block at 204.25; stackHeight = 8
+# line 1507
+
+    lw $t0, 12($t0)
+# begin: If at 205.6; stackHeight = 8
+# line 1508
+
+    jalr $t0 # isNull
+# begin: Call at 205.16; stackHeight = 8
+# line 1509
+
+    addu $sp, $sp, 0
+# begin: IdentifierExp at 205.10; stackHeight = 8
+# line 1510
+
+    lw $s2, ($sp)
+    lw $t0, 4($s2)
+# line 1511
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 1512
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1513
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 205.10; stackHeight = 12
+# line 1514
+
+# end: Call at 206.12; stackHeight = 12
+    lw $t0, 0($sp)
+# line 1515
+
+    lw $t0, ($sp)
+    sw $s2, 0($sp)
+# line 1516
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 1517
+
+    beq $t0, $zero, if_else_344
+    beq $s2, $zero, nullPtrException
+# line 1518
+
+# begin: Block at 206.22; stackHeight = 8
+    lw $t0, -12($s2)
+# line 1519
+
+# begin: Assign at 208.18; stackHeight = 8
+    lw $t0, 12($t0)
+# line 1520
+
+# begin: IdentifierExp at 208.7; stackHeight = 8
+    jalr $t0 # isNull
+# line 1521
+
+    lw $t0, 12($sp)
+    addu $sp, $sp, 0
+# line 1522
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 1523
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1524
+
+# end: IdentifierExp at 208.7; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1525
+
+# begin: IntegerLiteral at 208.15; stackHeight = 12
+    sw $t0, ($sp)
+# line 1526
+
+    li $t0, 0
+# end: Call at 205.16; stackHeight = 12
+# line 1527
+
+    subu $sp, $sp, 8
+    lw $t0, ($sp)
+# line 1528
+
+    sw $s5, 4($sp)
+    addu $sp, $sp, 4
+# line 1529
+
+    sw $t0, ($sp)
+    beq $t0, $zero, if_else_411
+# line 1530
+
+# end: IntegerLiteral at 208.15; stackHeight = 20
+# begin: Block at 205.26; stackHeight = 8
+# line 1531
+
+# begin: IdentifierExp at 208.20; stackHeight = 20
+# begin: If at 206.3; stackHeight = 8
+# line 1532
+
+    lw $t0, -20($s2)
+# begin: Call at 206.12; stackHeight = 8
+# line 1533
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 206.7; stackHeight = 8
+# line 1534
+
+    sw $t0, ($sp)
+    lw $t0, 0($s2)
+# line 1535
+
+# end: IdentifierExp at 208.20; stackHeight = 24
+    subu $sp, $sp, 4
+# line 1536
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 1537
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 206.7; stackHeight = 12
+# line 1538
+
+    lw $t1, ($sp)
+    lw $t0, 0($sp)
+# line 1539
+
+    addu $sp, $sp, 8
+    sw $s2, 0($sp)
+# line 1540
+
+    lw $t2, ($sp)
+    move $s2, $t0
+# line 1541
+
+    addu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1542
+
+    beq $t2, $zero, nullPtrException
+    lw $t0, -12($s2)
+# line 1543
+
+    lw $t3, -4($t2)
+    lw $t0, 12($t0)
+# line 1544
+
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+    jalr $t0 # isNull
+# line 1545
+
+    sll $t1, $t1, 2
+    addu $sp, $sp, 0
+# line 1546
+
+    addu $t1, $t1, $t2
+    lw $s2, ($sp)
+# line 1547
+
+    sw $t0, ($t1)
+    addu $sp, $sp, 4
+# line 1548
+
+# end: Assign at 208.18; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1549
+
+# begin: Assign at 209.14; stackHeight = 8
+    sw $t0, ($sp)
+# line 1550
+
+# begin: IdentifierExp at 209.16; stackHeight = 8
+# end: Call at 206.12; stackHeight = 12
+# line 1551
+
+    lw $t0, 8($s2)
+    lw $t0, ($sp)
+# line 1552
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1553
+
+    sw $t0, ($sp)
+    beq $t0, $zero, if_else_344
+# line 1554
+
+# end: IdentifierExp at 209.16; stackHeight = 12
+# begin: Block at 206.22; stackHeight = 8
+# line 1555
+
+    lw $t0, ($sp)
+# begin: Assign at 208.18; stackHeight = 8
+# line 1556
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 208.7; stackHeight = 8
+# line 1557
+
+    sw $t0, 4($sp)
+    lw $t0, 12($sp)
+# line 1558
+
+# end: Assign at 209.14; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1559
+
+# end: Block at 206.22; stackHeight = 8
+    sw $t0, ($sp)
+# line 1560
+
+    j if_done_344
+# end: IdentifierExp at 208.7; stackHeight = 12
+# line 1561
+
+  if_else_344:
+# begin: IntegerLiteral at 208.15; stackHeight = 12
+# line 1562
+
+# begin: Block at 211.8; stackHeight = 8
+    li $t0, 0
+# line 1563
+
+# begin: Assign at 213.14; stackHeight = 8
+    subu $sp, $sp, 8
+# line 1564
+
+# begin: IdentifierExp at 213.16; stackHeight = 8
+    sw $s5, 4($sp)
+# line 1565
+
+    lw $t0, 4($s2)
+    sw $t0, ($sp)
+# line 1566
+
+    subu $sp, $sp, 4
+# end: IntegerLiteral at 208.15; stackHeight = 20
+# line 1567
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 208.20; stackHeight = 20
+# line 1568
+
+# end: IdentifierExp at 213.16; stackHeight = 12
+    lw $t0, -20($s2)
+# line 1569
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1570
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1571
+
+    sw $t0, 4($sp)
+# end: IdentifierExp at 208.20; stackHeight = 24
+# line 1572
+
+# end: Assign at 213.14; stackHeight = 8
+    lw $t0, ($sp)
+# line 1573
+
+# begin: CallStatement at 214.14; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1574
+
+# begin: Call at 214.14; stackHeight = 8
+    lw $t1, ($sp)
+# line 1575
+
+# begin: IdentifierExp at 214.7; stackHeight = 8
+    addu $sp, $sp, 8
+# line 1576
+
+    lw $t0, 4($sp)
+    lw $t2, ($sp)
+# line 1577
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1578
+
+    sw $t0, ($sp)
+    beq $t2, $zero, nullPtrException
+# line 1579
+
+# end: IdentifierExp at 214.7; stackHeight = 12
+    lw $t3, -4($t2)
+# line 1580
+
+    lw $t0, 0($sp)
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+# line 1581
+
+    sw $s2, 0($sp)
+    sll $t1, $t1, 2
+# line 1582
+
+    move $s2, $t0
+    addu $t1, $t1, $t2
+# line 1583
+
+    beq $s2, $zero, nullPtrException
+    sw $t0, ($t1)
+# line 1584
+
+    lw $t0, -12($s2)
+# end: Assign at 208.18; stackHeight = 8
+# line 1585
+
+    lw $t0, 20($t0)
+# begin: Assign at 209.14; stackHeight = 8
+# line 1586
+
+    jalr $t0 # setBlack
+# begin: IdentifierExp at 209.16; stackHeight = 8
+# line 1587
+
+    addu $sp, $sp, 0
+    lw $t0, 4($s2)
+# line 1588
+
+    lw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 1589
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1590
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 209.16; stackHeight = 12
+# line 1591
+
+    sw $t0, ($sp)
+    lw $t0, ($sp)
+# line 1592
+
+# end: Call at 214.14; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1593
+
+    lw $t0, ($sp)
+    sw $t0, 4($sp)
+# line 1594
+
+    addu $sp, $sp, 4
+# end: Assign at 209.14; stackHeight = 8
+# line 1595
+
+# end: CallStatement at 214.14; stackHeight = 8
+# end: Block at 206.22; stackHeight = 8
+# line 1596
+
+# end: Block at 211.8; stackHeight = 8
+    j if_done_344
+# line 1597
+
+  if_done_344:
+  if_else_344:
+# line 1598
+
+# end: If at 206.3; stackHeight = 8
+# begin: Block at 211.8; stackHeight = 8
+# line 1599
+
+# end: Block at 205.26; stackHeight = 8
+# begin: Assign at 213.14; stackHeight = 8
+# line 1600
+
+    j if_done_411
+# begin: IdentifierExp at 213.16; stackHeight = 8
+# line 1601
+
+  if_else_411:
+    lw $t0, 0($s2)
+# line 1602
+
+# begin: If at 217.11; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1603
+
+# begin: Call at 217.20; stackHeight = 8
+    sw $t0, ($sp)
+# line 1604
+
+# begin: IdentifierExp at 217.15; stackHeight = 8
+# end: IdentifierExp at 213.16; stackHeight = 12
+# line 1605
+
+    lw $t0, 4($s2)
+    lw $t0, ($sp)
+# line 1606
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1607
+
+    sw $t0, ($sp)
+    sw $t0, 4($sp)
+# line 1608
+
+# end: IdentifierExp at 217.15; stackHeight = 12
+# end: Assign at 213.14; stackHeight = 8
+# line 1609
+
+    lw $t0, 0($sp)
+# begin: CallStatement at 214.14; stackHeight = 8
+# line 1610
+
+    sw $s2, 0($sp)
+# begin: Call at 214.14; stackHeight = 8
+# line 1611
+
+    move $s2, $t0
+# begin: IdentifierExp at 214.7; stackHeight = 8
+# line 1612
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 4($sp)
+# line 1613
+
+    lw $t0, -12($s2)
+    subu $sp, $sp, 4
+# line 1614
+
+    lw $t0, 12($t0)
+    sw $t0, ($sp)
+# line 1615
+
+    jalr $t0 # isNull
+# end: IdentifierExp at 214.7; stackHeight = 12
+# line 1616
+
+    addu $sp, $sp, 0
+    lw $t0, 0($sp)
+# line 1617
+
+    lw $s2, ($sp)
+    sw $s2, 0($sp)
+# line 1618
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 1619
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 1620
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 1621
+
+# end: Call at 217.20; stackHeight = 12
+    lw $t0, 20($t0)
+# line 1622
+
+    lw $t0, ($sp)
+    jalr $t0 # setBlack
+# line 1623
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 1624
+
+    beq $t0, $zero, if_else_410
+    lw $s2, ($sp)
+# line 1625
+
+# begin: Block at 217.30; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1626
+
+# begin: Assign at 219.10; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1627
+
+# begin: IdentifierExp at 219.12; stackHeight = 8
+    sw $t0, ($sp)
+# line 1628
+
+    lw $t0, 8($s2)
+# end: Call at 214.14; stackHeight = 12
+# line 1629
+
+    subu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 1630
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1631
+
+# end: IdentifierExp at 219.12; stackHeight = 12
+# end: CallStatement at 214.14; stackHeight = 8
+# line 1632
+
+    lw $t0, ($sp)
+# end: Block at 211.8; stackHeight = 8
+# line 1633
+
+    addu $sp, $sp, 4
+  if_done_344:
+# line 1634
+
+    sw $t0, 4($sp)
+# end: If at 206.3; stackHeight = 8
+# line 1635
+
+# end: Assign at 219.10; stackHeight = 8
+# end: Block at 205.26; stackHeight = 8
+# line 1636
+
+# begin: CallStatement at 220.10; stackHeight = 8
+    j if_done_411
+# line 1637
+
+# begin: Call at 220.10; stackHeight = 8
+  if_else_411:
+# line 1638
+
+# begin: IdentifierExp at 220.3; stackHeight = 8
+# begin: If at 217.11; stackHeight = 8
+# line 1639
+
+    lw $t0, 4($sp)
+# begin: Call at 217.20; stackHeight = 8
+# line 1640
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 217.15; stackHeight = 8
+# line 1641
+
+    sw $t0, ($sp)
+    lw $t0, 0($s2)
+# line 1642
+
+# end: IdentifierExp at 220.3; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1643
+
+    lw $t0, 0($sp)
+    sw $t0, ($sp)
+# line 1644
+
+    sw $s2, 0($sp)
+# end: IdentifierExp at 217.15; stackHeight = 12
+# line 1645
+
+    move $s2, $t0
+    lw $t0, 0($sp)
+# line 1646
+
+    beq $s2, $zero, nullPtrException
+    sw $s2, 0($sp)
+# line 1647
+
+    lw $t0, -12($s2)
+    move $s2, $t0
+# line 1648
+
+    lw $t0, 20($t0)
+    beq $s2, $zero, nullPtrException
+# line 1649
+
+    jalr $t0 # setBlack
+    lw $t0, -12($s2)
+# line 1650
+
+    addu $sp, $sp, 0
+    lw $t0, 12($t0)
+# line 1651
+
+    lw $s2, ($sp)
+    jalr $t0 # isNull
+# line 1652
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 1653
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 1654
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1655
+
+# end: Call at 220.10; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1656
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 1657
+
+    addu $sp, $sp, 4
+# end: Call at 217.20; stackHeight = 12
+# line 1658
+
+# end: CallStatement at 220.10; stackHeight = 8
+    lw $t0, ($sp)
+# line 1659
+
+# end: Block at 217.30; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1660
+
+    j if_done_410
+    beq $t0, $zero, if_else_410
+# line 1661
+
+  if_else_410:
+# begin: Block at 217.30; stackHeight = 8
+# line 1662
+
+# begin: Block at 222.11; stackHeight = 8
+# begin: Assign at 219.10; stackHeight = 8
+# line 1663
+
+# begin: LocalVarDecl at 223.23; stackHeight = 8
+# begin: IdentifierExp at 219.12; stackHeight = 8
+# line 1664
+
+# begin: Call at 223.36; stackHeight = 8
+    lw $t0, 4($s2)
+# line 1665
+
+# begin: IdentifierExp at 223.30; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1666
+
+    lw $t0, 8($s2)
+    sw $t0, ($sp)
+# line 1667
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 219.12; stackHeight = 12
+# line 1668
+
+    sw $t0, ($sp)
+    lw $t0, ($sp)
+# line 1669
+
+# end: IdentifierExp at 223.30; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1670
+
+    lw $t0, 0($sp)
+    sw $t0, 4($sp)
+# line 1671
+
+    sw $s2, 0($sp)
+# end: Assign at 219.10; stackHeight = 8
+# line 1672
+
+    move $s2, $t0
+# begin: CallStatement at 220.10; stackHeight = 8
+# line 1673
+
+    beq $s2, $zero, nullPtrException
+# begin: Call at 220.10; stackHeight = 8
+# line 1674
+
+    lw $t0, -12($s2)
+# begin: IdentifierExp at 220.3; stackHeight = 8
+# line 1675
+
+    lw $t0, 36($t0)
+    lw $t0, 4($sp)
+# line 1676
+
+    jalr $t0 # asNonNull
+    subu $sp, $sp, 4
+# line 1677
+
+    addu $sp, $sp, 0
+    sw $t0, ($sp)
+# line 1678
+
+    lw $s2, ($sp)
+# end: IdentifierExp at 220.3; stackHeight = 12
+# line 1679
+
+    addu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 1680
+
+    subu $sp, $sp, 4
+    sw $s2, 0($sp)
+# line 1681
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 1682
+
+# end: Call at 223.36; stackHeight = 12
+    beq $s2, $zero, nullPtrException
+# line 1683
+
+    lw $zero, ($sp) #**"succ"
+    lw $t0, -12($s2)
+# line 1684
+
+# end: LocalVarDecl at 223.23; stackHeight = 12
+    lw $t0, 20($t0)
+# line 1685
+
+# begin: Block at 224.3; stackHeight = 12
+    jalr $t0 # setBlack
+# line 1686
+
+# begin: Block at 224.8; stackHeight = 12
+    addu $sp, $sp, 0
+# line 1687
+
+# end: Block at 224.8; stackHeight = 12
+    lw $s2, ($sp)
+# line 1688
+
+# begin: BreakTarget at 224.3; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1689
+
+    j while_cond_380
+    subu $sp, $sp, 4
+# line 1690
+
+  while_top_380:
+    sw $t0, ($sp)
+# line 1691
+
+# begin: Block at 224.3; stackHeight = 12
+# end: Call at 220.10; stackHeight = 12
+# line 1692
+
+# begin: Block at 224.12; stackHeight = 12
+    lw $t0, ($sp)
+# line 1693
+
+# begin: LocalVarDecl at 225.27; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1694
+
+# begin: Call at 225.44; stackHeight = 12
+# end: CallStatement at 220.10; stackHeight = 8
+# line 1695
+
+# begin: InstVarAccess at 225.38; stackHeight = 12
+# end: Block at 217.30; stackHeight = 8
+# line 1696
+
+# begin: IdentifierExp at 225.34; stackHeight = 12
+    j if_done_410
+# line 1697
+
+    lw $t0, 0($sp)
+  if_else_410:
+# line 1698
+
+    subu $sp, $sp, 4
+# begin: Block at 222.11; stackHeight = 8
+# line 1699
+
+    sw $t0, ($sp)
+# begin: LocalVarDecl at 223.23; stackHeight = 8
+# line 1700
+
+# end: IdentifierExp at 225.34; stackHeight = 16
+# begin: Call at 223.36; stackHeight = 8
+# line 1701
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 223.30; stackHeight = 8
+# line 1702
+
+    addu $sp, $sp, 4
+    lw $t0, 4($s2)
+# line 1703
+
+    beq $t0, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 1704
+
+    lw $t0, 16($t0)
+    sw $t0, ($sp)
+# line 1705
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 223.30; stackHeight = 12
+# line 1706
+
+    sw $t0, ($sp)
+    lw $t0, 0($sp)
+# line 1707
+
+# end: InstVarAccess at 225.38; stackHeight = 16
+    sw $s2, 0($sp)
+# line 1708
+
+    lw $t0, 0($sp)
+    move $s2, $t0
+# line 1709
+
+    sw $s2, 0($sp)
+    beq $s2, $zero, nullPtrException
+# line 1710
+
+    move $s2, $t0
+    lw $t0, -12($s2)
+# line 1711
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 36($t0)
+# line 1712
+
+    lw $t0, -12($s2)
+    jalr $t0 # asNonNull
+# line 1713
+
+    lw $t0, 36($t0)
+    addu $sp, $sp, 0
+# line 1714
+
+    jalr $t0 # asNonNull
+    lw $s2, ($sp)
+# line 1715
+
+    addu $sp, $sp, 0
+    addu $sp, $sp, 4
+# line 1716
+
+    lw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 1717
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1718
+
+    subu $sp, $sp, 4
+# end: Call at 223.36; stackHeight = 12
+# line 1719
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"succ"
+# line 1720
+
+# end: Call at 225.44; stackHeight = 16
+# end: LocalVarDecl at 223.23; stackHeight = 12
+# line 1721
+
+    lw $zero, ($sp) #**"next"
+# begin: Block at 224.3; stackHeight = 12
+# line 1722
+
+# end: LocalVarDecl at 225.27; stackHeight = 16
+# begin: Block at 224.8; stackHeight = 12
+# line 1723
+
+# begin: If at 226.7; stackHeight = 16
+# end: Block at 224.8; stackHeight = 12
+# line 1724
+
+# begin: Equals at 226.16; stackHeight = 16
+# begin: BreakTarget at 224.3; stackHeight = 12
+# line 1725
+
+# begin: IdentifierExp at 226.11; stackHeight = 16
+    j while_cond_380
+# line 1726
+
+    lw $t0, 0($sp)
+  while_top_380:
+# line 1727
+
+    subu $sp, $sp, 4
+# begin: Block at 224.3; stackHeight = 12
+# line 1728
+
+    sw $t0, ($sp)
+# begin: Block at 224.12; stackHeight = 12
+# line 1729
+
+# end: IdentifierExp at 226.11; stackHeight = 20
+# begin: LocalVarDecl at 225.27; stackHeight = 12
+# line 1730
+
+# begin: Null at 226.19; stackHeight = 20
+# begin: Call at 225.44; stackHeight = 12
+# line 1731
+
+    subu $sp, $sp, 4
+# begin: InstVarAccess at 225.38; stackHeight = 12
+# line 1732
+
+    sw $0, ($sp)
+# begin: IdentifierExp at 225.34; stackHeight = 12
+# line 1733
+
+# end: Null at 226.19; stackHeight = 24
+    lw $t0, 0($sp)
+# line 1734
+
+    lw $t2, ($sp)
+    subu $sp, $sp, 4
+# line 1735
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1736
+
+    lw $t1, ($sp)
+# end: IdentifierExp at 225.34; stackHeight = 16
+# line 1737
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 1738
+
+    seq $t0, $t1, $t2
+    addu $sp, $sp, 4
+# line 1739
+
+    subu $sp, $sp, 4
+    beq $t0, $zero, nullPtrException
+# line 1740
+
+    sw $t0, ($sp)
+    lw $t0, 0($t0)
+# line 1741
+
+# end: Equals at 226.16; stackHeight = 20
+    subu $sp, $sp, 4
+# line 1742
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 1743
+
+    addu $sp, $sp, 4
+# end: InstVarAccess at 225.38; stackHeight = 16
+# line 1744
+
+    beq $t0, $zero, if_else_371
+    lw $t0, 0($sp)
+# line 1745
+
+# begin: Break at 226.25; stackHeight = 16
+    sw $s2, 0($sp)
+# line 1746
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 1747
+
+    j break_target_380
+    beq $s2, $zero, nullPtrException
+# line 1748
+
+# end: Break at 226.25; stackHeight = 12
+    lw $t0, -12($s2)
+# line 1749
+
+    j if_done_371
+    lw $t0, 36($t0)
+# line 1750
+
+  if_else_371:
+    jalr $t0 # asNonNull
+# line 1751
+
+# begin: Block at 227.7; stackHeight = 12
+    addu $sp, $sp, 0
+# line 1752
+
+# end: Block at 227.7; stackHeight = 12
+    lw $s2, ($sp)
+# line 1753
+
+  if_done_371:
+    addu $sp, $sp, 4
+# line 1754
+
+# end: If at 226.7; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1755
+
+# begin: Assign at 227.12; stackHeight = 12
+    sw $t0, ($sp)
+# line 1756
+
+# begin: IdentifierExp at 227.14; stackHeight = 12
+# end: Call at 225.44; stackHeight = 16
+# line 1757
+
+    lw $t0, -4($sp)
+    lw $zero, ($sp) #**"next"
+# line 1758
+
+    subu $sp, $sp, 4
+# end: LocalVarDecl at 225.27; stackHeight = 16
+# line 1759
+
+    sw $t0, ($sp)
+# begin: If at 226.7; stackHeight = 16
+# line 1760
+
+# end: IdentifierExp at 227.14; stackHeight = 16
+# begin: Equals at 226.16; stackHeight = 16
+# line 1761
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 226.11; stackHeight = 16
+# line 1762
+
+    addu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 1763
+
+    sw $t0, 0($sp)
+    subu $sp, $sp, 4
+# line 1764
+
+# end: Assign at 227.12; stackHeight = 12
+    sw $t0, ($sp)
+# line 1765
+
+# end: Block at 224.12; stackHeight = 12
+# end: IdentifierExp at 226.11; stackHeight = 20
+# line 1766
+
+# begin: Block at 224.10; stackHeight = 12
+# begin: Null at 226.19; stackHeight = 20
+# line 1767
+
+# end: Block at 224.10; stackHeight = 12
+    subu $sp, $sp, 4
+# line 1768
+
+# end: Block at 224.3; stackHeight = 12
+    sw $zero, ($sp)
+# line 1769
+
+  while_cond_380:
+# end: Null at 226.19; stackHeight = 24
+# line 1770
+
+# begin: True at 224.9; stackHeight = 12
+    lw $t2, ($sp)
+# line 1771
+
+    li $t0, 1
+    addu $sp, $sp, 4
+# line 1772
+
+    subu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 1773
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 1774
+
+# end: True at 224.9; stackHeight = 16
+    seq $t0, $t1, $t2
+# line 1775
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1776
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1777
+
+    bne $t0, $zero, while_top_380
+# end: Equals at 226.16; stackHeight = 20
+# line 1778
+
+  break_target_380:
+    lw $t0, ($sp)
+# line 1779
+
+# end: BreakTarget at 224.3; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1780
+
+# end: Block at 224.3; stackHeight = 12
+    beq $t0, $zero, if_else_371
+# line 1781
+
+# begin: LocalVarDecl at 231.7; stackHeight = 12
+# begin: Break at 226.25; stackHeight = 16
+# line 1782
+
+# begin: InstVarAccess at 231.18; stackHeight = 12
+    addu $sp, $sp, 4
+# line 1783
+
+# begin: IdentifierExp at 231.14; stackHeight = 12
+    j break_target_380
+# line 1784
+
+    lw $t0, 0($sp)
+# end: Break at 226.25; stackHeight = 16
+# line 1785
+
+    subu $sp, $sp, 4
+    j if_done_371
+# line 1786
+
+    sw $t0, ($sp)
+  if_else_371:
+# line 1787
+
+# end: IdentifierExp at 231.14; stackHeight = 16
+# begin: Block at 227.7; stackHeight = 16
+# line 1788
+
+    lw $t0, ($sp)
+# end: Block at 227.7; stackHeight = 16
+# line 1789
+
+    addu $sp, $sp, 4
+  if_done_371:
+# line 1790
+
+    beq $t0, $zero, nullPtrException
+# end: If at 226.7; stackHeight = 16
+# line 1791
+
+    lw $t0, -64($t0)
+# begin: Assign at 227.12; stackHeight = 16
+# line 1792
+
+    subu $sp, $sp, 8
+# begin: IdentifierExp at 227.14; stackHeight = 16
+# line 1793
+
+    sw $s5, 4($sp)
+    lw $t0, 0($sp)
+# line 1794
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1795
+
+# end: InstVarAccess at 231.18; stackHeight = 20
+    sw $t0, ($sp)
+# line 1796
+
+    lw $zero, ($sp) #**"temp"
+# end: IdentifierExp at 227.14; stackHeight = 20
+# line 1797
+
+# end: LocalVarDecl at 231.7; stackHeight = 20
+    lw $t0, ($sp)
+# line 1798
+
+# begin: Assign at 232.13; stackHeight = 20
+    addu $sp, $sp, 4
+# line 1799
+
+# begin: InstVarAccess at 232.19; stackHeight = 20
+    sw $t0, 4($sp)
+# line 1800
+
+# begin: This at 232.15; stackHeight = 20
+# end: Assign at 227.12; stackHeight = 16
+# line 1801
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1802
+
+    sw $s2, ($sp)
+# end: Block at 224.12; stackHeight = 12
+# line 1803
+
+# end: This at 232.15; stackHeight = 24
+# begin: Block at 224.10; stackHeight = 12
+# line 1804
+
+    lw $t0, ($sp)
+# end: Block at 224.10; stackHeight = 12
+# line 1805
+
+    addu $sp, $sp, 4
+# end: Block at 224.3; stackHeight = 12
+# line 1806
+
+    beq $t0, $zero, nullPtrException
+  while_cond_380:
+# line 1807
+
+    lw $t0, -64($t0)
+# begin: True at 224.9; stackHeight = 12
+# line 1808
+
+    subu $sp, $sp, 8
+    li $t0, 1
+# line 1809
+
+    sw $s5, 4($sp)
+    subu $sp, $sp, 4
+# line 1810
+
+# end: InstVarAccess at 232.19; stackHeight = 28
+# end: True at 224.9; stackHeight = 16
+# line 1812
+
+# begin: IdentifierExp at 232.3; stackHeight = 28
+    lw $t0, ($sp)
+# line 1813
+
+    lw $t0, 16($sp)
+    addu $sp, $sp, 4
+# line 1814
+
+    subu $sp, $sp, 4
+    bne $t0, $zero, while_top_380
+# line 1815
+
+    sw $t0, ($sp)
+  break_target_380:
+# line 1816
+
+# end: IdentifierExp at 232.3; stackHeight = 32
+# end: BreakTarget at 224.3; stackHeight = 12
+# line 1817
+
+    lw $t0, ($sp)
+# end: Block at 224.3; stackHeight = 12
+# line 1818
+
+    addu $sp, $sp, 8
+# begin: LocalVarDecl at 231.7; stackHeight = 12
+# line 1819
+
+    lw $t1, ($sp)
+# begin: InstVarAccess at 231.18; stackHeight = 12
+# line 1820
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 231.14; stackHeight = 12
+# line 1821
+
+    beq $t1, $zero, nullPtrException
+    lw $t0, 0($sp)
+# line 1822
+
+    sw $t0, -16($t1)
+    subu $sp, $sp, 4
+# line 1823
+
+# end: Assign at 232.13; stackHeight = 20
+    sw $t0, ($sp)
+# line 1824
+
+# begin: Assign at 233.13; stackHeight = 20
+# end: IdentifierExp at 231.14; stackHeight = 16
+# line 1825
+
+# begin: IdentifierExp at 233.15; stackHeight = 20
+    lw $t0, ($sp)
+# line 1826
+
+    lw $t0, 0($sp)
+    addu $sp, $sp, 4
+# line 1827
+
+    subu $sp, $sp, 8
+    beq $t0, $zero, nullPtrException
+# line 1828
+
+    sw $s5, 4($sp)
+    lw $t0, -16($t0)
+# line 1829
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 1830
+
+# end: IdentifierExp at 233.15; stackHeight = 28
+    sw $s5, 4($sp)
+# line 1831
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 1832
+
+    addu $sp, $sp, 8
+# end: InstVarAccess at 231.18; stackHeight = 20
+# line 1833
+
+    sw $t0, -16($s2)
+    lw $zero, ($sp) #**"temp"
+# line 1834
+
+# end: Assign at 233.13; stackHeight = 20
+# end: LocalVarDecl at 231.7; stackHeight = 20
+# line 1835
+
+# begin: Assign at 236.17; stackHeight = 20
+# begin: Assign at 232.13; stackHeight = 20
+# line 1836
+
+# begin: Call at 236.25; stackHeight = 20
+# begin: InstVarAccess at 232.19; stackHeight = 20
+# line 1837
+
+# begin: IdentifierExp at 236.19; stackHeight = 20
+# begin: This at 232.15; stackHeight = 20
+# line 1838
+
+    lw $t0, 8($s2)
+    subu $sp, $sp, 4
+# line 1839
+
+    subu $sp, $sp, 4
+    sw $s2, ($sp)
+# line 1840
+
+    sw $t0, ($sp)
+# end: This at 232.15; stackHeight = 24
+# line 1841
+
+# end: IdentifierExp at 236.19; stackHeight = 24
+    lw $t0, ($sp)
+# line 1842
+
+# begin: IdentifierExp at 236.36; stackHeight = 24
+    addu $sp, $sp, 4
+# line 1843
+
+    lw $t0, 32($sp)
+    beq $t0, $zero, nullPtrException
+# line 1844
+
+    subu $sp, $sp, 8
+    lw $t0, -16($t0)
+# line 1845
+
+    sw $s5, 4($sp)
+    subu $sp, $sp, 8
+# line 1846
+
+    sw $t0, ($sp)
+    sw $s5, 4($sp)
+# line 1847
+
+# end: IdentifierExp at 236.36; stackHeight = 32
+    sw $t0, ($sp)
+# line 1848
+
+# begin: IdentifierExp at 236.42; stackHeight = 32
+# end: InstVarAccess at 232.19; stackHeight = 28
+# line 1849
+
+    lw $t0, 36($sp)
+# begin: IdentifierExp at 232.3; stackHeight = 28
+# line 1850
+
+    subu $sp, $sp, 4
+    lw $t0, 16($sp)
+# line 1851
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1852
+
+# end: IdentifierExp at 236.42; stackHeight = 36
+    sw $t0, ($sp)
+# line 1853
+
+    lw $t0, 12($sp)
+# end: IdentifierExp at 232.3; stackHeight = 32
+# line 1854
+
+    sw $s2, 12($sp)
+    lw $t1, ($sp)
+# line 1855
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 1856
+
+    beq $s2, $zero, nullPtrException
+    beq $t1, $zero, nullPtrException
+# line 1857
+
+    lw $t0, -12($s2)
+    lw $t0, ($sp)
+# line 1858
+
+    lw $t0, 56($t0)
+    addu $sp, $sp, 8
+# line 1859
+
+    jalr $t0 # helpDelete
+    sw $t0, -16($t1)
+# line 1860
+
+    addu $sp, $sp, 12
+# end: Assign at 232.13; stackHeight = 20
+# line 1861
+
+    lw $s2, ($sp)
+# begin: Assign at 233.13; stackHeight = 20
+# line 1862
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 233.15; stackHeight = 20
+# line 1863
+
+    subu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 1864
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 1865
+
+# end: Call at 236.25; stackHeight = 24
+    sw $s5, 4($sp)
+# line 1866
+
+# begin: IdentifierExp at 236.3; stackHeight = 24
+    sw $t0, ($sp)
+# line 1867
+
+    lw $t0, 16($sp)
+# end: IdentifierExp at 233.15; stackHeight = 28
+# line 1868
+
+    subu $sp, $sp, 4
+# begin: This at 233.3; stackHeight = 28
+# line 1869
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1870
+
+# end: IdentifierExp at 236.3; stackHeight = 28
+    sw $s2, ($sp)
+# line 1871
+
+    lw $t0, ($sp)
+# end: This at 233.3; stackHeight = 32
+# line 1872
+
+    addu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 1873
+
+    lw $t1, ($sp)
+    addu $sp, $sp, 4
+# line 1874
+
+    addu $sp, $sp, 4
+    beq $t1, $zero, nullPtrException
+# line 1875
+
+    beq $t1, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 1876
+
+    sw $t0, 8($t1)
+    addu $sp, $sp, 8
+# line 1877
+
+# end: Assign at 236.17; stackHeight = 20
+    sw $t0, -16($t1)
+# line 1878
+
+# begin: Assign at 239.10; stackHeight = 20
+# end: Assign at 233.13; stackHeight = 20
+# line 1879
+
+# begin: Call at 239.20; stackHeight = 20
+# begin: Assign at 236.17; stackHeight = 20
+# line 1880
+
+# begin: IdentifierExp at 239.12; stackHeight = 20
+# begin: Call at 236.25; stackHeight = 20
+# line 1881
+
+    lw $t0, 12($sp)
+# begin: IdentifierExp at 236.19; stackHeight = 20
+# line 1882
+
+    subu $sp, $sp, 4
+    lw $t0, 4($s2)
+# line 1883
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1884
+
+# end: IdentifierExp at 239.12; stackHeight = 24
+    sw $t0, ($sp)
+# line 1885
+
+# begin: True at 239.38; stackHeight = 24
+# end: IdentifierExp at 236.19; stackHeight = 24
+# line 1886
+
+    li $t0, 1
+# begin: IdentifierExp at 236.36; stackHeight = 24
+# line 1887
+
+    subu $sp, $sp, 4
+    lw $t0, 32($sp)
+# line 1888
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 8
+# line 1889
+
+# end: True at 239.38; stackHeight = 28
+    sw $s5, 4($sp)
+# line 1890
+
+# begin: IdentifierExp at 239.44; stackHeight = 28
+    sw $t0, ($sp)
+# line 1891
+
+    lw $t0, 32($sp)
+# end: IdentifierExp at 236.36; stackHeight = 32
+# line 1892
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 236.42; stackHeight = 32
+# line 1893
+
+    sw $t0, ($sp)
+    lw $t0, 36($sp)
+# line 1894
+
+# end: IdentifierExp at 239.44; stackHeight = 32
+    subu $sp, $sp, 4
+# line 1895
+
+    lw $t0, 8($sp)
+    sw $t0, ($sp)
+# line 1896
+
+    sw $s2, 8($sp)
+# end: IdentifierExp at 236.42; stackHeight = 36
+# line 1897
+
+    move $s2, $t0
+    lw $zero, ($sp) #**"isShort"
+# line 1898
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 12($sp)
+# line 1899
+
+    lw $t0, -12($s2)
+    sw $s2, 12($sp)
+# line 1900
+
+    lw $t0, 68($t0)
+    move $s2, $t0
+# line 1901
+
+    jalr $t0 # adjustAfterDelete
+    beq $s2, $zero, nullPtrException
+# line 1902
+
+    addu $sp, $sp, 8
+    lw $t0, -12($s2)
+# line 1903
+
+    lw $s2, ($sp)
+    lw $t0, 56($t0)
+# line 1904
+
+    addu $sp, $sp, 4
+    jalr $t0 # helpDelete
+# line 1905
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 12
+# line 1906
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 1907
+
+# end: Call at 239.20; stackHeight = 24
+    addu $sp, $sp, 4
+# line 1908
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1909
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1910
+
+    sw $t0, 16($sp)
+# end: Call at 236.25; stackHeight = 24
+# line 1911
+
+# end: Assign at 239.10; stackHeight = 20
+# begin: IdentifierExp at 236.3; stackHeight = 24
+# line 1912
+
+    addu $sp, $sp, 12
+    lw $t0, 16($sp)
+# line 1913
+
+# end: Block at 222.11; stackHeight = 8
+    subu $sp, $sp, 4
+# line 1914
+
+  if_done_410:
+    sw $t0, ($sp)
+# line 1915
+
+# end: If at 217.11; stackHeight = 8
+# end: IdentifierExp at 236.3; stackHeight = 28
+# line 1916
+
+  if_done_411:
+    lw $t1, ($sp)
+# line 1917
+
+# end: If at 205.6; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1918
+
+# end: Block at 204.25; stackHeight = 8
+    beq $t1, $zero, nullPtrException
+# line 1919
+
+    j if_done_446
+    lw $t0, ($sp)
+# line 1920
+
+  if_else_446:
+    addu $sp, $sp, 4
+# line 1921
+
+# begin: If at 242.7; stackHeight = 8
+    sw $t0, 4($t1)
+# line 1922
+
+# begin: LessThan at 242.16; stackHeight = 8
+# end: Assign at 236.17; stackHeight = 20
+# line 1923
+
+# begin: IdentifierExp at 242.11; stackHeight = 8
+# begin: Assign at 239.10; stackHeight = 20
+# line 1924
+
+    lw $t0, 16($sp)
+# begin: Call at 239.20; stackHeight = 20
+# line 1925
+
+    subu $sp, $sp, 8
+# begin: IdentifierExp at 239.12; stackHeight = 20
+# line 1926
+
+    sw $s5, 4($sp)
+    lw $t0, 12($sp)
+# line 1927
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 1928
+
+# end: IdentifierExp at 242.11; stackHeight = 16
+    sw $t0, ($sp)
+# line 1929
+
+# begin: InstVarAccess at 242.22; stackHeight = 16
+# end: IdentifierExp at 239.12; stackHeight = 24
+# line 1930
+
+# begin: This at 242.18; stackHeight = 16
+# begin: True at 239.38; stackHeight = 24
+# line 1931
+
+    subu $sp, $sp, 4
+    li $t0, 1
+# line 1932
+
+    sw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 1933
+
+# end: This at 242.18; stackHeight = 20
+    sw $t0, ($sp)
+# line 1934
+
+    lw $t0, ($sp)
+# end: True at 239.38; stackHeight = 28
+# line 1935
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 1936
+
+    beq $t0, $zero, nullPtrException
+# begin: IdentifierExp at 239.44; stackHeight = 28
+# line 1937
+
+    lw $t0, -64($t0)
+    lw $t0, 32($sp)
+# line 1938
+
+    subu $sp, $sp, 8
+    subu $sp, $sp, 4
+# line 1939
+
+    sw $s5, 4($sp)
+    sw $t0, ($sp)
+# line 1940
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 239.44; stackHeight = 32
+# line 1941
+
+# end: InstVarAccess at 242.22; stackHeight = 24
+    lw $zero, ($sp) #**"isShort"
+# line 1942
+
+    lw $t2, ($sp)
+    lw $t0, 8($sp)
+# line 1943
+
+    addu $sp, $sp, 8
+    sw $s2, 8($sp)
+# line 1944
+
+    lw $t1, ($sp)
+    move $s2, $t0
+# line 1945
+
+    addu $sp, $sp, 8
+    beq $s2, $zero, nullPtrException
+# line 1946
+
+    slt $t0, $t1, $t2
+    lw $t0, -12($s2)
+# line 1947
+
+    subu $sp, $sp, 4
+    lw $t0, 68($t0)
+# line 1948
+
+    sw $t0, ($sp)
+    jalr $t0 # adjustAfterDelete
+# line 1949
+
+# end: LessThan at 242.16; stackHeight = 12
+    addu $sp, $sp, 8
+# line 1950
+
+    lw $t0, ($sp)
+    lw $s2, ($sp)
+# line 1951
+
+    beq $t0, $zero, if_else_445
+    subu $sp, $sp, 4
+# line 1953
+
+# begin: Block at 242.29; stackHeight = 8
+    sw $t0, ($sp)
+# line 1954
+
+# begin: Assign at 244.19; stackHeight = 8
+# end: Call at 239.20; stackHeight = 24
+# line 1955
+
+# begin: Call at 244.26; stackHeight = 8
+    lw $t0, ($sp)
+# line 1956
+
+# begin: IdentifierExp at 244.21; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1957
+
+    lw $t0, 4($s2)
+    sw $t0, 16($sp)
+# line 1958
+
+    subu $sp, $sp, 4
+# end: Assign at 239.10; stackHeight = 20
+# line 1959
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 12
+# line 1960
+
+# end: IdentifierExp at 244.21; stackHeight = 12
+# end: Block at 222.11; stackHeight = 8
+# line 1961
+
+# begin: IdentifierExp at 244.37; stackHeight = 12
+  if_done_410:
+# line 1962
+
+    lw $t0, 20($sp)
+# end: If at 217.11; stackHeight = 8
+# line 1963
+
+    subu $sp, $sp, 8
+  if_done_411:
+# line 1964
+
+    sw $s5, 4($sp)
+# end: If at 205.6; stackHeight = 8
+# line 1965
+
+    sw $t0, ($sp)
+# end: Block at 204.25; stackHeight = 8
+# line 1966
+
+# end: IdentifierExp at 244.37; stackHeight = 20
+    j if_done_446
+# line 1967
+
+# begin: IdentifierExp at 244.43; stackHeight = 20
+  if_else_446:
+# line 1968
+
+    lw $t0, 24($sp)
+# begin: If at 242.7; stackHeight = 8
+# line 1969
+
+    subu $sp, $sp, 4
+# begin: LessThan at 242.16; stackHeight = 8
+# line 1970
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 242.11; stackHeight = 8
+# line 1971
+
+# end: IdentifierExp at 244.43; stackHeight = 24
+    lw $t0, 16($sp)
+# line 1972
+
+    lw $t0, 12($sp)
+    subu $sp, $sp, 8
+# line 1973
+
+    sw $s2, 12($sp)
+    sw $s5, 4($sp)
+# line 1974
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 1975
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 242.11; stackHeight = 16
+# line 1976
+
+    lw $t0, -12($s2)
+# begin: InstVarAccess at 242.22; stackHeight = 16
+# line 1977
+
+    lw $t0, 56($t0)
+# begin: This at 242.18; stackHeight = 16
+# line 1978
+
+    jalr $t0 # helpDelete
+    subu $sp, $sp, 4
+# line 1979
+
+    addu $sp, $sp, 12
+    sw $s2, ($sp)
+# line 1980
+
+    lw $s2, ($sp)
+# end: This at 242.18; stackHeight = 20
+# line 1981
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 1982
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 1983
+
+    sw $t0, ($sp)
+    beq $t0, $zero, nullPtrException
+# line 1984
+
+# end: Call at 244.26; stackHeight = 12
+    lw $t0, -16($t0)
+# line 1985
+
+# begin: IdentifierExp at 244.6; stackHeight = 12
+    subu $sp, $sp, 8
+# line 1986
+
+    lw $t0, 4($sp)
+    sw $s5, 4($sp)
+# line 1987
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 1988
+
+    sw $t0, ($sp)
+# end: InstVarAccess at 242.22; stackHeight = 24
+# line 1989
+
+# end: IdentifierExp at 244.6; stackHeight = 16
+    lw $t2, ($sp)
+# line 1990
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 1991
+
+    addu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 1992
+
+    lw $t1, ($sp)
+    addu $sp, $sp, 8
+# line 1993
+
+    addu $sp, $sp, 4
+    slt $t0, $t1, $t2
+# line 1994
+
+    beq $t1, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 1995
+
+    sw $t0, 4($t1)
+    sw $t0, ($sp)
+# line 1996
+
+# end: Assign at 244.19; stackHeight = 8
+# end: LessThan at 242.16; stackHeight = 12
+# line 1997
+
+# begin: Assign at 245.13; stackHeight = 8
+    lw $t0, ($sp)
+# line 1998
+
+# begin: Call at 245.23; stackHeight = 8
+    addu $sp, $sp, 4
+# line 1999
+
+# begin: IdentifierExp at 245.15; stackHeight = 8
+    beq $t0, $zero, if_else_445
+# line 2000
+
+    lw $t0, 0($sp)
+# begin: Block at 242.29; stackHeight = 8
+# line 2001
+
+    subu $sp, $sp, 4
+# begin: Assign at 244.19; stackHeight = 8
+# line 2002
+
+    sw $t0, ($sp)
+# begin: Call at 244.26; stackHeight = 8
+# line 2003
+
+# end: IdentifierExp at 245.15; stackHeight = 12
+# begin: IdentifierExp at 244.21; stackHeight = 8
+# line 2004
+
+# begin: False at 245.41; stackHeight = 12
+    lw $t0, 0($s2)
+# line 2005
+
+    sw $zero, ($sp)
+    sw $t0, ($sp)
+# line 2007
+
+# end: False at 245.41; stackHeight = 16
+# end: IdentifierExp at 244.21; stackHeight = 12
+# line 2008
+
+# begin: IdentifierExp at 245.48; stackHeight = 16
+# begin: IdentifierExp at 244.37; stackHeight = 12
+# line 2009
+
+    subu $sp, $sp, 4
+    subu $sp, $sp, 8
+# line 2011
+
+    sw $t0, ($sp)
+    sw $s5, 4($sp)
+# line 2012
+
+# end: IdentifierExp at 245.48; stackHeight = 20
+    sw $t0, ($sp)
+# line 2013
+
+    lw $t0, 8($sp)
+# end: IdentifierExp at 244.37; stackHeight = 20
+# line 2014
+
+    sw $s2, 8($sp)
+# begin: IdentifierExp at 244.43; stackHeight = 20
+# line 2015
+
+    move $s2, $t0
+    lw $t0, 24($sp)
+# line 2016
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 2017
+
+    lw $t0, -12($s2)
+    sw $t0, ($sp)
+# line 2018
+
+    lw $t0, 68($t0)
+# end: IdentifierExp at 244.43; stackHeight = 24
+# line 2019
+
+    jalr $t0 # adjustAfterDelete
+    lw $zero, ($sp) #**"isShort"
+# line 2020
+
+    addu $sp, $sp, 8
+    lw $t0, 12($sp)
+# line 2021
+
+    lw $s2, ($sp)
+    sw $s2, 12($sp)
+# line 2022
+
+    addu $sp, $sp, 4
+    move $s2, $t0
+# line 2023
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2024
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2025
+
+# end: Call at 245.23; stackHeight = 12
+    lw $t0, 56($t0)
+# line 2026
+
+    lw $t0, ($sp)
+    jalr $t0 # helpDelete
+# line 2027
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 12
+# line 2028
+
+    sw $t0, 4($sp)
+    lw $s2, ($sp)
+# line 2029
+
+# end: Assign at 245.13; stackHeight = 8
+    addu $sp, $sp, 4
+# line 2030
+
+# end: Block at 242.29; stackHeight = 8
+    subu $sp, $sp, 4
+# line 2031
+
+    j if_done_445
+    sw $t0, ($sp)
+# line 2032
+
+  if_else_445:
+# end: Call at 244.26; stackHeight = 12
+# line 2033
+
+# begin: Block at 247.7; stackHeight = 8
+# begin: IdentifierExp at 244.6; stackHeight = 12
+# line 2034
+
+# begin: Assign at 249.20; stackHeight = 8
+    lw $t0, 4($sp)
+# line 2035
+
+# begin: Call at 249.28; stackHeight = 8
+    subu $sp, $sp, 4
+# line 2036
+
+# begin: IdentifierExp at 249.22; stackHeight = 8
+    sw $t0, ($sp)
+# line 2037
+
+    lw $t0, 8($s2)
+# end: IdentifierExp at 244.6; stackHeight = 16
+# line 2038
+
+    subu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 2039
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2040
+
+# end: IdentifierExp at 249.22; stackHeight = 12
+    beq $t1, $zero, nullPtrException
+# line 2041
+
+# begin: IdentifierExp at 249.39; stackHeight = 12
+    lw $t0, ($sp)
+# line 2042
+
+    lw $t0, 20($sp)
+    addu $sp, $sp, 4
+# line 2043
+
+    subu $sp, $sp, 8
+    sw $t0, 0($t1)
+# line 2044
+
+    sw $s5, 4($sp)
+# end: Assign at 244.19; stackHeight = 8
+# line 2045
+
+    sw $t0, ($sp)
+# begin: Assign at 245.13; stackHeight = 8
+# line 2046
+
+# end: IdentifierExp at 249.39; stackHeight = 20
+# begin: Call at 245.23; stackHeight = 8
+# line 2047
+
+# begin: IdentifierExp at 249.45; stackHeight = 20
+# begin: IdentifierExp at 245.15; stackHeight = 8
+# line 2048
+
+    lw $t0, 24($sp)
+    lw $t0, 0($sp)
+# line 2049
+
+# end: IdentifierExp at 249.45; stackHeight = 24
+# end: IdentifierExp at 245.15; stackHeight = 12
+# line 2052
+
+    lw $t0, 12($sp)
+# begin: False at 245.41; stackHeight = 12
+# line 2053
+
+    sw $s2, 12($sp)
+    subu $sp, $sp, 4
+# line 2054
+
+    move $s2, $t0
+    sw $zero, ($sp)
+# line 2055
+
+    beq $s2, $zero, nullPtrException
+# end: False at 245.41; stackHeight = 16
+# line 2056
+
+    lw $t0, -12($s2)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2057
+
+    lw $t0, 56($t0)
+# begin: IdentifierExp at 245.48; stackHeight = 16
+# line 2058
+
+    jalr $t0 # helpDelete
+    lw $t0, 20($sp)
+# line 2059
+
+    addu $sp, $sp, 12
+    subu $sp, $sp, 4
+# line 2060
+
+    lw $s2, ($sp)
+    sw $t0, ($sp)
+# line 2061
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 245.48; stackHeight = 20
+# line 2062
+
+    subu $sp, $sp, 4
+    lw $zero, ($sp) #**"isShort"
+# line 2063
+
+    sw $t0, ($sp)
+    lw $t0, 8($sp)
+# line 2064
+
+# end: Call at 249.28; stackHeight = 12
+    sw $s2, 8($sp)
+# line 2065
+
+# begin: IdentifierExp at 249.6; stackHeight = 12
+    move $s2, $t0
+# line 2066
+
+    lw $t0, 4($sp)
+    beq $s2, $zero, nullPtrException
+# line 2067
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2068
+
+    sw $t0, ($sp)
+    lw $t0, 68($t0)
+# line 2069
+
+# end: IdentifierExp at 249.6; stackHeight = 16
+    jalr $t0 # adjustAfterDelete
+# line 2070
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 2071
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2072
+
+    lw $t1, ($sp)
+    addu $sp, $sp, 4
+# line 2073
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2074
+
+    beq $t1, $zero, nullPtrException
+    sw $t0, ($sp)
+# line 2075
+
+    sw $t0, 8($t1)
+# end: Call at 245.23; stackHeight = 12
+# line 2076
+
+# end: Assign at 249.20; stackHeight = 8
+    lw $t0, ($sp)
+# line 2077
+
+# begin: Assign at 250.13; stackHeight = 8
+    addu $sp, $sp, 4
+# line 2078
+
+# begin: Call at 250.23; stackHeight = 8
+    sw $t0, 4($sp)
+# line 2079
+
+# begin: IdentifierExp at 250.15; stackHeight = 8
+# end: Assign at 245.13; stackHeight = 8
+# line 2080
+
+    lw $t0, 0($sp)
+# end: Block at 242.29; stackHeight = 8
+# line 2081
+
+    subu $sp, $sp, 4
+    j if_done_445
+# line 2082
+
+    sw $t0, ($sp)
+  if_else_445:
+# line 2083
+
+# end: IdentifierExp at 250.15; stackHeight = 12
+# begin: Block at 247.7; stackHeight = 8
+# line 2084
+
+# begin: True at 250.41; stackHeight = 12
+# begin: Assign at 249.20; stackHeight = 8
+# line 2085
+
+    li $t0, 1
+# begin: Call at 249.28; stackHeight = 8
+# line 2086
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 249.22; stackHeight = 8
+# line 2087
+
+    sw $t0, ($sp)
+    lw $t0, 4($s2)
+# line 2088
+
+# end: True at 250.41; stackHeight = 16
+    subu $sp, $sp, 4
+# line 2089
+
+# begin: IdentifierExp at 250.47; stackHeight = 16
+    sw $t0, ($sp)
+# line 2090
+
+    lw $t0, 20($sp)
+# end: IdentifierExp at 249.22; stackHeight = 12
+# line 2091
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 249.39; stackHeight = 12
+# line 2092
+
+    sw $t0, ($sp)
+    lw $t0, 20($sp)
+# line 2093
+
+# end: IdentifierExp at 250.47; stackHeight = 20
+    subu $sp, $sp, 8
+# line 2094
+
+    lw $t0, 8($sp)
+    sw $s5, 4($sp)
+# line 2095
+
+    sw $s2, 8($sp)
+    sw $t0, ($sp)
+# line 2096
+
+    move $s2, $t0
+# end: IdentifierExp at 249.39; stackHeight = 20
+# line 2097
+
+    beq $s2, $zero, nullPtrException
+# begin: IdentifierExp at 249.45; stackHeight = 20
+# line 2098
+
+    lw $t0, -12($s2)
+    lw $t0, 24($sp)
+# line 2099
+
+    lw $t0, 68($t0)
+    subu $sp, $sp, 4
+# line 2100
+
+    jalr $t0 # adjustAfterDelete
+    sw $t0, ($sp)
+# line 2101
+
+    addu $sp, $sp, 8
+# end: IdentifierExp at 249.45; stackHeight = 24
+# line 2102
+
+    lw $s2, ($sp)
+    lw $zero, ($sp) #**"isShort"
+# line 2103
+
+    addu $sp, $sp, 4
+    lw $t0, 12($sp)
+# line 2104
+
+    subu $sp, $sp, 4
+    sw $s2, 12($sp)
+# line 2105
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 2106
+
+# end: Call at 250.23; stackHeight = 12
+    beq $s2, $zero, nullPtrException
+# line 2107
+
+    lw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2108
+
+    addu $sp, $sp, 4
+    lw $t0, 56($t0)
+# line 2109
+
+    sw $t0, 4($sp)
+    jalr $t0 # helpDelete
+# line 2110
+
+# end: Assign at 250.13; stackHeight = 8
+    addu $sp, $sp, 12
+# line 2111
+
+# end: Block at 247.7; stackHeight = 8
+    lw $s2, ($sp)
+# line 2112
+
+  if_done_445:
+    addu $sp, $sp, 4
+# line 2113
+
+# end: If at 242.7; stackHeight = 8
+    subu $sp, $sp, 4
+# line 2114
+
+  if_done_446:
+    sw $t0, ($sp)
+# line 2115
+
+# end: If at 204.2; stackHeight = 8
+# end: Call at 249.28; stackHeight = 12
+# line 2116
+
+# begin: IdentifierExp at 253.9; stackHeight = 8
+# begin: IdentifierExp at 249.6; stackHeight = 12
+# line 2117
+
+# end: IdentifierExp at 253.9; stackHeight = 12
+# end: IdentifierExp at 249.6; stackHeight = 16
+# line 2121
+
+    lw $t0, ($sp)
+    lw $t1, ($sp)
+# line 2122
+
+    addu $sp, $sp, 8
+    beq $t1, $zero, nullPtrException
+# line 2124
+
+    lw $ra, ($sp)
+    lw $t0, ($sp)
+# line 2125
+
+    jr $ra
+    sw $t0, 4($t1)
+# line 2127
+
+.globl mth_NonNullRedBlackTree_adjustAfterDelete
+# end: Assign at 249.20; stackHeight = 8
+# line 2128
+
+mth_NonNullRedBlackTree_adjustAfterDelete:
+# begin: Assign at 250.13; stackHeight = 8
+# line 2129
+
+    subu $sp, $sp, 4
+# begin: Call at 250.23; stackHeight = 8
+# line 2130
+
+    sw $ra, ($sp)
+# begin: IdentifierExp at 250.15; stackHeight = 8
+# line 2131
+
+# begin: LocalVarDecl at 263.22; stackHeight = 0
+    lw $t0, 0($sp)
+# line 2132
+
+# begin: This at 263.31; stackHeight = 0
+    subu $sp, $sp, 4
+# line 2133
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2134
+
+    sw $s2, ($sp)
+# end: IdentifierExp at 250.15; stackHeight = 12
+# line 2135
+
+# end: This at 263.31; stackHeight = 4
+# begin: True at 250.41; stackHeight = 12
+# line 2136
+
+    lw $zero, ($sp) #**"rtnVal"
+    li $t0, 1
+# line 2137
+
+# end: LocalVarDecl at 263.22; stackHeight = 4
+    subu $sp, $sp, 4
+# line 2138
+
+# begin: If at 265.2; stackHeight = 4
+    sw $t0, ($sp)
+# line 2139
+
+# begin: ArrayLookup at 265.13; stackHeight = 4
+# end: True at 250.41; stackHeight = 16
+# line 2140
+
+# begin: IntegerLiteral at 265.14; stackHeight = 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2141
+
+    li $t0, 0
+# begin: IdentifierExp at 250.47; stackHeight = 16
+# line 2142
+
+    subu $sp, $sp, 8
+    lw $t0, 20($sp)
+# line 2143
+
+    sw $s5, 4($sp)
+    subu $sp, $sp, 4
+# line 2144
+
+# end: IntegerLiteral at 265.14; stackHeight = 12
+# end: IdentifierExp at 250.47; stackHeight = 20
+# line 2146
+
+# begin: IdentifierExp at 265.6; stackHeight = 12
+    lw $zero, ($sp) #**"isShort"
+# line 2147
+
+    lw $t0, 16($sp)
+    lw $t0, 8($sp)
+# line 2148
+
+    subu $sp, $sp, 4
+    sw $s2, 8($sp)
+# line 2149
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 2150
+
+# end: IdentifierExp at 265.6; stackHeight = 16
+    beq $s2, $zero, nullPtrException
+# line 2151
+
+    lw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2152
+
+    addu $sp, $sp, 4
+    lw $t0, 68($t0)
+# line 2153
+
+    lw $t1, ($sp)
+    jalr $t0 # adjustAfterDelete
+# line 2154
+
+    beq $t0, $zero, nullPtrException
+    lw $s2, ($sp)
+# line 2156
+
+    lw $t3, -4($t0)
+    addu $sp, $sp, 4
+# line 2157
+
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+    subu $sp, $sp, 4
+# line 2158
+
+    sll $t1, $t1, 2
+    sw $t0, ($sp)
+# line 2159
+
+    addu $t1, $t1, $t0
+# end: Call at 250.23; stackHeight = 12
+# line 2160
+
+    lw $t0, ($t1)
+    lw $t0, ($sp)
+# line 2161
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 2162
+
+    sw $t0, ($sp)
+    sw $t0, 4($sp)
+# line 2163
+
+# end: ArrayLookup at 265.13; stackHeight = 8
+# end: Assign at 250.13; stackHeight = 8
+# line 2164
+
+    lw $t0, ($sp)
+# end: Block at 247.7; stackHeight = 8
+# line 2165
+
+    addu $sp, $sp, 4
+  if_done_445:
+# line 2166
+
+    beq $t0, $zero, if_else_716
+# end: If at 242.7; stackHeight = 8
+# line 2167
+
+# begin: Block at 265.18; stackHeight = 4
+  if_done_446:
+# line 2168
+
+# begin: Assign at 274.17; stackHeight = 4
+# end: If at 204.2; stackHeight = 8
+# line 2169
+
+# begin: IdentifierExp at 274.6; stackHeight = 4
+# begin: IdentifierExp at 253.9; stackHeight = 8
+# line 2170
+
+    lw $t0, 8($sp)
+    lw $t0, 4($sp)
+# line 2171
+
+# end: IdentifierExp at 274.6; stackHeight = 8
+# end: IdentifierExp at 253.9; stackHeight = 12
+# line 2174
+
+# begin: IntegerLiteral at 274.14; stackHeight = 8
+    lw $t0, ($sp)
+# line 2175
+
+    li $t0, 0
+    addu $sp, $sp, 4
+# line 2176
+
+    subu $sp, $sp, 8
+    addu $sp, $sp, 8
+# line 2177
+
+    sw $s5, 4($sp)
+    lw $ra, ($sp)
+# line 2178
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2179
+
+# end: IntegerLiteral at 274.14; stackHeight = 16
+    jr $ra
+# line 2180
+
+# begin: False at 274.19; stackHeight = 16
+.globl mth_NonNullRedBlackTree_adjustAfterDelete
+# line 2181
+
+    subu $sp, $sp, 4
+mth_NonNullRedBlackTree_adjustAfterDelete:
+# line 2182
+
+    sw $zero, ($sp)
+    subu $sp, $sp, 4
+# line 2183
+
+# end: False at 274.19; stackHeight = 20
+    sw $ra, ($sp)
+# line 2184
+
+    lw $t0, ($sp)
+# begin: LocalVarDecl at 263.22; stackHeight = 0
+# line 2185
+
+    addu $sp, $sp, 4
+# begin: This at 263.31; stackHeight = 0
+# line 2186
+
+    lw $t1, ($sp)
+    subu $sp, $sp, 4
+# line 2187
+
+    addu $sp, $sp, 8
+    sw $s2, ($sp)
+# line 2188
+
+    lw $t2, ($sp)
+# end: This at 263.31; stackHeight = 4
+# line 2189
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"rtnVal"
+# line 2190
+
+    beq $t2, $zero, nullPtrException
+# end: LocalVarDecl at 263.22; stackHeight = 4
+# line 2191
+
+    lw $t3, -4($t2)
+# begin: If at 265.2; stackHeight = 4
+# line 2192
+
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+# begin: ArrayLookup at 265.13; stackHeight = 4
+# line 2193
+
+    sll $t1, $t1, 2
+# begin: IntegerLiteral at 265.14; stackHeight = 4
+# line 2194
+
+    addu $t1, $t1, $t2
+    li $t0, 0
+# line 2195
+
+    sw $t0, ($t1)
+    subu $sp, $sp, 8
+# line 2196
+
+# end: Assign at 274.17; stackHeight = 4
+    sw $s5, 4($sp)
+# line 2197
+
+# begin: LocalVarDecl at 277.26; stackHeight = 4
+    sw $t0, ($sp)
+# line 2198
+
+# begin: This at 277.35; stackHeight = 4
+# end: IntegerLiteral at 265.14; stackHeight = 12
+# line 2199
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 265.6; stackHeight = 12
+# line 2200
+
+    sw $s2, ($sp)
+    lw $t0, 16($sp)
+# line 2201
+
+# end: This at 277.35; stackHeight = 8
+    subu $sp, $sp, 4
+# line 2202
+
+    lw $zero, ($sp) #**"parent"
+    sw $t0, ($sp)
+# line 2203
+
+# end: LocalVarDecl at 277.26; stackHeight = 8
+# end: IdentifierExp at 265.6; stackHeight = 16
+# line 2204
+
+# begin: LocalVarDecl at 278.26; stackHeight = 8
+    lw $t0, ($sp)
+# line 2205
+
+# begin: Call at 279.34; stackHeight = 8
+    addu $sp, $sp, 4
+# line 2206
+
+# begin: Call at 279.10; stackHeight = 8
+    lw $t1, ($sp)
+# line 2207
+
+# begin: IdentifierExp at 279.3; stackHeight = 8
+    addu $sp, $sp, 8
+# line 2208
+
+    lw $t0, 0($sp)
+    beq $t0, $zero, nullPtrException
+# line 2209
+
+    subu $sp, $sp, 4
+    lw $t3, -4($t0)
+# line 2210
+
+    sw $t0, ($sp)
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+# line 2211
+
+# end: IdentifierExp at 279.3; stackHeight = 12
+    sll $t1, $t1, 2
+# line 2212
+
+# begin: IdentifierExp at 279.19; stackHeight = 12
+    addu $t1, $t1, $t0
+# line 2213
+
+    lw $t0, 20($sp)
+    lw $t0, ($t1)
+# line 2214
+
+# end: IdentifierExp at 279.19; stackHeight = 16
+# end: ArrayLookup at 265.13; stackHeight = 8
+# line 2217
+
+    lw $t0, 4($sp)
+    lw $t0, ($sp)
+# line 2218
+
+    sw $s2, 4($sp)
+    addu $sp, $sp, 4
+# line 2219
+
+    move $s2, $t0
+    beq $t0, $zero, if_else_716
+# line 2220
+
+    beq $s2, $zero, nullPtrException
+# begin: Block at 265.18; stackHeight = 4
+# line 2221
+
+    lw $t0, -12($s2)
+# begin: Assign at 274.17; stackHeight = 4
+# line 2222
+
+    lw $t0, 72($t0)
+# begin: IdentifierExp at 274.6; stackHeight = 4
+# line 2223
+
+    jalr $t0 # getRight
+    lw $t0, 8($sp)
+# line 2224
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2225
+
+    lw $s2, ($sp)
+    sw $t0, ($sp)
+# line 2226
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 274.6; stackHeight = 8
+# line 2227
+
+    subu $sp, $sp, 4
+# begin: IntegerLiteral at 274.14; stackHeight = 8
+# line 2228
+
+    sw $t0, ($sp)
+    li $t0, 0
+# line 2229
+
+# end: Call at 279.10; stackHeight = 12
+    subu $sp, $sp, 8
+# line 2230
+
+    lw $t0, 0($sp)
+    sw $s5, 4($sp)
+# line 2231
+
+    sw $s2, 0($sp)
+    sw $t0, ($sp)
+# line 2232
+
+    move $s2, $t0
+# end: IntegerLiteral at 274.14; stackHeight = 16
+# line 2233
+
+    beq $s2, $zero, nullPtrException
+# begin: False at 274.19; stackHeight = 16
+# line 2234
+
+    lw $t0, -12($s2)
+    subu $sp, $sp, 4
+# line 2235
+
+    lw $t0, 36($t0)
+    sw $zero, ($sp)
+# line 2236
+
+    jalr $t0 # asNonNull
+# end: False at 274.19; stackHeight = 20
+# line 2237
+
+    addu $sp, $sp, 0
+    lw $t0, ($sp)
+# line 2238
+
+    lw $s2, ($sp)
+    addu $sp, $sp, 4
+# line 2239
+
+    addu $sp, $sp, 4
+    lw $t1, ($sp)
+# line 2240
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 2241
+
+    sw $t0, ($sp)
+    lw $t2, ($sp)
+# line 2242
+
+# end: Call at 279.34; stackHeight = 12
+    addu $sp, $sp, 4
+# line 2243
+
+    lw $zero, ($sp) #**"sibling"
+    beq $t2, $zero, nullPtrException
+# line 2244
+
+# end: LocalVarDecl at 278.26; stackHeight = 12
+    lw $t3, -4($t2)
+# line 2245
+
+# begin: LocalVarDecl at 280.19; stackHeight = 12
+    bgeu $t1, $t3, arrayIndexOutOfBounds
+# line 2246
+
+# begin: Call at 280.41; stackHeight = 12
+    sll $t1, $t1, 2
+# line 2247
+
+# begin: IdentifierExp at 280.33; stackHeight = 12
+    addu $t1, $t1, $t2
+# line 2248
+
+    lw $t0, 0($sp)
+    sw $t0, ($t1)
+# line 2249
+
+    subu $sp, $sp, 4
+# end: Assign at 274.17; stackHeight = 4
+# line 2250
+
+    sw $t0, ($sp)
+# begin: LocalVarDecl at 277.26; stackHeight = 4
+# line 2251
+
+# end: IdentifierExp at 280.33; stackHeight = 16
+# begin: This at 277.35; stackHeight = 4
+# line 2252
+
+# begin: IdentifierExp at 280.49; stackHeight = 16
+    subu $sp, $sp, 4
+# line 2253
+
+    lw $t0, 24($sp)
+    sw $s2, ($sp)
+# line 2254
+
+    subu $sp, $sp, 4
+# end: This at 277.35; stackHeight = 8
+# line 2255
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"parent"
+# line 2256
+
+# end: IdentifierExp at 280.49; stackHeight = 20
+# end: LocalVarDecl at 277.26; stackHeight = 8
+# line 2257
+
+    lw $t0, 4($sp)
+# begin: LocalVarDecl at 278.26; stackHeight = 8
+# line 2258
+
+    sw $s2, 4($sp)
+# begin: Call at 279.34; stackHeight = 8
+# line 2259
+
+    move $s2, $t0
+# begin: Call at 279.10; stackHeight = 8
+# line 2260
+
+    beq $s2, $zero, nullPtrException
+# begin: IdentifierExp at 279.3; stackHeight = 8
+# line 2261
+
+    lw $t0, -12($s2)
+    lw $t0, 0($sp)
+# line 2262
+
+    lw $t0, 76($t0)
+    subu $sp, $sp, 4
+# line 2263
+
+    jalr $t0 # getLeft
+    sw $t0, ($sp)
+# line 2264
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 279.3; stackHeight = 12
+# line 2265
+
+    lw $s2, ($sp)
+# begin: IdentifierExp at 279.19; stackHeight = 12
+# line 2266
+
+    addu $sp, $sp, 4
+    lw $t0, 20($sp)
+# line 2267
+
+# end: Call at 280.41; stackHeight = 16
+# end: IdentifierExp at 279.19; stackHeight = 16
+# line 2270
+
+    lw $zero, ($sp) #**"innerNephew"
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2271
+
+# end: LocalVarDecl at 280.19; stackHeight = 16
+    lw $t0, 4($sp)
+# line 2272
+
+# begin: LocalVarDecl at 281.19; stackHeight = 16
+    sw $s2, 4($sp)
+# line 2273
+
+# begin: Call at 281.41; stackHeight = 16
+    move $s2, $t0
+# line 2274
+
+# begin: IdentifierExp at 281.33; stackHeight = 16
+    beq $s2, $zero, nullPtrException
+# line 2275
+
+    lw $t0, 4($sp)
+    lw $t0, -12($s2)
+# line 2276
+
+    subu $sp, $sp, 4
+    lw $t0, 72($t0)
+# line 2277
+
+    sw $t0, ($sp)
+    jalr $t0 # getRight
+# line 2278
+
+# end: IdentifierExp at 281.33; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2279
+
+# begin: IdentifierExp at 281.50; stackHeight = 20
+    lw $s2, ($sp)
+# line 2280
+
+    lw $t0, 28($sp)
+    addu $sp, $sp, 4
+# line 2281
+
+# end: IdentifierExp at 281.50; stackHeight = 24
+# end: Call at 279.10; stackHeight = 12
+# line 2284
+
+    lw $t0, 4($sp)
+    lw $t0, 0($sp)
+# line 2285
+
+    sw $s2, 4($sp)
+    sw $s2, 0($sp)
+# line 2286
+
+    lw $t0, 72($t0)
+    lw $t0, 36($t0)
+# line 2290
+
+    jalr $t0 # getRight
+    jalr $t0 # asNonNull
+# line 2291
+
+    addu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 2292
+
+# end: Call at 281.41; stackHeight = 20
+# end: Call at 279.34; stackHeight = 12
+# line 2297
+
+    lw $zero, ($sp) #**"outerNephew"
+    lw $zero, ($sp) #**"sibling"
+# line 2298
+
+# end: LocalVarDecl at 281.19; stackHeight = 20
+# end: LocalVarDecl at 278.26; stackHeight = 12
+# line 2299
+
+# begin: If at 284.6; stackHeight = 20
+# begin: LocalVarDecl at 280.19; stackHeight = 12
+# line 2300
+
+# begin: Call at 284.17; stackHeight = 20
+# begin: Call at 280.41; stackHeight = 12
+# line 2301
+
+# begin: IdentifierExp at 284.10; stackHeight = 20
+# begin: IdentifierExp at 280.33; stackHeight = 12
+# line 2302
+
+    lw $t0, 12($sp)
+    lw $t0, 0($sp)
+# line 2303
+
+# end: IdentifierExp at 284.10; stackHeight = 24
+# end: IdentifierExp at 280.33; stackHeight = 16
+# line 2306
+
+    lw $t0, 0($sp)
+# begin: IdentifierExp at 280.49; stackHeight = 16
+# line 2307
+
+    sw $s2, 0($sp)
+    lw $t0, 24($sp)
+# line 2308
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 2309
+
+    beq $s2, $zero, nullPtrException
+    sw $t0, ($sp)
+# line 2310
+
+    lw $t0, -12($s2)
+# end: IdentifierExp at 280.49; stackHeight = 20
+# line 2311
+
+    lw $t0, 24($t0)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2312
+
+    jalr $t0 # isRed
+    lw $t0, 4($sp)
+# line 2313
+
+    addu $sp, $sp, 0
+    sw $s2, 4($sp)
+# line 2314
+
+    lw $s2, ($sp)
+    move $s2, $t0
+# line 2315
+
+    addu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2316
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2317
+
+    sw $t0, ($sp)
+    lw $t0, 76($t0)
+# line 2318
+
+# end: Call at 284.17; stackHeight = 24
+    jalr $t0 # getLeft
+# line 2319
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2320
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2321
+
+    beq $t0, $zero, if_else_713
+    addu $sp, $sp, 4
+# line 2322
+
+# begin: Block at 284.26; stackHeight = 20
+    subu $sp, $sp, 4
+# line 2323
+
+# begin: If at 285.3; stackHeight = 20
+    sw $t0, ($sp)
+# line 2324
+
+# begin: Call at 285.19; stackHeight = 20
+# end: Call at 280.41; stackHeight = 16
+# line 2325
+
+# begin: IdentifierExp at 285.7; stackHeight = 20
+    lw $zero, ($sp) #**"innerNephew"
+# line 2326
+
+    lw $t0, 4($sp)
+# end: LocalVarDecl at 280.19; stackHeight = 16
+# line 2327
+
+    subu $sp, $sp, 4
+# begin: LocalVarDecl at 281.19; stackHeight = 16
+# line 2328
+
+    sw $t0, ($sp)
+# begin: Call at 281.41; stackHeight = 16
+# line 2329
+
+# end: IdentifierExp at 285.7; stackHeight = 24
+# begin: IdentifierExp at 281.33; stackHeight = 16
+# line 2330
+
+    lw $t0, 0($sp)
+    lw $t0, 4($sp)
+# line 2331
+
+    sw $s2, 0($sp)
+    subu $sp, $sp, 4
+# line 2332
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 2333
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 281.33; stackHeight = 20
+# line 2334
+
+    lw $t0, -12($s2)
+# begin: IdentifierExp at 281.50; stackHeight = 20
+# line 2335
+
+    lw $t0, 16($t0)
+    lw $t0, 28($sp)
+# line 2336
+
+    jalr $t0 # isBlack
+    subu $sp, $sp, 4
+# line 2337
+
+    addu $sp, $sp, 0
+    sw $t0, ($sp)
+# line 2338
+
+    lw $s2, ($sp)
+# end: IdentifierExp at 281.50; stackHeight = 24
+# line 2339
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2340
+
+    subu $sp, $sp, 4
+    lw $t0, 4($sp)
+# line 2341
+
+    sw $t0, ($sp)
+    sw $s2, 4($sp)
+# line 2342
+
+# end: Call at 285.19; stackHeight = 24
+    move $s2, $t0
+# line 2343
+
+    lw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 2344
+
+    addu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2345
+
+    beq $t0, $zero, if_else_573
+    lw $t0, 72($t0)
+# line 2346
+
+# begin: Block at 285.30; stackHeight = 20
+    jalr $t0 # getRight
+# line 2347
+
+# begin: CallStatement at 287.14; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2348
+
+# begin: Call at 287.14; stackHeight = 20
+    lw $s2, ($sp)
+# line 2349
+
+# begin: IdentifierExp at 287.7; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2350
+
+    lw $t0, 12($sp)
+    subu $sp, $sp, 4
+# line 2351
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2352
+
+    sw $t0, ($sp)
+# end: Call at 281.41; stackHeight = 20
+# line 2353
+
+# end: IdentifierExp at 287.7; stackHeight = 24
+    lw $zero, ($sp) #**"outerNephew"
+# line 2354
+
+# begin: IdentifierExp at 287.23; stackHeight = 24
+# end: LocalVarDecl at 281.19; stackHeight = 20
+# line 2355
+
+    lw $t0, 8($sp)
+# begin: If at 284.6; stackHeight = 20
+# line 2356
+
+    subu $sp, $sp, 4
+# begin: Call at 284.17; stackHeight = 20
+# line 2357
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 284.10; stackHeight = 20
+# line 2358
+
+# end: IdentifierExp at 287.23; stackHeight = 28
+    lw $t0, 12($sp)
+# line 2359
+
+# begin: IdentifierExp at 287.36; stackHeight = 28
+    subu $sp, $sp, 4
+# line 2360
+
+    lw $t0, 36($sp)
+    sw $t0, ($sp)
+# line 2361
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 284.10; stackHeight = 24
+# line 2362
+
+    sw $t0, ($sp)
+    lw $t0, 0($sp)
+# line 2363
+
+# end: IdentifierExp at 287.36; stackHeight = 32
+    sw $s2, 0($sp)
+# line 2364
+
+    lw $t0, 8($sp)
+    move $s2, $t0
+# line 2365
+
+    sw $s2, 8($sp)
+    beq $s2, $zero, nullPtrException
+# line 2366
+
+    move $s2, $t0
+    lw $t0, -12($s2)
+# line 2367
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 24($t0)
+# line 2368
+
+    lw $t0, -12($s2)
+    jalr $t0 # isRed
+# line 2369
+
+    lw $t0, 80($t0)
+    addu $sp, $sp, 0
+# line 2370
+
+    jalr $t0 # setRight
+    lw $s2, ($sp)
+# line 2371
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 2372
+
+    lw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 2373
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2374
+
+    subu $sp, $sp, 4
+# end: Call at 284.17; stackHeight = 24
+# line 2375
+
+    sw $t0, ($sp)
+    lw $t0, ($sp)
+# line 2376
+
+# end: Call at 287.14; stackHeight = 24
+    addu $sp, $sp, 4
+# line 2377
+
+    lw $t0, ($sp)
+    beq $t0, $zero, if_else_713
+# line 2378
+
+    addu $sp, $sp, 4
+# begin: Block at 284.26; stackHeight = 20
+# line 2379
+
+# end: CallStatement at 287.14; stackHeight = 20
+# begin: If at 285.3; stackHeight = 20
+# line 2380
+
+# begin: CallStatement at 288.15; stackHeight = 20
+# begin: Call at 285.19; stackHeight = 20
+# line 2381
+
+# begin: Call at 288.15; stackHeight = 20
+# begin: IdentifierExp at 285.7; stackHeight = 20
+# line 2382
+
+# begin: IdentifierExp at 288.7; stackHeight = 20
+    lw $t0, 4($sp)
+# line 2383
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 2384
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2385
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 285.7; stackHeight = 24
+# line 2386
+
+# end: IdentifierExp at 288.7; stackHeight = 24
+    lw $t0, 0($sp)
+# line 2387
+
+# begin: IdentifierExp at 288.23; stackHeight = 24
+    sw $s2, 0($sp)
+# line 2388
+
+    lw $t0, 16($sp)
+    move $s2, $t0
+# line 2389
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2390
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2391
+
+# end: IdentifierExp at 288.23; stackHeight = 28
+    lw $t0, 16($t0)
+# line 2392
+
+# begin: IdentifierExp at 288.31; stackHeight = 28
+    jalr $t0 # isBlack
+# line 2393
+
+    lw $t0, 36($sp)
+    addu $sp, $sp, 0
+# line 2394
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2395
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2396
+
+# end: IdentifierExp at 288.31; stackHeight = 32
+    subu $sp, $sp, 4
+# line 2397
+
+    lw $t0, 8($sp)
+    sw $t0, ($sp)
+# line 2398
+
+    sw $s2, 8($sp)
+# end: Call at 285.19; stackHeight = 24
+# line 2399
+
+    move $s2, $t0
+    lw $t0, ($sp)
+# line 2400
+
+    beq $s2, $zero, nullPtrException
+    addu $sp, $sp, 4
+# line 2401
+
+    lw $t0, -12($s2)
+    beq $t0, $zero, if_else_573
+# line 2402
+
+    lw $t0, 84($t0)
+# begin: Block at 285.30; stackHeight = 20
+# line 2403
+
+    jalr $t0 # setLeft
+# begin: CallStatement at 287.14; stackHeight = 20
+# line 2404
+
+    addu $sp, $sp, 8
+# begin: Call at 287.14; stackHeight = 20
+# line 2405
+
+    lw $s2, ($sp)
+# begin: IdentifierExp at 287.7; stackHeight = 20
+# line 2406
+
+    addu $sp, $sp, 4
+    lw $t0, 12($sp)
+# line 2407
+
+# end: Call at 288.15; stackHeight = 24
+# end: IdentifierExp at 287.7; stackHeight = 24
+# line 2410
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 287.23; stackHeight = 24
+# line 2411
+
+    addu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 2412
+
+# end: CallStatement at 288.15; stackHeight = 20
+    subu $sp, $sp, 4
+# line 2413
+
+# begin: Assign at 289.14; stackHeight = 20
+    sw $t0, ($sp)
+# line 2414
+
+# begin: IdentifierExp at 289.16; stackHeight = 20
+# end: IdentifierExp at 287.23; stackHeight = 28
+# line 2415
+
+    lw $t0, 8($sp)
+    lw $zero, ($sp) #**"node"
+# line 2416
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 287.36; stackHeight = 28
+# line 2417
+
+    sw $t0, ($sp)
+    lw $t0, 36($sp)
+# line 2418
+
+# end: IdentifierExp at 289.16; stackHeight = 24
+    subu $sp, $sp, 4
+# line 2419
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 2420
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 287.36; stackHeight = 32
+# line 2421
+
+    sw $t0, 16($sp)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2422
+
+# end: Assign at 289.14; stackHeight = 20
+    lw $t0, 8($sp)
+# line 2423
+
+# end: Block at 285.30; stackHeight = 20
+    sw $s2, 8($sp)
+# line 2424
+
+    j if_done_573
+    move $s2, $t0
+# line 2425
+
+  if_else_573:
+    beq $s2, $zero, nullPtrException
+# line 2426
+
+# begin: If at 291.8; stackHeight = 20
+    lw $t0, -12($s2)
+# line 2427
+
+# begin: Call at 291.24; stackHeight = 20
+    lw $t0, 80($t0)
+# line 2428
+
+# begin: IdentifierExp at 291.12; stackHeight = 20
+    jalr $t0 # setRight
+# line 2429
+
+    lw $t0, 0($sp)
+    addu $sp, $sp, 8
+# line 2430
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2431
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2432
+
+# end: IdentifierExp at 291.12; stackHeight = 24
+    subu $sp, $sp, 4
+# line 2433
+
+    lw $t0, 0($sp)
+    sw $t0, ($sp)
+# line 2434
+
+    sw $s2, 0($sp)
+# end: Call at 287.14; stackHeight = 24
+# line 2435
+
+    move $s2, $t0
+    lw $t0, ($sp)
+# line 2436
+
+    beq $s2, $zero, nullPtrException
+    addu $sp, $sp, 4
+# line 2437
+
+    lw $t0, -12($s2)
+# end: CallStatement at 287.14; stackHeight = 20
+# line 2438
+
+    lw $t0, 24($t0)
+# begin: CallStatement at 288.15; stackHeight = 20
+# line 2439
+
+    jalr $t0 # isRed
+# begin: Call at 288.15; stackHeight = 20
+# line 2440
+
+    addu $sp, $sp, 0
+# begin: IdentifierExp at 288.7; stackHeight = 20
+# line 2441
+
+    lw $s2, ($sp)
+    lw $t0, 8($sp)
+# line 2442
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2443
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2444
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 288.7; stackHeight = 24
+# line 2445
+
+# end: Call at 291.24; stackHeight = 24
+# begin: IdentifierExp at 288.23; stackHeight = 24
+# line 2446
+
+    lw $t0, ($sp)
+    lw $t0, 16($sp)
+# line 2447
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2448
+
+    beq $t0, $zero, if_else_572
+    sw $t0, ($sp)
+# line 2449
+
+# begin: Block at 291.33; stackHeight = 20
+# end: IdentifierExp at 288.23; stackHeight = 28
+# line 2450
+
+# begin: CallStatement at 293.14; stackHeight = 20
+    lw $zero, ($sp) #**"node"
+# line 2451
+
+# begin: Call at 293.14; stackHeight = 20
+# begin: IdentifierExp at 288.31; stackHeight = 28
+# line 2452
+
+# begin: IdentifierExp at 293.7; stackHeight = 20
+    lw $t0, 36($sp)
+# line 2453
+
+    lw $t0, 12($sp)
+    subu $sp, $sp, 4
+# line 2454
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2455
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 288.31; stackHeight = 32
+# line 2456
+
+# end: IdentifierExp at 293.7; stackHeight = 24
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2457
+
+# begin: IdentifierExp at 293.23; stackHeight = 24
+    lw $t0, 8($sp)
+# line 2458
+
+    lw $t0, 8($sp)
+    sw $s2, 8($sp)
+# line 2459
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 2460
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 2461
+
+# end: IdentifierExp at 293.23; stackHeight = 28
+    lw $t0, -12($s2)
+# line 2462
+
+# begin: IdentifierExp at 293.36; stackHeight = 28
+    lw $t0, 84($t0)
+# line 2463
+
+    lw $t0, 36($sp)
+    jalr $t0 # setLeft
+# line 2464
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 2465
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 2466
+
+# end: IdentifierExp at 293.36; stackHeight = 32
+    addu $sp, $sp, 4
+# line 2467
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 2468
+
+    sw $s2, 8($sp)
+    sw $t0, ($sp)
+# line 2469
+
+    move $s2, $t0
+# end: Call at 288.15; stackHeight = 24
+# line 2470
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 2471
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 2472
+
+    lw $t0, 80($t0)
+# end: CallStatement at 288.15; stackHeight = 20
+# line 2473
+
+    jalr $t0 # setRight
+# begin: Assign at 289.14; stackHeight = 20
+# line 2474
+
+    addu $sp, $sp, 8
+# begin: IdentifierExp at 289.16; stackHeight = 20
+# line 2475
+
+    lw $s2, ($sp)
+    lw $t0, 8($sp)
+# line 2476
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2477
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2478
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 289.16; stackHeight = 24
+# line 2479
+
+# end: Call at 293.14; stackHeight = 24
+    lw $t0, ($sp)
+# line 2480
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2481
+
+    addu $sp, $sp, 4
+    sw $t0, 16($sp)
+# line 2482
+
+# end: CallStatement at 293.14; stackHeight = 20
+# end: Assign at 289.14; stackHeight = 20
+# line 2483
+
+# begin: CallStatement at 294.15; stackHeight = 20
+# end: Block at 285.30; stackHeight = 20
+# line 2484
+
+# begin: Call at 294.15; stackHeight = 20
+    j if_done_573
+# line 2485
+
+# begin: IdentifierExp at 294.7; stackHeight = 20
+  if_else_573:
+# line 2486
+
+    lw $t0, 8($sp)
+# begin: If at 291.8; stackHeight = 20
+# line 2487
+
+    subu $sp, $sp, 4
+# begin: Call at 291.24; stackHeight = 20
+# line 2488
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 291.12; stackHeight = 20
+# line 2489
+
+# end: IdentifierExp at 294.7; stackHeight = 24
+    lw $t0, 0($sp)
+# line 2490
+
+# begin: IdentifierExp at 294.23; stackHeight = 24
+    subu $sp, $sp, 4
+# line 2491
+
+    lw $t0, 16($sp)
+    sw $t0, ($sp)
+# line 2492
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 291.12; stackHeight = 24
+# line 2493
+
+    sw $t0, ($sp)
+    lw $t0, 0($sp)
+# line 2494
+
+# end: IdentifierExp at 294.23; stackHeight = 28
+    sw $s2, 0($sp)
+# line 2495
+
+# begin: IdentifierExp at 294.31; stackHeight = 28
+    move $s2, $t0
+# line 2496
+
+    lw $t0, 36($sp)
+    beq $s2, $zero, nullPtrException
+# line 2497
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2498
+
+    sw $t0, ($sp)
+    lw $t0, 24($t0)
+# line 2499
+
+# end: IdentifierExp at 294.31; stackHeight = 32
+    jalr $t0 # isRed
+# line 2500
+
+    lw $t0, 8($sp)
+    addu $sp, $sp, 0
+# line 2501
+
+    sw $s2, 8($sp)
+    lw $s2, ($sp)
+# line 2502
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 2503
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 2504
+
+    lw $t0, -12($s2)
+    sw $t0, ($sp)
+# line 2505
+
+    lw $t0, 84($t0)
+# end: Call at 291.24; stackHeight = 24
+# line 2506
+
+    jalr $t0 # setLeft
+    lw $t0, ($sp)
+# line 2507
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 2508
+
+    lw $s2, ($sp)
+    beq $t0, $zero, if_else_572
+# line 2509
+
+    addu $sp, $sp, 4
+# begin: Block at 291.33; stackHeight = 20
+# line 2510
+
+    subu $sp, $sp, 4
+# begin: CallStatement at 293.14; stackHeight = 20
+# line 2511
+
+    sw $t0, ($sp)
+# begin: Call at 293.14; stackHeight = 20
+# line 2512
+
+# end: Call at 294.15; stackHeight = 24
+# begin: IdentifierExp at 293.7; stackHeight = 20
+# line 2513
+
+    lw $t0, ($sp)
+    lw $t0, 12($sp)
+# line 2514
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2515
+
+# end: CallStatement at 294.15; stackHeight = 20
+    sw $t0, ($sp)
+# line 2516
+
+# begin: CallStatement at 295.14; stackHeight = 20
+# end: IdentifierExp at 293.7; stackHeight = 24
+# line 2517
+
+# begin: Call at 295.14; stackHeight = 20
+# begin: IdentifierExp at 293.23; stackHeight = 24
+# line 2518
+
+# begin: IdentifierExp at 295.7; stackHeight = 20
+    lw $t0, 8($sp)
+# line 2519
+
+    lw $t0, 12($sp)
+    subu $sp, $sp, 4
+# line 2520
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2521
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 293.23; stackHeight = 28
+# line 2522
+
+# end: IdentifierExp at 295.7; stackHeight = 24
+    lw $zero, ($sp) #**"node"
+# line 2523
+
+    lw $t0, 0($sp)
+# begin: IdentifierExp at 293.36; stackHeight = 28
+# line 2524
+
+    sw $s2, 0($sp)
+    lw $t0, 36($sp)
+# line 2525
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 2526
+
+    beq $s2, $zero, nullPtrException
+    sw $t0, ($sp)
+# line 2527
+
+    lw $t0, -12($s2)
+# end: IdentifierExp at 293.36; stackHeight = 32
+# line 2528
+
+    lw $t0, 20($t0)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2529
+
+    jalr $t0 # setBlack
+    lw $t0, 8($sp)
+# line 2530
+
+    addu $sp, $sp, 0
+    sw $s2, 8($sp)
+# line 2531
+
+    lw $s2, ($sp)
+    move $s2, $t0
+# line 2532
+
+    addu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2533
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2534
+
+    sw $t0, ($sp)
+    lw $t0, 80($t0)
+# line 2535
+
+# end: Call at 295.14; stackHeight = 24
+    jalr $t0 # setRight
+# line 2536
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 2537
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2538
+
+# end: CallStatement at 295.14; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2539
+
+# begin: CallStatement at 296.15; stackHeight = 20
+    subu $sp, $sp, 4
+# line 2540
+
+# begin: Call at 296.15; stackHeight = 20
+    sw $t0, ($sp)
+# line 2541
+
+# begin: IdentifierExp at 296.7; stackHeight = 20
+# end: Call at 293.14; stackHeight = 24
+# line 2542
+
+    lw $t0, 8($sp)
+    lw $t0, ($sp)
+# line 2543
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 2544
+
+    sw $t0, ($sp)
+# end: CallStatement at 293.14; stackHeight = 20
+# line 2545
+
+# end: IdentifierExp at 296.7; stackHeight = 24
+# begin: CallStatement at 294.15; stackHeight = 20
+# line 2546
+
+    lw $t0, 0($sp)
+# begin: Call at 294.15; stackHeight = 20
+# line 2547
+
+    sw $s2, 0($sp)
+# begin: IdentifierExp at 294.7; stackHeight = 20
+# line 2548
+
+    move $s2, $t0
+    lw $t0, 8($sp)
+# line 2549
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 2550
+
+    lw $t0, -12($s2)
+    sw $t0, ($sp)
+# line 2551
+
+    lw $t0, 60($t0)
+# end: IdentifierExp at 294.7; stackHeight = 24
+# line 2552
+
+    jalr $t0 # setRed
+# begin: IdentifierExp at 294.23; stackHeight = 24
+# line 2553
+
+    addu $sp, $sp, 0
+    lw $t0, 16($sp)
+# line 2554
+
+    lw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 2555
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2556
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 294.23; stackHeight = 28
+# line 2557
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"node"
+# line 2558
+
+# end: Call at 296.15; stackHeight = 24
+# begin: IdentifierExp at 294.31; stackHeight = 28
+# line 2559
+
+    lw $t0, ($sp)
+    lw $t0, 36($sp)
+# line 2560
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2561
+
+# end: CallStatement at 296.15; stackHeight = 20
+    sw $t0, ($sp)
+# line 2562
+
+# begin: CallStatement at 297.19; stackHeight = 20
+# end: IdentifierExp at 294.31; stackHeight = 32
+# line 2563
+
+# begin: Call at 297.19; stackHeight = 20
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2564
+
+# begin: IdentifierExp at 297.7; stackHeight = 20
+    lw $t0, 8($sp)
+# line 2565
+
+    lw $t0, 0($sp)
+    sw $s2, 8($sp)
+# line 2566
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 2567
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 2568
+
+# end: IdentifierExp at 297.7; stackHeight = 24
+    lw $t0, -12($s2)
+# line 2569
+
+    lw $t0, 0($sp)
+    lw $t0, 84($t0)
+# line 2570
+
+    sw $s2, 0($sp)
+    jalr $t0 # setLeft
+# line 2571
+
+    move $s2, $t0
+    addu $sp, $sp, 8
+# line 2572
+
+    beq $s2, $zero, nullPtrException
+    lw $s2, ($sp)
+# line 2573
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 2574
+
+    lw $t0, 20($t0)
+    subu $sp, $sp, 4
+# line 2575
+
+    jalr $t0 # setBlack
+    sw $t0, ($sp)
+# line 2576
+
+    addu $sp, $sp, 0
+# end: Call at 294.15; stackHeight = 24
+# line 2577
+
+    lw $s2, ($sp)
+    lw $t0, ($sp)
+# line 2578
+
+    subu $sp, $sp, 4
+# end: CallStatement at 294.15; stackHeight = 20
+# line 2580
+
+    sw $t0, ($sp)
+# begin: CallStatement at 295.14; stackHeight = 20
+# line 2581
+
+# end: Call at 297.19; stackHeight = 24
+# begin: Call at 295.14; stackHeight = 20
+# line 2582
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 295.7; stackHeight = 20
+# line 2583
+
+    addu $sp, $sp, 4
+    lw $t0, 12($sp)
+# line 2584
+
+# end: CallStatement at 297.19; stackHeight = 20
+    subu $sp, $sp, 4
+# line 2585
+
+# begin: Assign at 298.14; stackHeight = 20
+    sw $t0, ($sp)
+# line 2586
+
+# begin: IdentifierExp at 298.16; stackHeight = 20
+# end: IdentifierExp at 295.7; stackHeight = 24
+# line 2587
+
+    lw $t0, 8($sp)
+    lw $t0, 0($sp)
+# line 2588
+
+    subu $sp, $sp, 4
+    sw $s2, 0($sp)
+# line 2589
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 2590
+
+# end: IdentifierExp at 298.16; stackHeight = 24
+    beq $s2, $zero, nullPtrException
+# line 2591
+
+    lw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2592
+
+    addu $sp, $sp, 4
+    lw $t0, 20($t0)
+# line 2593
+
+    sw $t0, 16($sp)
+    jalr $t0 # setBlack
+# line 2594
+
+# end: Assign at 298.14; stackHeight = 20
+    addu $sp, $sp, 0
+# line 2595
+
+# end: Block at 291.33; stackHeight = 20
+    lw $s2, ($sp)
+# line 2596
+
+    j if_done_572
+    addu $sp, $sp, 4
+# line 2597
+
+  if_else_572:
+    subu $sp, $sp, 4
+# line 2598
+
+# begin: Block at 300.8; stackHeight = 20
+    sw $t0, ($sp)
+# line 2599
+
+# begin: LocalVarDecl at 302.27; stackHeight = 20
+# end: Call at 295.14; stackHeight = 24
+# line 2600
+
+# begin: Call at 302.60; stackHeight = 20
+    lw $t0, ($sp)
+# line 2601
+
+# begin: IdentifierExp at 302.48; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2602
+
+    lw $t0, 4($sp)
+# end: CallStatement at 295.14; stackHeight = 20
+# line 2603
+
+    subu $sp, $sp, 4
+# begin: CallStatement at 296.15; stackHeight = 20
+# line 2604
+
+    sw $t0, ($sp)
+# begin: Call at 296.15; stackHeight = 20
+# line 2605
+
+# end: IdentifierExp at 302.48; stackHeight = 24
+# begin: IdentifierExp at 296.7; stackHeight = 20
+# line 2606
+
+    lw $t0, 0($sp)
+    lw $t0, 8($sp)
+# line 2607
+
+    sw $s2, 0($sp)
+    subu $sp, $sp, 4
+# line 2608
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 2609
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 296.7; stackHeight = 24
+# line 2610
+
+    lw $t0, -12($s2)
+    lw $t0, 0($sp)
+# line 2611
+
+    lw $t0, 36($t0)
+    sw $s2, 0($sp)
+# line 2612
+
+    jalr $t0 # asNonNull
+    move $s2, $t0
+# line 2613
+
+    addu $sp, $sp, 0
+    beq $s2, $zero, nullPtrException
+# line 2614
+
+    lw $s2, ($sp)
+    lw $t0, -12($s2)
+# line 2615
+
+    addu $sp, $sp, 4
+    lw $t0, 60($t0)
+# line 2616
+
+    subu $sp, $sp, 4
+    jalr $t0 # setRed
+# line 2617
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 0
+# line 2618
+
+# end: Call at 302.60; stackHeight = 24
+    lw $s2, ($sp)
+# line 2619
+
+    lw $zero, ($sp) #**"innerNephewNonNull"
+    addu $sp, $sp, 4
+# line 2620
+
+# end: LocalVarDecl at 302.27; stackHeight = 24
+    subu $sp, $sp, 4
+# line 2621
+
+# begin: CallStatement at 303.14; stackHeight = 24
+    sw $t0, ($sp)
+# line 2622
+
+# begin: Call at 303.14; stackHeight = 24
+# end: Call at 296.15; stackHeight = 24
+# line 2623
+
+# begin: IdentifierExp at 303.7; stackHeight = 24
+    lw $t0, ($sp)
+# line 2624
+
+    lw $t0, 16($sp)
+    addu $sp, $sp, 4
+# line 2625
+
+    subu $sp, $sp, 4
+# end: CallStatement at 296.15; stackHeight = 20
+# line 2626
+
+    sw $t0, ($sp)
+# begin: CallStatement at 297.19; stackHeight = 20
+# line 2627
+
+# end: IdentifierExp at 303.7; stackHeight = 28
+# begin: Call at 297.19; stackHeight = 20
+# line 2628
+
+# begin: Call at 303.42; stackHeight = 28
+# begin: IdentifierExp at 297.7; stackHeight = 20
+# line 2629
+
+# begin: IdentifierExp at 303.23; stackHeight = 28
+    lw $t0, 0($sp)
+# line 2630
+
+    lw $t0, 4($sp)
+    subu $sp, $sp, 4
+# line 2631
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2632
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 297.7; stackHeight = 24
+# line 2633
+
+# end: IdentifierExp at 303.23; stackHeight = 32
+    lw $t0, 0($sp)
+# line 2634
+
+# begin: IdentifierExp at 303.50; stackHeight = 32
+    sw $s2, 0($sp)
+# line 2635
+
+    lw $t0, 40($sp)
+    move $s2, $t0
+# line 2636
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2637
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2638
+
+# end: IdentifierExp at 303.50; stackHeight = 36
+    lw $t0, 20($t0)
+# line 2639
+
+    lw $t0, 4($sp)
+    jalr $t0 # setBlack
+# line 2640
+
+    sw $s2, 4($sp)
+    addu $sp, $sp, 0
+# line 2641
+
+    move $s2, $t0
+    lw $s2, ($sp)
+# line 2642
+
+    beq $s2, $zero, nullPtrException
+    addu $sp, $sp, 4
+# line 2643
+
+    lw $t0, -12($s2)
+    subu $sp, $sp, 4
+# line 2644
+
+    lw $t0, 76($t0)
+    sw $t0, ($sp)
+# line 2645
+
+    jalr $t0 # getLeft
+# end: Call at 297.19; stackHeight = 24
+# line 2646
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 2647
+
+    lw $s2, ($sp)
+    addu $sp, $sp, 4
+# line 2648
+
+    addu $sp, $sp, 4
+# end: CallStatement at 297.19; stackHeight = 20
+# line 2649
+
+    subu $sp, $sp, 4
+# begin: Assign at 298.14; stackHeight = 20
+# line 2650
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 298.16; stackHeight = 20
+# line 2651
+
+# end: Call at 303.42; stackHeight = 32
+    lw $t0, 8($sp)
+# line 2652
+
+# begin: IdentifierExp at 304.9; stackHeight = 32
+    subu $sp, $sp, 4
+# line 2653
+
+    lw $t0, 40($sp)
+    sw $t0, ($sp)
+# line 2654
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 298.16; stackHeight = 24
+# line 2655
+
+    sw $t0, ($sp)
+    lw $t0, ($sp)
+# line 2656
+
+# end: IdentifierExp at 304.9; stackHeight = 36
+    addu $sp, $sp, 4
+# line 2657
+
+    lw $t0, 8($sp)
+    sw $t0, 16($sp)
+# line 2658
+
+    sw $s2, 8($sp)
+# end: Assign at 298.14; stackHeight = 20
+# line 2659
+
+    move $s2, $t0
+# end: Block at 291.33; stackHeight = 20
+# line 2660
+
+    beq $s2, $zero, nullPtrException
+    j if_done_572
+# line 2661
+
+    lw $t0, -12($s2)
+  if_else_572:
+# line 2662
+
+    lw $t0, 80($t0)
+# begin: Block at 300.8; stackHeight = 20
+# line 2663
+
+    jalr $t0 # setRight
+# begin: LocalVarDecl at 302.27; stackHeight = 20
+# line 2664
+
+    addu $sp, $sp, 8
+# begin: Call at 302.60; stackHeight = 20
+# line 2665
+
+    lw $s2, ($sp)
+# begin: IdentifierExp at 302.48; stackHeight = 20
+# line 2666
+
+    addu $sp, $sp, 4
+    lw $t0, 4($sp)
+# line 2667
+
+# end: Call at 303.14; stackHeight = 28
+# end: IdentifierExp at 302.48; stackHeight = 24
+# line 2670
+
+    lw $t0, ($sp)
+    lw $t0, 0($sp)
+# line 2671
+
+    addu $sp, $sp, 4
+    sw $s2, 0($sp)
+# line 2672
+
+# end: CallStatement at 303.14; stackHeight = 24
+    move $s2, $t0
+# line 2673
+
+# begin: CallStatement at 305.15; stackHeight = 24
+    beq $s2, $zero, nullPtrException
+# line 2674
+
+# begin: Call at 305.15; stackHeight = 24
+    lw $t0, -12($s2)
+# line 2675
+
+# begin: IdentifierExp at 305.7; stackHeight = 24
+    lw $t0, 36($t0)
+# line 2676
+
+    lw $t0, 12($sp)
+    jalr $t0 # asNonNull
+# line 2677
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 2678
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 2679
+
+# end: IdentifierExp at 305.7; stackHeight = 28
+    addu $sp, $sp, 4
+# line 2680
+
+# begin: Call at 305.42; stackHeight = 28
+    subu $sp, $sp, 4
+# line 2681
+
+# begin: IdentifierExp at 305.23; stackHeight = 28
+    sw $t0, ($sp)
+# line 2682
+
+    lw $t0, 4($sp)
+# end: Call at 302.60; stackHeight = 24
+# line 2683
+
+    subu $sp, $sp, 4
+    lw $zero, ($sp) #**"innerNephewNonNull"
+# line 2684
+
+    sw $t0, ($sp)
+# end: LocalVarDecl at 302.27; stackHeight = 24
+# line 2685
+
+# end: IdentifierExp at 305.23; stackHeight = 32
+# begin: CallStatement at 303.14; stackHeight = 24
+# line 2686
+
+# begin: IdentifierExp at 305.51; stackHeight = 32
+# begin: Call at 303.14; stackHeight = 24
+# line 2687
+
+    lw $t0, 40($sp)
+# begin: IdentifierExp at 303.7; stackHeight = 24
+# line 2688
+
+    subu $sp, $sp, 4
+    lw $t0, 16($sp)
+# line 2689
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2690
+
+# end: IdentifierExp at 305.51; stackHeight = 36
+    sw $t0, ($sp)
+# line 2691
+
+    lw $t0, 4($sp)
+# end: IdentifierExp at 303.7; stackHeight = 28
+# line 2692
+
+    sw $s2, 4($sp)
+# begin: Call at 303.42; stackHeight = 28
+# line 2693
+
+    move $s2, $t0
+# begin: IdentifierExp at 303.23; stackHeight = 28
+# line 2694
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 4($sp)
+# line 2695
+
+    lw $t0, -12($s2)
+    subu $sp, $sp, 4
+# line 2696
+
+    lw $t0, 72($t0)
+    sw $t0, ($sp)
+# line 2697
+
+    jalr $t0 # getRight
+# end: IdentifierExp at 303.23; stackHeight = 32
+# line 2698
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 303.50; stackHeight = 32
+# line 2699
+
+    lw $s2, ($sp)
+    lw $t0, 40($sp)
+# line 2700
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2701
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2702
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 303.50; stackHeight = 36
+# line 2703
+
+# end: Call at 305.42; stackHeight = 32
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2704
+
+# begin: IdentifierExp at 306.9; stackHeight = 32
+    lw $t0, 4($sp)
+# line 2705
+
+    lw $t0, 40($sp)
+    sw $s2, 4($sp)
+# line 2706
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 2707
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 2708
+
+# end: IdentifierExp at 306.9; stackHeight = 36
+    lw $t0, -12($s2)
+# line 2709
+
+    lw $t0, 8($sp)
+    lw $t0, 76($t0)
+# line 2710
+
+    sw $s2, 8($sp)
+    jalr $t0 # getLeft
+# line 2711
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 2712
+
+    beq $s2, $zero, nullPtrException
+    lw $s2, ($sp)
+# line 2713
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 2714
+
+    lw $t0, 84($t0)
+    subu $sp, $sp, 4
+# line 2715
+
+    jalr $t0 # setLeft
+    sw $t0, ($sp)
+# line 2716
+
+    addu $sp, $sp, 8
+# end: Call at 303.42; stackHeight = 32
+# line 2717
+
+    lw $s2, ($sp)
+    lw $zero, ($sp) #**"node"
+# line 2718
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 304.9; stackHeight = 32
+# line 2719
+
+    subu $sp, $sp, 4
+    lw $t0, 40($sp)
+# line 2720
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2721
+
+# end: Call at 305.15; stackHeight = 28
+    sw $t0, ($sp)
+# line 2722
+
+    lw $t0, ($sp)
+# end: IdentifierExp at 304.9; stackHeight = 36
+# line 2723
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2724
+
+# end: CallStatement at 305.15; stackHeight = 24
+    lw $t0, 8($sp)
+# line 2725
+
+# begin: CallStatement at 307.26; stackHeight = 24
+    sw $s2, 8($sp)
+# line 2726
+
+# begin: Call at 307.26; stackHeight = 24
+    move $s2, $t0
+# line 2727
+
+# begin: IdentifierExp at 307.7; stackHeight = 24
+    beq $s2, $zero, nullPtrException
+# line 2728
+
+    lw $t0, 0($sp)
+    lw $t0, -12($s2)
+# line 2729
+
+    subu $sp, $sp, 4
+    lw $t0, 80($t0)
+# line 2730
+
+    sw $t0, ($sp)
+    jalr $t0 # setRight
+# line 2731
+
+# end: IdentifierExp at 307.7; stackHeight = 28
+    addu $sp, $sp, 8
+# line 2732
+
+# begin: IdentifierExp at 307.34; stackHeight = 28
+    lw $s2, ($sp)
+# line 2733
+
+    lw $t0, 20($sp)
+    addu $sp, $sp, 4
+# line 2734
+
+# end: IdentifierExp at 307.34; stackHeight = 32
+# end: Call at 303.14; stackHeight = 28
+# line 2737
+
+# begin: IdentifierExp at 307.42; stackHeight = 32
+    lw $t0, ($sp)
+# line 2738
+
+    lw $t0, 40($sp)
+    addu $sp, $sp, 4
+# line 2739
+
+    subu $sp, $sp, 4
+# end: CallStatement at 303.14; stackHeight = 24
+# line 2740
+
+    sw $t0, ($sp)
+# begin: CallStatement at 305.15; stackHeight = 24
+# line 2741
+
+# end: IdentifierExp at 307.42; stackHeight = 36
+# begin: Call at 305.15; stackHeight = 24
+# line 2742
+
+    lw $t0, 8($sp)
+# begin: IdentifierExp at 305.7; stackHeight = 24
+# line 2743
+
+    sw $s2, 8($sp)
+    lw $t0, 12($sp)
+# line 2744
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 2745
+
+    beq $s2, $zero, nullPtrException
+    sw $t0, ($sp)
+# line 2746
+
+    lw $t0, -12($s2)
+# end: IdentifierExp at 305.7; stackHeight = 28
+# line 2747
+
+    lw $t0, 84($t0)
+# begin: Call at 305.42; stackHeight = 28
+# line 2748
+
+    jalr $t0 # setLeft
+# begin: IdentifierExp at 305.23; stackHeight = 28
+# line 2749
+
+    addu $sp, $sp, 8
+    lw $t0, 4($sp)
+# line 2750
+
+    lw $s2, ($sp)
+    subu $sp, $sp, 4
+# line 2751
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2752
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 305.23; stackHeight = 32
+# line 2753
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 305.51; stackHeight = 32
+# line 2754
+
+# end: Call at 307.26; stackHeight = 28
+    lw $t0, 40($sp)
+# line 2755
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2756
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2757
+
+# end: CallStatement at 307.26; stackHeight = 24
+# end: IdentifierExp at 305.51; stackHeight = 36
+# line 2758
+
+# begin: CallStatement at 308.26; stackHeight = 24
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2759
+
+# begin: Call at 308.26; stackHeight = 24
+    lw $t0, 4($sp)
+# line 2760
+
+# begin: IdentifierExp at 308.7; stackHeight = 24
+    sw $s2, 4($sp)
+# line 2761
+
+    lw $t0, 0($sp)
+    move $s2, $t0
+# line 2762
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 2763
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2764
+
+# end: IdentifierExp at 308.7; stackHeight = 28
+    lw $t0, 72($t0)
+# line 2765
+
+# begin: IdentifierExp at 308.35; stackHeight = 28
+    jalr $t0 # getRight
+# line 2766
+
+    lw $t0, 16($sp)
+    addu $sp, $sp, 4
+# line 2767
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2768
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2769
+
+# end: IdentifierExp at 308.35; stackHeight = 32
+    subu $sp, $sp, 4
+# line 2770
+
+# begin: IdentifierExp at 308.44; stackHeight = 32
+    sw $t0, ($sp)
+# line 2771
+
+    lw $t0, 40($sp)
+# end: Call at 305.42; stackHeight = 32
+# line 2772
+
+    subu $sp, $sp, 4
+    lw $zero, ($sp) #**"node"
+# line 2773
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 306.9; stackHeight = 32
+# line 2774
+
+# end: IdentifierExp at 308.44; stackHeight = 36
+    lw $t0, 40($sp)
+# line 2775
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 2776
+
+    sw $s2, 8($sp)
+    sw $t0, ($sp)
+# line 2777
+
+    move $s2, $t0
+# end: IdentifierExp at 306.9; stackHeight = 36
+# line 2778
+
+    beq $s2, $zero, nullPtrException
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2779
+
+    lw $t0, -12($s2)
+    lw $t0, 8($sp)
+# line 2780
+
+    lw $t0, 80($t0)
+    sw $s2, 8($sp)
+# line 2781
+
+    jalr $t0 # setRight
+    move $s2, $t0
+# line 2782
+
+    addu $sp, $sp, 8
+    beq $s2, $zero, nullPtrException
+# line 2783
+
+    lw $s2, ($sp)
+    lw $t0, -12($s2)
+# line 2784
+
+    addu $sp, $sp, 4
+    lw $t0, 84($t0)
+# line 2785
+
+    subu $sp, $sp, 4
+    jalr $t0 # setLeft
+# line 2786
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 2787
+
+# end: Call at 308.26; stackHeight = 28
+    lw $s2, ($sp)
+# line 2788
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 2789
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 2790
+
+# end: CallStatement at 308.26; stackHeight = 24
+    sw $t0, ($sp)
+# line 2791
+
+# begin: CallStatement at 309.15; stackHeight = 24
+# end: Call at 305.15; stackHeight = 28
+# line 2792
+
+# begin: Call at 309.15; stackHeight = 24
+    lw $t0, ($sp)
+# line 2793
+
+# begin: IdentifierExp at 309.7; stackHeight = 24
+    addu $sp, $sp, 4
+# line 2794
+
+    lw $t0, 12($sp)
+# end: CallStatement at 305.15; stackHeight = 24
+# line 2795
+
+    subu $sp, $sp, 4
+# begin: CallStatement at 307.26; stackHeight = 24
+# line 2796
+
+    sw $t0, ($sp)
+# begin: Call at 307.26; stackHeight = 24
+# line 2797
+
+# end: IdentifierExp at 309.7; stackHeight = 28
+# begin: IdentifierExp at 307.7; stackHeight = 24
+# line 2798
+
+    sw $s2, 0($sp)
+    subu $sp, $sp, 4
+# line 2800
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 2801
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 307.7; stackHeight = 28
+# line 2802
+
+    lw $t0, -12($s2)
+# begin: IdentifierExp at 307.34; stackHeight = 28
+# line 2803
+
+    lw $t0, 60($t0)
+    lw $t0, 20($sp)
+# line 2804
+
+    jalr $t0 # setRed
+    subu $sp, $sp, 4
+# line 2805
+
+    addu $sp, $sp, 0
+    sw $t0, ($sp)
+# line 2806
+
+    lw $s2, ($sp)
+# end: IdentifierExp at 307.34; stackHeight = 32
+# line 2807
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"node"
+# line 2808
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 307.42; stackHeight = 32
+# line 2809
+
+    sw $t0, ($sp)
+    lw $t0, 40($sp)
+# line 2810
+
+# end: Call at 309.15; stackHeight = 28
+    subu $sp, $sp, 4
+# line 2811
+
+    lw $t0, ($sp)
+    sw $t0, ($sp)
+# line 2812
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 307.42; stackHeight = 36
+# line 2813
+
+# end: CallStatement at 309.15; stackHeight = 24
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2814
+
+# begin: CallStatement at 310.19; stackHeight = 24
+    lw $t0, 8($sp)
+# line 2815
+
+# begin: Call at 310.19; stackHeight = 24
+    sw $s2, 8($sp)
+# line 2816
+
+# begin: IdentifierExp at 310.7; stackHeight = 24
+    move $s2, $t0
+# line 2817
+
+    lw $t0, 8($sp)
+    beq $s2, $zero, nullPtrException
+# line 2818
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 2819
+
+    sw $t0, ($sp)
+    lw $t0, 84($t0)
+# line 2820
+
+# end: IdentifierExp at 310.7; stackHeight = 28
+    jalr $t0 # setLeft
+# line 2821
+
+    lw $t0, 0($sp)
+    addu $sp, $sp, 8
+# line 2822
+
+    sw $s2, 0($sp)
+    lw $s2, ($sp)
+# line 2823
+
+    move $s2, $t0
+    addu $sp, $sp, 4
+# line 2824
+
+    beq $s2, $zero, nullPtrException
+    subu $sp, $sp, 4
+# line 2825
+
+    lw $t0, -12($s2)
+    sw $t0, ($sp)
+# line 2826
+
+    lw $t0, 20($t0)
+# end: Call at 307.26; stackHeight = 28
+# line 2827
+
+    jalr $t0 # setBlack
+    lw $t0, ($sp)
+# line 2828
+
+    addu $sp, $sp, 0
+    addu $sp, $sp, 4
+# line 2829
+
+    lw $s2, ($sp)
+# end: CallStatement at 307.26; stackHeight = 24
+# line 2830
+
+    addu $sp, $sp, 4
+# begin: CallStatement at 308.26; stackHeight = 24
+# line 2831
+
+    subu $sp, $sp, 4
+# begin: Call at 308.26; stackHeight = 24
+# line 2832
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 308.7; stackHeight = 24
+# line 2833
+
+# end: Call at 310.19; stackHeight = 28
+    lw $t0, 0($sp)
+# line 2834
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2835
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2836
+
+# end: CallStatement at 310.19; stackHeight = 24
+# end: IdentifierExp at 308.7; stackHeight = 28
+# line 2837
+
+# begin: Assign at 311.14; stackHeight = 24
+# begin: IdentifierExp at 308.35; stackHeight = 28
+# line 2838
+
+# begin: IdentifierExp at 311.16; stackHeight = 24
+    lw $t0, 16($sp)
+# line 2839
+
+    lw $t0, 12($sp)
+    subu $sp, $sp, 4
+# line 2840
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2841
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 308.35; stackHeight = 32
+# line 2842
+
+# end: IdentifierExp at 311.16; stackHeight = 28
+    lw $zero, ($sp) #**"node"
+# line 2843
+
+    lw $t0, ($sp)
+# begin: IdentifierExp at 308.44; stackHeight = 32
+# line 2844
+
+    addu $sp, $sp, 4
+    lw $t0, 40($sp)
+# line 2845
+
+    sw $t0, 20($sp)
+    subu $sp, $sp, 4
+# line 2846
+
+# end: Assign at 311.14; stackHeight = 24
+    sw $t0, ($sp)
+# line 2847
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 308.44; stackHeight = 36
+# line 2848
+
+# end: Block at 300.8; stackHeight = 20
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2849
+
+  if_done_572:
+    lw $t0, 8($sp)
+# line 2850
+
+# end: If at 291.8; stackHeight = 20
+    sw $s2, 8($sp)
+# line 2851
+
+  if_done_573:
+    move $s2, $t0
+# line 2852
+
+# end: If at 285.3; stackHeight = 20
+    beq $s2, $zero, nullPtrException
+# line 2853
+
+# end: Block at 284.26; stackHeight = 20
+    lw $t0, -12($s2)
+# line 2854
+
+    j if_done_713
+    lw $t0, 80($t0)
+# line 2855
+
+  if_else_713:
+    jalr $t0 # setRight
+# line 2856
+
+# begin: If at 314.11; stackHeight = 20
+    addu $sp, $sp, 8
+# line 2857
+
+# begin: Call at 314.23; stackHeight = 20
+    lw $s2, ($sp)
+# line 2858
+
+# begin: IdentifierExp at 314.15; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2859
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 2860
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2861
+
+    sw $t0, ($sp)
+# end: Call at 308.26; stackHeight = 28
+# line 2862
+
+# end: IdentifierExp at 314.15; stackHeight = 24
+    lw $t0, ($sp)
+# line 2863
+
+    lw $t0, 0($sp)
+    addu $sp, $sp, 4
+# line 2864
+
+    sw $s2, 0($sp)
+# end: CallStatement at 308.26; stackHeight = 24
+# line 2865
+
+    move $s2, $t0
+# begin: CallStatement at 309.15; stackHeight = 24
+# line 2866
+
+    beq $s2, $zero, nullPtrException
+# begin: Call at 309.15; stackHeight = 24
+# line 2867
+
+    lw $t0, -12($s2)
+# begin: IdentifierExp at 309.7; stackHeight = 24
+# line 2868
+
+    lw $t0, 24($t0)
+    lw $t0, 12($sp)
+# line 2869
+
+    jalr $t0 # isRed
+    subu $sp, $sp, 4
+# line 2870
+
+    addu $sp, $sp, 0
+    sw $t0, ($sp)
+# line 2871
+
+    lw $s2, ($sp)
+# end: IdentifierExp at 309.7; stackHeight = 28
+# line 2872
+
+    addu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 2873
+
+    subu $sp, $sp, 4
+    sw $s2, 0($sp)
+# line 2874
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 2875
+
+# end: Call at 314.23; stackHeight = 24
+    beq $s2, $zero, nullPtrException
+# line 2876
+
+    lw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 2877
+
+    addu $sp, $sp, 4
+    lw $t0, 60($t0)
+# line 2878
+
+    beq $t0, $zero, if_else_712
+    jalr $t0 # setRed
+# line 2879
+
+# begin: Block at 314.32; stackHeight = 20
+    addu $sp, $sp, 0
+# line 2880
+
+# begin: LocalVarDecl at 315.23; stackHeight = 20
+    lw $s2, ($sp)
+# line 2881
+
+# begin: Call at 315.56; stackHeight = 20
+    addu $sp, $sp, 4
+# line 2882
+
+# begin: IdentifierExp at 315.44; stackHeight = 20
+    subu $sp, $sp, 4
+# line 2883
+
+    lw $t0, 4($sp)
+    sw $t0, ($sp)
+# line 2884
+
+    subu $sp, $sp, 4
+# end: Call at 309.15; stackHeight = 28
+# line 2885
+
+    sw $t0, ($sp)
+    lw $t0, ($sp)
+# line 2886
+
+# end: IdentifierExp at 315.44; stackHeight = 24
+    addu $sp, $sp, 4
+# line 2887
+
+    lw $t0, 0($sp)
+# end: CallStatement at 309.15; stackHeight = 24
+# line 2888
+
+    sw $s2, 0($sp)
+# begin: CallStatement at 310.19; stackHeight = 24
+# line 2889
+
+    move $s2, $t0
+# begin: Call at 310.19; stackHeight = 24
+# line 2890
+
+    beq $s2, $zero, nullPtrException
+# begin: IdentifierExp at 310.7; stackHeight = 24
+# line 2891
+
+    lw $t0, -12($s2)
+    lw $t0, 8($sp)
+# line 2892
+
+    lw $t0, 36($t0)
+    subu $sp, $sp, 4
+# line 2893
+
+    jalr $t0 # asNonNull
+    sw $t0, ($sp)
+# line 2894
+
+    addu $sp, $sp, 0
+# end: IdentifierExp at 310.7; stackHeight = 28
+# line 2895
+
+    lw $s2, ($sp)
+    lw $t0, 0($sp)
+# line 2896
+
+    addu $sp, $sp, 4
+    sw $s2, 0($sp)
+# line 2897
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 2898
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 2899
+
+# end: Call at 315.56; stackHeight = 24
+    lw $t0, -12($s2)
+# line 2900
+
+    lw $zero, ($sp) #**"innerNephewNonNull"
+    lw $t0, 20($t0)
+# line 2901
+
+# end: LocalVarDecl at 315.23; stackHeight = 24
+    jalr $t0 # setBlack
+# line 2902
+
+# begin: LocalVarDecl at 316.16; stackHeight = 24
+    addu $sp, $sp, 0
+# line 2903
+
+# begin: Call at 317.26; stackHeight = 24
+    lw $s2, ($sp)
+# line 2904
+
+# begin: IdentifierExp at 317.7; stackHeight = 24
+    addu $sp, $sp, 4
+# line 2905
+
+    lw $t0, 0($sp)
+    subu $sp, $sp, 4
+# line 2906
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 2907
+
+    sw $t0, ($sp)
+# end: Call at 310.19; stackHeight = 28
+# line 2908
+
+# end: IdentifierExp at 317.7; stackHeight = 28
+    lw $t0, ($sp)
+# line 2909
+
+# begin: IdentifierExp at 317.34; stackHeight = 28
+    addu $sp, $sp, 4
+# line 2910
+
+    lw $t0, 36($sp)
+# end: CallStatement at 310.19; stackHeight = 24
+# line 2911
+
+    subu $sp, $sp, 4
+# begin: Assign at 311.14; stackHeight = 24
+# line 2912
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 311.16; stackHeight = 24
+# line 2913
+
+# end: IdentifierExp at 317.34; stackHeight = 32
+    lw $t0, 12($sp)
+# line 2914
+
+    lw $t0, 4($sp)
+    subu $sp, $sp, 4
+# line 2915
+
+    sw $s2, 4($sp)
+    sw $t0, ($sp)
+# line 2916
+
+    move $s2, $t0
+# end: IdentifierExp at 311.16; stackHeight = 28
+# line 2917
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 2918
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 2919
+
+    lw $t0, 76($t0)
+    sw $t0, 20($sp)
+# line 2920
+
+    jalr $t0 # getLeft
+# end: Assign at 311.14; stackHeight = 24
+# line 2921
+
+    lw $s2, ($sp)
+# end: Block at 300.8; stackHeight = 20
+# line 2923
+
+    addu $sp, $sp, 4
+  if_done_572:
+# line 2924
+
+    subu $sp, $sp, 4
+# end: If at 291.8; stackHeight = 20
+# line 2925
+
+    sw $t0, ($sp)
+  if_done_573:
+# line 2926
+
+# end: Call at 317.26; stackHeight = 28
+# end: If at 285.3; stackHeight = 20
+# line 2927
+
+    lw $zero, ($sp) #**"innerGrandNephew"
+# end: Block at 284.26; stackHeight = 20
+# line 2928
+
+# end: LocalVarDecl at 316.16; stackHeight = 28
+    j if_done_713
+# line 2929
+
+# begin: If at 318.3; stackHeight = 28
+  if_else_713:
+# line 2930
+
+# begin: Call at 318.24; stackHeight = 28
+# begin: If at 314.11; stackHeight = 20
+# line 2931
+
+# begin: IdentifierExp at 318.7; stackHeight = 28
+# begin: Call at 314.23; stackHeight = 20
+# line 2932
+
+    lw $t0, 0($sp)
+# begin: IdentifierExp at 314.15; stackHeight = 20
+# line 2933
+
+    subu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 2934
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2935
+
+# end: IdentifierExp at 318.7; stackHeight = 32
+    sw $t0, ($sp)
+# line 2936
+
+    lw $t0, 0($sp)
+# end: IdentifierExp at 314.15; stackHeight = 24
+# line 2937
+
+    sw $s2, 0($sp)
+    lw $t0, 0($sp)
+# line 2938
+
+    move $s2, $t0
+    sw $s2, 0($sp)
+# line 2939
+
+    beq $s2, $zero, nullPtrException
+    move $s2, $t0
+# line 2940
+
+    lw $t0, -12($s2)
+    beq $s2, $zero, nullPtrException
+# line 2941
+
+    lw $t0, 24($t0)
+    lw $t0, -12($s2)
+# line 2942
+
+    jalr $t0 # isRed
+    lw $t0, 24($t0)
+# line 2943
+
+    addu $sp, $sp, 0
+    jalr $t0 # isRed
+# line 2944
+
+    lw $s2, ($sp)
+    addu $sp, $sp, 0
+# line 2945
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2946
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 2947
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2948
+
+# end: Call at 318.24; stackHeight = 32
+    sw $t0, ($sp)
+# line 2949
+
+    lw $t0, ($sp)
+# end: Call at 314.23; stackHeight = 24
+# line 2950
+
+    addu $sp, $sp, 4
+    lw $t0, ($sp)
+# line 2951
+
+    beq $t0, $zero, if_else_638
+    addu $sp, $sp, 4
+# line 2952
+
+# begin: Block at 318.33; stackHeight = 28
+    beq $t0, $zero, if_else_712
+# line 2953
+
+# begin: LocalVarDecl at 320.27; stackHeight = 28
+# begin: Block at 314.32; stackHeight = 20
+# line 2954
+
+# begin: Call at 321.21; stackHeight = 28
+# begin: LocalVarDecl at 315.23; stackHeight = 20
+# line 2955
+
+# begin: IdentifierExp at 321.4; stackHeight = 28
+# begin: Call at 315.56; stackHeight = 20
+# line 2956
+
+    lw $t0, 0($sp)
+# begin: IdentifierExp at 315.44; stackHeight = 20
+# line 2957
+
+    subu $sp, $sp, 4
+    lw $t0, 4($sp)
+# line 2958
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2959
+
+# end: IdentifierExp at 321.4; stackHeight = 32
+    sw $t0, ($sp)
+# line 2960
+
+    lw $t0, 0($sp)
+# end: IdentifierExp at 315.44; stackHeight = 24
+# line 2961
+
+    sw $s2, 0($sp)
+    lw $t0, 0($sp)
+# line 2962
+
+    move $s2, $t0
+    sw $s2, 0($sp)
+# line 2963
+
+    beq $s2, $zero, nullPtrException
+    move $s2, $t0
+# line 2964
+
+    lw $t0, -12($s2)
+    beq $s2, $zero, nullPtrException
+# line 2965
+
+    lw $t0, 36($t0)
+    lw $t0, -12($s2)
+# line 2966
+
+    jalr $t0 # asNonNull
+    lw $t0, 36($t0)
+# line 2967
+
+    addu $sp, $sp, 0
+    jalr $t0 # asNonNull
+# line 2968
+
+    lw $s2, ($sp)
+    addu $sp, $sp, 0
+# line 2969
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 2970
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 2971
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2972
+
+# end: Call at 321.21; stackHeight = 32
+    sw $t0, ($sp)
+# line 2973
+
+    lw $zero, ($sp) #**"innerGrandNephewNonNull"
+# end: Call at 315.56; stackHeight = 24
+# line 2974
+
+# end: LocalVarDecl at 320.27; stackHeight = 32
+    lw $zero, ($sp) #**"innerNephewNonNull"
+# line 2975
+
+# begin: CallStatement at 322.14; stackHeight = 32
+# end: LocalVarDecl at 315.23; stackHeight = 24
+# line 2976
+
+# begin: Call at 322.14; stackHeight = 32
+# begin: LocalVarDecl at 316.16; stackHeight = 24
+# line 2977
+
+# begin: IdentifierExp at 322.7; stackHeight = 32
+# begin: Call at 317.26; stackHeight = 24
+# line 2978
+
+    lw $t0, 24($sp)
+# begin: IdentifierExp at 317.7; stackHeight = 24
+# line 2979
+
+    subu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 2980
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 2981
+
+# end: IdentifierExp at 322.7; stackHeight = 36
+    sw $t0, ($sp)
+# line 2982
+
+# begin: Call at 322.47; stackHeight = 36
+# end: IdentifierExp at 317.7; stackHeight = 28
+# line 2983
+
+# begin: IdentifierExp at 322.23; stackHeight = 36
+# begin: IdentifierExp at 317.34; stackHeight = 28
+# line 2984
+
+    lw $t0, 4($sp)
+    lw $t0, 36($sp)
+# line 2985
+
+# end: IdentifierExp at 322.23; stackHeight = 40
+# end: IdentifierExp at 317.34; stackHeight = 32
+# line 2988
+
+# begin: IdentifierExp at 322.55; stackHeight = 40
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 2989
+
+    lw $t0, 48($sp)
+    lw $t0, 4($sp)
+# line 2990
+
+    subu $sp, $sp, 4
+    sw $s2, 4($sp)
+# line 2991
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 2992
+
+# end: IdentifierExp at 322.55; stackHeight = 44
+    beq $s2, $zero, nullPtrException
+# line 2993
+
+    lw $t0, 4($sp)
+    lw $t0, -12($s2)
+# line 2994
+
+    sw $s2, 4($sp)
+    lw $t0, 76($t0)
+# line 2995
+
+    move $s2, $t0
+    jalr $t0 # getLeft
+# line 2996
+
+    beq $s2, $zero, nullPtrException
+    addu $sp, $sp, 4
+# line 2997
+
+    lw $t0, -12($s2)
+    lw $s2, ($sp)
+# line 2998
+
+    lw $t0, 76($t0)
+    addu $sp, $sp, 4
+# line 2999
+
+    jalr $t0 # getLeft
+    subu $sp, $sp, 4
+# line 3000
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3001
+
+    lw $s2, ($sp)
+# end: Call at 317.26; stackHeight = 28
+# line 3002
+
+    addu $sp, $sp, 4
+    lw $zero, ($sp) #**"innerGrandNephew"
+# line 3003
+
+    subu $sp, $sp, 4
+# end: LocalVarDecl at 316.16; stackHeight = 28
+# line 3004
+
+    sw $t0, ($sp)
+# begin: If at 318.3; stackHeight = 28
+# line 3005
+
+# end: Call at 322.47; stackHeight = 40
+# begin: Call at 318.24; stackHeight = 28
+# line 3006
+
+# begin: IdentifierExp at 323.9; stackHeight = 40
+# begin: IdentifierExp at 318.7; stackHeight = 28
+# line 3007
+
+    lw $t0, 48($sp)
+    lw $t0, 0($sp)
+# line 3008
+
+# end: IdentifierExp at 323.9; stackHeight = 44
+# end: IdentifierExp at 318.7; stackHeight = 32
+# line 3011
+
+    lw $t0, 8($sp)
+    lw $t0, 0($sp)
+# line 3012
+
+    sw $s2, 8($sp)
+    sw $s2, 0($sp)
+# line 3013
+
+    lw $t0, 80($t0)
+    lw $t0, 24($t0)
+# line 3017
+
+    jalr $t0 # setRight
+    jalr $t0 # isRed
+# line 3018
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 0
+# line 3019
+
+# end: Call at 322.14; stackHeight = 36
+# end: Call at 318.24; stackHeight = 32
+# line 3024
+
+# end: CallStatement at 322.14; stackHeight = 32
+    beq $t0, $zero, if_else_638
+# line 3027
+
+# begin: CallStatement at 324.26; stackHeight = 32
+# begin: Block at 318.33; stackHeight = 28
+# line 3028
+
+# begin: Call at 324.26; stackHeight = 32
+# begin: LocalVarDecl at 320.27; stackHeight = 28
+# line 3029
+
+# begin: IdentifierExp at 324.7; stackHeight = 32
+# begin: Call at 321.21; stackHeight = 28
+# line 3030
+
+    lw $t0, 8($sp)
+# begin: IdentifierExp at 321.4; stackHeight = 28
+# line 3031
+
+    subu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 3032
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 3033
+
+# end: IdentifierExp at 324.7; stackHeight = 36
+    sw $t0, ($sp)
+# line 3034
+
+# begin: Call at 325.37; stackHeight = 36
+# end: IdentifierExp at 321.4; stackHeight = 32
+# line 3035
+
+# begin: IdentifierExp at 325.13; stackHeight = 36
+    lw $t0, 0($sp)
+# line 3036
+
+    lw $t0, 4($sp)
+    sw $s2, 0($sp)
+# line 3037
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 3038
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 3039
+
+# end: IdentifierExp at 325.13; stackHeight = 40
+    lw $t0, -12($s2)
+# line 3040
+
+# begin: IdentifierExp at 325.46; stackHeight = 40
+    lw $t0, 36($t0)
+# line 3041
+
+    lw $t0, 48($sp)
+    jalr $t0 # asNonNull
+# line 3042
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 0
+# line 3043
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 3044
+
+# end: IdentifierExp at 325.46; stackHeight = 44
+    addu $sp, $sp, 4
+# line 3045
+
+    lw $t0, 4($sp)
+    subu $sp, $sp, 4
+# line 3046
+
+    sw $s2, 4($sp)
+    sw $t0, ($sp)
+# line 3047
+
+    move $s2, $t0
+# end: Call at 321.21; stackHeight = 32
+# line 3048
+
+    beq $s2, $zero, nullPtrException
+    lw $zero, ($sp) #**"innerGrandNephewNonNull"
+# line 3049
+
+    lw $t0, -12($s2)
+# end: LocalVarDecl at 320.27; stackHeight = 32
+# line 3050
+
+    lw $t0, 72($t0)
+# begin: CallStatement at 322.14; stackHeight = 32
+# line 3051
+
+    jalr $t0 # getRight
+# begin: Call at 322.14; stackHeight = 32
+# line 3052
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 322.7; stackHeight = 32
+# line 3053
+
+    lw $s2, ($sp)
+    lw $t0, 24($sp)
+# line 3054
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 3055
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3056
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 322.7; stackHeight = 36
+# line 3057
+
+# end: Call at 325.37; stackHeight = 40
+# begin: Call at 322.47; stackHeight = 36
+# line 3058
+
+# begin: IdentifierExp at 326.13; stackHeight = 40
+# begin: IdentifierExp at 322.23; stackHeight = 36
+# line 3059
+
+    lw $t0, 48($sp)
+    lw $t0, 4($sp)
+# line 3060
+
+# end: IdentifierExp at 326.13; stackHeight = 44
+# end: IdentifierExp at 322.23; stackHeight = 40
+# line 3063
+
+    lw $t0, 8($sp)
+# begin: IdentifierExp at 322.55; stackHeight = 40
+# line 3064
+
+    sw $s2, 8($sp)
+    lw $t0, 48($sp)
+# line 3065
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 3066
+
+    beq $s2, $zero, nullPtrException
+    sw $t0, ($sp)
+# line 3067
+
+    lw $t0, -12($s2)
+# end: IdentifierExp at 322.55; stackHeight = 44
+# line 3068
+
+    lw $t0, 84($t0)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3069
+
+    jalr $t0 # setLeft
+    lw $t0, 4($sp)
+# line 3070
+
+    addu $sp, $sp, 8
+    sw $s2, 4($sp)
+# line 3071
+
+    lw $s2, ($sp)
+    move $s2, $t0
+# line 3072
+
+    addu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 3073
+
+    subu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 3074
+
+    sw $t0, ($sp)
+    lw $t0, 76($t0)
+# line 3075
+
+# end: Call at 324.26; stackHeight = 36
+    jalr $t0 # getLeft
+# line 3076
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 3077
+
+    addu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 3078
+
+# end: CallStatement at 324.26; stackHeight = 32
+    addu $sp, $sp, 4
+# line 3079
+
+# begin: CallStatement at 327.31; stackHeight = 32
+    subu $sp, $sp, 4
+# line 3080
+
+# begin: Call at 327.31; stackHeight = 32
+    sw $t0, ($sp)
+# line 3081
+
+# begin: IdentifierExp at 327.7; stackHeight = 32
+# end: Call at 322.47; stackHeight = 40
+# line 3082
+
+    lw $t0, 0($sp)
+    lw $zero, ($sp) #**"node"
+# line 3083
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 323.9; stackHeight = 40
+# line 3084
+
+    sw $t0, ($sp)
+    lw $t0, 48($sp)
+# line 3085
+
+# end: IdentifierExp at 327.7; stackHeight = 36
+    subu $sp, $sp, 4
+# line 3086
+
+    lw $t0, 0($sp)
+    sw $t0, ($sp)
+# line 3087
+
+    sw $s2, 0($sp)
+# end: IdentifierExp at 323.9; stackHeight = 44
+# line 3088
+
+    move $s2, $t0
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3089
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 8($sp)
+# line 3090
+
+    lw $t0, -12($s2)
+    sw $s2, 8($sp)
+# line 3091
+
+    lw $t0, 20($t0)
+    move $s2, $t0
+# line 3092
+
+    jalr $t0 # setBlack
+    beq $s2, $zero, nullPtrException
+# line 3093
+
+    addu $sp, $sp, 0
+    lw $t0, -12($s2)
+# line 3094
+
+    lw $s2, ($sp)
+    lw $t0, 80($t0)
+# line 3095
+
+    addu $sp, $sp, 4
+    jalr $t0 # setRight
+# line 3096
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 8
+# line 3097
+
+    sw $t0, ($sp)
+    lw $s2, ($sp)
+# line 3098
+
+# end: Call at 327.31; stackHeight = 36
+    addu $sp, $sp, 4
+# line 3099
+
+    lw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 3100
+
+    addu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3101
+
+# end: CallStatement at 327.31; stackHeight = 32
+# end: Call at 322.14; stackHeight = 36
+# line 3102
+
+# begin: Assign at 328.14; stackHeight = 32
+    lw $t0, ($sp)
+# line 3103
+
+# begin: IdentifierExp at 328.16; stackHeight = 32
+    addu $sp, $sp, 4
+# line 3104
+
+    lw $t0, 0($sp)
+# end: CallStatement at 322.14; stackHeight = 32
+# line 3105
+
+    subu $sp, $sp, 4
+# begin: CallStatement at 324.26; stackHeight = 32
+# line 3106
+
+    sw $t0, ($sp)
+# begin: Call at 324.26; stackHeight = 32
+# line 3107
+
+# end: IdentifierExp at 328.16; stackHeight = 36
+# begin: IdentifierExp at 324.7; stackHeight = 32
+# line 3108
+
+    lw $t0, ($sp)
+    lw $t0, 8($sp)
+# line 3109
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 3110
+
+    sw $t0, 28($sp)
+    sw $t0, ($sp)
+# line 3111
+
+# end: Assign at 328.14; stackHeight = 32
+# end: IdentifierExp at 324.7; stackHeight = 36
+# line 3112
+
+    addu $sp, $sp, 4
+# begin: Call at 325.37; stackHeight = 36
+# line 3113
+
+# end: Block at 318.33; stackHeight = 28
+# begin: IdentifierExp at 325.13; stackHeight = 36
+# line 3114
+
+    j if_done_638
+    lw $t0, 4($sp)
+# line 3115
+
+  if_else_638:
+    subu $sp, $sp, 4
+# line 3116
+
+# begin: Block at 330.8; stackHeight = 28
+    sw $t0, ($sp)
+# line 3117
+
+# begin: CallStatement at 332.14; stackHeight = 28
+# end: IdentifierExp at 325.13; stackHeight = 40
+# line 3118
+
+# begin: Call at 332.14; stackHeight = 28
+# begin: IdentifierExp at 325.46; stackHeight = 40
+# line 3119
+
+# begin: IdentifierExp at 332.7; stackHeight = 28
+    lw $t0, 48($sp)
+# line 3120
+
+    lw $t0, 20($sp)
+    subu $sp, $sp, 4
+# line 3121
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3122
+
+    sw $t0, ($sp)
+# end: IdentifierExp at 325.46; stackHeight = 44
+# line 3123
+
+# end: IdentifierExp at 332.7; stackHeight = 32
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3124
+
+# begin: Call at 332.42; stackHeight = 32
+    lw $t0, 4($sp)
+# line 3125
+
+# begin: IdentifierExp at 332.23; stackHeight = 32
+    sw $s2, 4($sp)
+# line 3126
+
+    lw $t0, 8($sp)
+    move $s2, $t0
+# line 3127
+
+    subu $sp, $sp, 4
+    beq $s2, $zero, nullPtrException
+# line 3128
+
+    sw $t0, ($sp)
+    lw $t0, -12($s2)
+# line 3129
+
+# end: IdentifierExp at 332.23; stackHeight = 36
+    lw $t0, 72($t0)
+# line 3130
+
+# begin: IdentifierExp at 332.50; stackHeight = 36
+    jalr $t0 # getRight
+# line 3131
+
+    lw $t0, 44($sp)
+    addu $sp, $sp, 4
+# line 3132
+
+    subu $sp, $sp, 4
+    lw $s2, ($sp)
+# line 3133
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 3134
+
+# end: IdentifierExp at 332.50; stackHeight = 40
+    subu $sp, $sp, 4
+# line 3135
+
+    lw $t0, 4($sp)
+    sw $t0, ($sp)
+# line 3136
+
+    sw $s2, 4($sp)
+# end: Call at 325.37; stackHeight = 40
+# line 3137
+
+    move $s2, $t0
+    lw $zero, ($sp) #**"node"
+# line 3138
+
+    beq $s2, $zero, nullPtrException
+# begin: IdentifierExp at 326.13; stackHeight = 40
+# line 3139
+
+    lw $t0, -12($s2)
+    lw $t0, 48($sp)
+# line 3140
+
+    lw $t0, 76($t0)
+    subu $sp, $sp, 4
+# line 3141
+
+    jalr $t0 # getLeft
+    sw $t0, ($sp)
+# line 3142
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 326.13; stackHeight = 44
+# line 3143
+
+    lw $s2, ($sp)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3144
+
+    addu $sp, $sp, 4
+    lw $t0, 8($sp)
+# line 3145
+
+    subu $sp, $sp, 4
+    sw $s2, 8($sp)
+# line 3146
+
+    sw $t0, ($sp)
+    move $s2, $t0
+# line 3147
+
+# end: Call at 332.42; stackHeight = 36
+    beq $s2, $zero, nullPtrException
+# line 3148
+
+# begin: IdentifierExp at 333.9; stackHeight = 36
+    lw $t0, -12($s2)
+# line 3149
+
+    lw $t0, 44($sp)
+    lw $t0, 84($t0)
+# line 3150
+
+    subu $sp, $sp, 4
+    jalr $t0 # setLeft
+# line 3151
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 8
+# line 3152
+
+# end: IdentifierExp at 333.9; stackHeight = 40
+    lw $s2, ($sp)
+# line 3153
+
+    lw $t0, 8($sp)
+    addu $sp, $sp, 4
+# line 3154
+
+    sw $s2, 8($sp)
+    subu $sp, $sp, 4
+# line 3155
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 3156
+
+    beq $s2, $zero, nullPtrException
+# end: Call at 324.26; stackHeight = 36
+# line 3157
+
+    lw $t0, -12($s2)
+    lw $t0, ($sp)
+# line 3158
+
+    lw $t0, 80($t0)
+    addu $sp, $sp, 4
+# line 3159
+
+    jalr $t0 # setRight
+# end: CallStatement at 324.26; stackHeight = 32
+# line 3160
+
+    addu $sp, $sp, 8
+# begin: CallStatement at 327.31; stackHeight = 32
+# line 3161
+
+    lw $s2, ($sp)
+# begin: Call at 327.31; stackHeight = 32
+# line 3162
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 327.7; stackHeight = 32
+# line 3163
+
+    subu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 3164
+
+    sw $t0, ($sp)
+    subu $sp, $sp, 4
+# line 3165
+
+# end: Call at 332.14; stackHeight = 32
+    sw $t0, ($sp)
+# line 3166
+
+    lw $t0, ($sp)
+# end: IdentifierExp at 327.7; stackHeight = 36
+# line 3167
+
+    addu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 3168
+
+# end: CallStatement at 332.14; stackHeight = 28
+    sw $s2, 0($sp)
+# line 3169
+
+# begin: CallStatement at 334.26; stackHeight = 28
+    move $s2, $t0
+# line 3170
+
+# begin: Call at 334.26; stackHeight = 28
+    beq $s2, $zero, nullPtrException
+# line 3171
+
+# begin: IdentifierExp at 334.7; stackHeight = 28
+    lw $t0, -12($s2)
+# line 3172
+
+    lw $t0, 4($sp)
+    lw $t0, 20($t0)
+# line 3173
+
+    subu $sp, $sp, 4
+    jalr $t0 # setBlack
+# line 3174
+
+    sw $t0, ($sp)
+    addu $sp, $sp, 0
+# line 3175
+
+# end: IdentifierExp at 334.7; stackHeight = 32
+    lw $s2, ($sp)
+# line 3176
+
+# begin: IdentifierExp at 334.34; stackHeight = 32
+    addu $sp, $sp, 4
+# line 3177
+
+    lw $t0, 24($sp)
+    subu $sp, $sp, 4
+# line 3178
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3179
+
+    sw $t0, ($sp)
+# end: Call at 327.31; stackHeight = 36
+# line 3180
+
+# end: IdentifierExp at 334.34; stackHeight = 36
+    lw $t0, ($sp)
+# line 3181
+
+# begin: IdentifierExp at 334.42; stackHeight = 36
+    addu $sp, $sp, 4
+# line 3182
+
+    lw $t0, 44($sp)
+# end: CallStatement at 327.31; stackHeight = 32
+# line 3183
+
+    subu $sp, $sp, 4
+# begin: Assign at 328.14; stackHeight = 32
+# line 3184
+
+    sw $t0, ($sp)
+# begin: IdentifierExp at 328.16; stackHeight = 32
+# line 3185
+
+# end: IdentifierExp at 334.42; stackHeight = 40
+    lw $t0, 0($sp)
+# line 3186
+
+    lw $t0, 8($sp)
+    subu $sp, $sp, 4
+# line 3187
+
+    sw $s2, 8($sp)
+    sw $t0, ($sp)
+# line 3188
+
+    move $s2, $t0
+# end: IdentifierExp at 328.16; stackHeight = 36
+# line 3189
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, ($sp)
+# line 3190
+
+    lw $t0, -12($s2)
+    addu $sp, $sp, 4
+# line 3191
+
+    lw $t0, 84($t0)
+    sw $t0, 28($sp)
+# line 3192
+
+    jalr $t0 # setLeft
+# end: Assign at 328.14; stackHeight = 32
+# line 3193
+
+    addu $sp, $sp, 8
+    addu $sp, $sp, 4
+# line 3194
+
+    lw $s2, ($sp)
+# end: Block at 318.33; stackHeight = 28
+# line 3195
+
+    addu $sp, $sp, 4
+    j if_done_638
+# line 3196
+
+    subu $sp, $sp, 4
+  if_else_638:
+# line 3197
+
+    sw $t0, ($sp)
+# begin: Block at 330.8; stackHeight = 28
+# line 3198
+
+# end: Call at 334.26; stackHeight = 32
+# begin: CallStatement at 332.14; stackHeight = 28
+# line 3199
+
+    lw $t0, ($sp)
+# begin: Call at 332.14; stackHeight = 28
+# line 3200
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 332.7; stackHeight = 28
+# line 3201
+
+# end: CallStatement at 334.26; stackHeight = 28
+    lw $t0, 20($sp)
+# line 3202
+
+# begin: CallStatement at 335.14; stackHeight = 28
+    subu $sp, $sp, 4
+# line 3203
+
+# begin: Call at 335.14; stackHeight = 28
+    sw $t0, ($sp)
+# line 3204
+
+# begin: IdentifierExp at 335.7; stackHeight = 28
+# end: IdentifierExp at 332.7; stackHeight = 32
+# line 3205
+
+    lw $t0, 20($sp)
+# begin: Call at 332.42; stackHeight = 32
+# line 3206
+
+    subu $sp, $sp, 4
+# begin: IdentifierExp at 332.23; stackHeight = 32
+# line 3207
+
+    sw $t0, ($sp)
+    lw $t0, 8($sp)
+# line 3208
+
+# end: IdentifierExp at 335.7; stackHeight = 32
+    subu $sp, $sp, 4
+# line 3209
+
+    lw $t0, 0($sp)
+    sw $t0, ($sp)
+# line 3210
+
+    sw $s2, 0($sp)
+# end: IdentifierExp at 332.23; stackHeight = 36
+# line 3211
+
+    move $s2, $t0
+# begin: IdentifierExp at 332.50; stackHeight = 36
+# line 3212
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, 44($sp)
+# line 3213
+
+    lw $t0, -12($s2)
+    subu $sp, $sp, 4
+# line 3214
+
+    lw $t0, 60($t0)
+    sw $t0, ($sp)
+# line 3215
+
+    jalr $t0 # setRed
+# end: IdentifierExp at 332.50; stackHeight = 40
+# line 3216
+
+    addu $sp, $sp, 0
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3217
+
+    lw $s2, ($sp)
+    lw $t0, 4($sp)
+# line 3218
+
+    addu $sp, $sp, 4
+    sw $s2, 4($sp)
+# line 3219
+
+    subu $sp, $sp, 4
+    move $s2, $t0
+# line 3220
+
+    sw $t0, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 3221
+
+# end: Call at 335.14; stackHeight = 32
+    lw $t0, -12($s2)
+# line 3222
+
+    lw $t0, ($sp)
+    lw $t0, 76($t0)
+# line 3223
+
+    addu $sp, $sp, 4
+    jalr $t0 # getLeft
+# line 3224
+
+# end: CallStatement at 335.14; stackHeight = 28
+    addu $sp, $sp, 4
+# line 3225
+
+# begin: CallStatement at 336.15; stackHeight = 28
+    lw $s2, ($sp)
+# line 3226
+
+# begin: Call at 336.15; stackHeight = 28
+    addu $sp, $sp, 4
+# line 3227
+
+# begin: IdentifierExp at 336.7; stackHeight = 28
+    subu $sp, $sp, 4
+# line 3228
+
+    lw $t0, 16($sp)
+    sw $t0, ($sp)
+# line 3229
+
+    subu $sp, $sp, 4
+# end: Call at 332.42; stackHeight = 36
+# line 3230
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"node"
+# line 3231
+
+# end: IdentifierExp at 336.7; stackHeight = 32
+# begin: IdentifierExp at 333.9; stackHeight = 36
+# line 3232
+
+    lw $t0, 0($sp)
+    lw $t0, 44($sp)
+# line 3233
+
+    sw $s2, 0($sp)
+    subu $sp, $sp, 4
+# line 3234
+
+    move $s2, $t0
+    sw $t0, ($sp)
+# line 3235
+
+    beq $s2, $zero, nullPtrException
+# end: IdentifierExp at 333.9; stackHeight = 40
+# line 3236
+
+    lw $t0, -12($s2)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3237
+
+    lw $t0, 20($t0)
+    lw $t0, 8($sp)
+# line 3238
+
+    jalr $t0 # setBlack
+    sw $s2, 8($sp)
+# line 3239
+
+    addu $sp, $sp, 0
+    move $s2, $t0
+# line 3240
+
+    lw $s2, ($sp)
+    beq $s2, $zero, nullPtrException
+# line 3241
+
+    addu $sp, $sp, 4
+    lw $t0, -12($s2)
+# line 3242
+
+    subu $sp, $sp, 4
+    lw $t0, 80($t0)
+# line 3243
+
+    sw $t0, ($sp)
+    jalr $t0 # setRight
+# line 3244
+
+# end: Call at 336.15; stackHeight = 32
+    addu $sp, $sp, 8
+# line 3245
+
+    lw $t0, ($sp)
+    lw $s2, ($sp)
+# line 3246
+
+# end: CallStatement at 336.15; stackHeight = 28
+    subu $sp, $sp, 4
+# line 3248
+
+# begin: Assign at 337.14; stackHeight = 28
+    sw $t0, ($sp)
+# line 3249
+
+# begin: IdentifierExp at 337.16; stackHeight = 28
+# end: Call at 332.14; stackHeight = 32
+# line 3250
+
+    lw $t0, 16($sp)
+    lw $t0, ($sp)
+# line 3251
+
+    subu $sp, $sp, 4
+    addu $sp, $sp, 4
+# line 3252
+
+    sw $t0, ($sp)
+# end: CallStatement at 332.14; stackHeight = 28
+# line 3253
+
+# end: IdentifierExp at 337.16; stackHeight = 32
+# begin: CallStatement at 334.26; stackHeight = 28
+# line 3254
+
+    lw $t0, ($sp)
+# begin: Call at 334.26; stackHeight = 28
+# line 3255
+
+    addu $sp, $sp, 4
+# begin: IdentifierExp at 334.7; stackHeight = 28
+# line 3256
+
+    sw $t0, 24($sp)
+    lw $t0, 4($sp)
+# line 3257
+
+# end: Assign at 337.14; stackHeight = 28
+    subu $sp, $sp, 4
+# line 3258
+
+# end: Block at 330.8; stackHeight = 28
+    sw $t0, ($sp)
+# line 3259
+
+  if_done_638:
+# end: IdentifierExp at 334.7; stackHeight = 32
+# line 3260
+
+# end: If at 318.3; stackHeight = 28
+# begin: IdentifierExp at 334.34; stackHeight = 32
+# line 3261
+
+    addu $sp, $sp, 8
+    lw $t0, 24($sp)
+# line 3262
+
+# end: Block at 314.32; stackHeight = 20
+    subu $sp, $sp, 4
+# line 3263
+
+    j if_done_712
+    sw $t0, ($sp)
+# line 3264
+
+  if_else_712:
+# end: IdentifierExp at 334.34; stackHeight = 36
+# line 3265
+
+# begin: Block at 340.11; stackHeight = 20
+    lw $zero, ($sp) #**"node"
+# line 3266
+
+# begin: If at 341.3; stackHeight = 20
+# begin: IdentifierExp at 334.42; stackHeight = 36
+# line 3267
+
+# begin: Call at 341.19; stackHeight = 20
+    lw $t0, 44($sp)
+# line 3268
+
+# begin: IdentifierExp at 341.7; stackHeight = 20
+    subu $sp, $sp, 4
+# line 3269
+
+    lw $t0, 0($sp)
+    sw $t0, ($sp)
+# line 3270
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 334.42; stackHeight = 40
+# line 3271
+
+    sw $t0, ($sp)
+    lw $zero, ($sp) #**"doMirrorImage"
+# line 3272
+
+# end: IdentifierExp at 341.7; stackHeight = 24
+    lw $t0, 8($sp)
+# line 3273
+
+    lw $t0, 0($sp)
+    sw $s2, 8($sp)
+# line 3274
+
+    sw $s2, 0($sp)
+    move $s2, $t0
+# line 3275
+
+    move $s2, $t0
+    beq $s2, $zero, nullPtrException
+# line 3276
+
+    beq $s2, $zero, nullPtrException
+    lw $t0, -12($s2)
+# line 3277
+
+    lw $t0, -12($s2)
+    lw $t0, 84($t0)
+# line 3278
+
+    lw $t0, 24($t0)
+    jalr $t0 # setLeft
+# line 3279
+
+    jalr $t0 # isRed
+    addu $sp, $sp, 8
+# line 3280
+
+    addu $sp, $sp, 0
+    lw $s2, ($sp)
+# line 3281
+
+    lw $s2, ($sp)
+    addu $sp, $sp, 4
+# line 3282
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 3283
+
+    subu $sp, $sp, 4
+    sw $t0, ($sp)
+# line 3284
+
+    sw $t0, ($sp)
+# end: Call at 334.26; stackHeight = 32
+# line 3285
+
+# end: Call at 341.19; stackHeight = 24
+    lw $t0, ($sp)
+# line 3286
+
+    lw $t0, ($sp)
+    addu $sp, $sp, 4
+# line 3287
+
+    addu $sp, $sp, 4
+# end: CallStatement at 334.26; stackHeight = 28
+# line 3288
+
+    beq $t0, $zero, if_else_710
+# begin: CallStatement at 335.14; stackHeight = 28
+# line 3289
+
+# begin: Block at 341.28; stackHeight = 20
+# begin: Call at 335.14; stackHeight = 28
+# line 3290
+
+# begin: CallStatement at 343.14; stackHeight = 20
+# begin: IdentifierExp at 335.7; stackHeight = 28
+# line 3291
+
+# begin: Call at 343.14; stackHeight = 20
+    lw $t0, 20($sp)
+# line 3292
+
+# begin: IdentifierExp at 343.7; stackHeight = 20
+    subu $sp, $sp, 4
+# line 3293
+
+    lw $t0, 12($sp)
+    sw $t0, ($sp)
+# line 3294
+
+    subu $sp, $sp, 4
+# end: IdentifierExp at 335.7; stackHeight = 32
+# line 3295
+
+    sw $t0, ($sp)
+    lw $t0, 0($sp)
+# line 3296
+
+# end: IdentifierExp at 343.7; stackHeight = 24
+    sw $s2, 0($sp)
+# line 3297
+
+# begin: Call at 343.31; stackHeight = 24
+    move $s2, $t0
+# line 3298
+
+# begin: IdentifierExp at 343.23; stackHeight = 24
+    beq $s2, $zero, nullPtrException
+# line 3299
+
+    lw $t0, 12($sp)
+    lw $t0, -12($s2)
+# line 3300
+
+    subu $sp, $sp, 4
+    lw $t0, 60($t0)
+# line 3301
+
+    sw $t0, ($sp)
+    jalr $t0 # setRed
+# line 3302
+
+# end: IdentifierExp at 343.23; stackHeight = 28
+    addu $sp, $sp, 0
+# line 3303
+
+# begin: IdentifierExp at 343.39; stackHeight = 28
+    lw $s2, ($sp)
+# line 3304
+
+    lw $t0, 36($sp)
+    addu $sp, $sp, 4
+# line 3305
+
+# end: IdentifierExp at 343.39; stackHeight = 32
+# end: Call at 335.14; stackHeight = 32
+# line 3308
+
+    lw $t0, 4($sp)
+    lw $t0, ($sp)
+# line 3309
+
+    sw $s2, 4($sp)
+    addu $sp, $sp, 4
+# line 3310
+
+    move $s2, $t0
+# end: CallStatement at 335.14; stackHeight = 28
+# line 3311
+
+    beq $s2, $zero, nullPtrException
+# begin: CallStatement at 336.15; stackHeight = 28
+# line 3312
+
+    lw $t0, -12($s2)
+# begin: Call at 336.15; stackHeight = 28
+# line 3313
+
+    lw $t0, 76($t0)
+# begin: IdentifierExp at 336.7; stackHeight = 28
+# line 3314
+
+    jalr $t0 # getLeft
+    lw $t0, 16($sp)
+# line 3315
+
+    addu $sp, $sp, 4
+    subu $sp, $sp, 4
+# line 3316
+
+    lw $s2, ($sp)
+    sw $t0, ($sp)
+# line 3317
+
+    addu $sp, $sp, 4
+# end: IdentifierExp at 336.7; stackHeight = 32
+# line 3318
+
+    subu $sp, $sp, 4
+    lw $t0, 0($sp)
+# line 3319
+
+    sw $t0, ($sp)
+    sw $s2, 0($sp)
+# line 3320
+
+# end: Call at 343.31; stackHeight = 28
+    move $s2, $t0
+# line 3321
+
+# begin: IdentifierExp at 343.55; stackHeight = 28
+    beq $s2, $zero, nullPtrException
+# line 3322
+
+    lw $t0, 36($sp)
+    lw $t0, -12($s2)
+# line 3323
+
+    subu $sp, $sp, 4
+    lw $t0, 20($t0)
+# line 3324
+
+    sw $t0, ($sp)
+    jalr $t0 # setBlack
+# line 3325
+
+# end: IdentifierExp at 343.55; stackHeight = 32
+    addu $sp, $sp, 0
+# line 3326
+
+    lw $t0, 8($sp)
+    lw $s2, ($sp)
+# line 3327
+
+    sw $s2, 8($sp)
+    addu $sp, $sp, 4
+# line 3328
+
+    move $s2, $t0
+    subu $sp, $sp, 4
+# line 3329
+
