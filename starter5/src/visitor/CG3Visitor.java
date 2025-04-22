@@ -76,7 +76,7 @@ public class CG3Visitor extends Visitor
     }
 
     public void npe(String reg) {
-        code.emit("beq "+reg+", $0, nullPtrException");
+        code.emit("beq "+reg+", $zero, nullPtrException");
     }
 
     public void oob(String r1, String r2) {
@@ -202,7 +202,7 @@ public class CG3Visitor extends Visitor
         code.comment(n, "begin");
         n.exp.accept(this);
         pop(n.exp.type, "$t0");
-        code.emit("beq $t0, $0, if_else_"+n.uniqueId);
+        code.emit("beq $t0, $zero, if_else_"+n.uniqueId);
         n.trueStmt.accept(this);
         code.emit("j if_done_"+n.uniqueId);
         code.emit("if_else_"+n.uniqueId+":");
@@ -216,12 +216,13 @@ public class CG3Visitor extends Visitor
     {
         code.comment(n, "begin");
         n.stackHeight = stack;
+        code.emit("j while_cond_"+n.uniqueId);
+        code.emit("while_top_"+n.uniqueId+":");
+        n.body.accept(this);
         code.emit("while_cond_"+n.uniqueId+":");
         n.exp.accept(this);
         pop(n.exp.type, "$t0");
-        code.emit("beq $t0, $0, break_target_"+n.uniqueId);
-        n.body.accept(this);
-        code.emit("j while_cond_"+n.uniqueId);
+        code.emit("bne $t0, $zero, while_top_"+n.uniqueId);
         code.emit("break_target_"+n.uniqueId+":");
         code.comment(n, "end");
         return null;
@@ -256,7 +257,7 @@ public class CG3Visitor extends Visitor
         code.comment(n, "begin");
         n.initExp.accept(this);
         visit((VarDecl)n);
-        code.emit("lw $0, ($sp) #**"+n.name);
+        code.emit("lw $zero, ($sp) #**"+n.name);
         n.offset = -stack;
         code.comment(n, "end");
         return null;
@@ -306,14 +307,14 @@ public class CG3Visitor extends Visitor
     public Object visit(False n)   
     { 
         code.comment(n, "begin");
-        push(n.type, "$0");
+        push(n.type, "$zero");
         code.comment(n, "end");
         return null; 
     }
 
     public Object visit(Null n)    
     { 
-        push(n.type, "$0");
+        push(n.type, "$zero");
         return null; 
     }
 
@@ -334,7 +335,7 @@ public class CG3Visitor extends Visitor
         code.comment(n, "begin");
         n.left.accept(this);
         code.emit("lw $t0, ($sp)");
-        code.emit("beq $t0, $0, skip_"+n.uniqueId);
+        code.emit("beq $t0, $zero, skip_"+n.uniqueId);
         pop(n.left.type, "$t0");
         n.right.accept(this);
         code.emit("skip_"+n.uniqueId+":");
@@ -382,7 +383,7 @@ public class CG3Visitor extends Visitor
     { 
         n.left.accept(this);
         code.emit("lw $t0, ($sp)");
-        code.emit("beq $t0, $0, skip_"+n.uniqueId);
+        code.emit("beq $t0, $zero, skip_"+n.uniqueId);
         pop(n.left.type, "$t0");
         n.right.accept(this);
         code.emit("skip_"+n.uniqueId+":");
@@ -542,8 +543,8 @@ public class CG3Visitor extends Visitor
                 pop(n.rhs.type, "$t0");
                 code.emit("sw $t0, "+i.varDec.offset+"($s2)");
             } else {
-                i.exp.accept(this);
                 n.rhs.accept(this);
+                i.exp.accept(this); // this is flipped because it apparently works this way?
                 pop(n.rhs.type, "$t0");
                 pop(i.exp.type, "$t1");
                 npe("$t1");
